@@ -1,0 +1,11 @@
+body {
+  font-family: monaco, Menlo, Consolas, Lucida Console, monospace;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+}
