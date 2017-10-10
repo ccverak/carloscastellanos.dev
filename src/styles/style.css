@@ -1,0 +1,42 @@
+body {
+  font-family: monaco, Menlo, Consolas, Lucida Console, monospace;
+  line-height: 27px;
+  font-size: 15px;
+}
+
+main {
+  width: 80%;
+  margin: 20px 20px 20px 20px;
+}
+
+main ul {
+  list-style: none;
+}
+
+main a {
+  color: currentcolor;
+  box-shadow: inset 0 -0.33333em rgba(84, 156, 245, 0.308);
+  /* background-color: #29FCA5; */
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+main a:hover {
+  background-color: rgba(157, 201, 255, 0.32);
+}
+
+
+main p span {
+  box-shadow: inset 0 -0.33333em rgba(84, 156, 245, 0.308);
+  transition: all 0.3s;
+}
+
+main p span:hover {
+  background-color: rgba(157, 201, 255, 0.32);
+}
+
+::selection {
+  color: white;
+  background: rgba(0, 0, 0, .99);
+}
+
