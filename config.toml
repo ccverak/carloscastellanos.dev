@@ -22,7 +22,7 @@ enableRobotsTXT = "true"
     keywords = "software,engineer,developer,serverless,aws,amazon,architect,freelancer,contractor,ruby,nodejs"
     info = "Sr. Software Engineer. Solutions Architect."
     avatarurl = "/images/av2.jpg"
-    footercontent = "Specialities: #Node, #Javascript, #Ruby, #AWS, #Serverless, #Backend-Services"
+    footercontent = ""
 
     fixedbarContent = "Do you want to contact me? →" # Add fixedbar content
     fixedbarContentAfter = "Drop me an email to → me@carloscastellanosvera.com" # Add fixedbar content after click
