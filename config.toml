@@ -1,72 +1,68 @@
 baseurl = "https://carloscastellanosvera.com"
 title = ""
+theme = "coder-portfolio" # Set the theme.
+languagecode = "en" # The site’s language code used to generate RSS.
+defaultcontentlanguage = "en" # The default content language.
 
-theme = "hugo-coder"
+paginate = 20 # Default number of pages per page in pagination.
 
-languagecode = "en"
+pygmentsstyle = "b2" # Color-theme or style for syntax highlighting.
+pygmentscodefences = true # Enable code fence background highlighting.
+pygmentscodefencesguesssyntax = true # Enable syntax guessing for code fences without specified language.
+pygmentsUseClasses = true # new add
 
-paginate = 20
-canonifyurls = true
-
-pygmentsstyle = "b2"
-pygmentscodefences = true
-pygmentscodefencesguesssyntax = true
-
-disqusShortname = "yourdiscussshortname"
+disqusShortname = "yourdiscussshortname" # Enable or disable Disqus.
 
 googleAnalytics = "UA-108083906-1"
+enableRobotsTXT = "true"
 
-[params]
+[params] # theme parameters
     author = "Carlos Castellanos Vera"
     description = "Carlos Castellanos Vera is a Software Engineer and Solutions Architect located in Malaga, Spain with over 10 years of experience."
     keywords = "software,engineer,developer,serverless,aws,amazon,architect,freelancer,contractor,ruby,nodejs"
     info = "Sr. Software Engineer. Solutions Architect."
     avatarurl = "/images/av2.jpg"
-    footercontent = "Want to contact me? Drop me an email to me@carloscastellanosvera.com"
+    footercontent = "Specialities: #Node, #Javascript, #Ruby, #AWS, #Serverless, #Backend-Services"
 
-    dateformat = "January 2, 2006"
+    fixedbarContent = "Do you want to contact me? →" # Add fixedbar content
+    fixedbarContentAfter = "Drop me an email to → me@carloscastellanosvera.com" # Add fixedbar content after click
 
-    hideCredits = true
+    # Whether you want to hide copyright and credits in the footer.
+    hideCredits = false
     hideCopyright = false
-
-    # Git Commit in Footer, uncomment the line below to enable it.
-    # commit = "https://github.com/luizdepra/hugo-coder/tree/"
-
-    rtl = false
-
-    # Use inverted colors
-    inverted = false
 
     # Custom CSS
     custom_css = ["custom.css"]
 
+    # Alignment of Mobile Menu items
+    itemscentered = true
+
+    # RTL support
+    rtl = false
+
+    snsShare = false # new add
+
+    thumbnail = "images/av2.jpg" # default sns thumbnail
+
+    # Multilanguage mode
+    langseparator = "|" # Separates menus from language selectors when site is multilingual.
+
+# Social links
 [[params.social]]
-    name = "Github"
-    icon = "fab fa-github"
+    name = "/Github"
     weight = 1
     url = "https://github.com/ccverak/"
 [[params.social]]
-    name = "LinkedIn"
-    icon = "fab fa-linkedin"
+    name = "/LinkedIn"
     weight = 2
     url = "https://www.linkedin.com/in/ccverak/"
 [[params.social]]
-    name = "Twitter"
-    icon = "fab fa-twitter"
+    name = "/Twitter"
     weight = 3
     url = "https://twitter.com/ccverak/"
-[[params.social]]
-    name = "Medium"
-    icon = "fab fa-medium"
-    weight = 4
-    url = "https://medium.com/@ccverak"
 
+# Menu links
 [[menu.main]]
-    name = "BLOG"
+    name = "/Blog"
     weight = 1
-    url = "https://medium.com/@ccverak/"
-
-#[[menu.main]]
-#    name = "Contact"
-#    weight = 2
-#    url = "/contact/"
+    url  = "https://medium.com/@ccverak"

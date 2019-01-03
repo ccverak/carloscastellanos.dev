@@ -7,6 +7,22 @@ a {
   transition: all 0.3s !important;
 }
 
+a:hover {
+  background-color: rgba(157, 201, 255, .32);
+}
+
+a:before, a:after {
+  position: absolute;
+  bottom: -2px;
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 2px;
+  background: #ffffff;
+  transition: 0.5s;
+  background-color: rgba(157, 201, 255, .32);
+}
+
 ::-moz-selection {
   color: white;
   background: rgba(0, 0, 0, 0.99);
