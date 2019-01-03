@@ -17,6 +17,7 @@ googleAnalytics = "UA-108083906-1"
 enableRobotsTXT = "true"
 
 [params] # theme parameters
+    title = "Carlos Castellanos Vera / ccverak"
     author = "Carlos Castellanos Vera"
     description = "Carlos Castellanos Vera is a Software Engineer and Solutions Architect located in Malaga, Spain with over 10 years of experience."
     keywords = "software,engineer,developer,serverless,aws,amazon,architect,freelancer,contractor,ruby,nodejs"
