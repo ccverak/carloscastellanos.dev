@@ -35,4 +35,5 @@ a:before, a:after {
 
 .navigation {
   border-bottom: 0 !important;
+   box-shadow: 0 !important;
 }
