@@ -28,7 +28,12 @@
     {{ end }}
     <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
     <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
-    <link rel="stylesheet" href="{{ "css/style.min.css" | absURL }}">
+    
+    {{ $style := resources.Get "css/style.min.css" | fingerprint }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+
+    {{ $style := resources.Get "css/custom.css" | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
 
     {{ if .Site.Params.rtl}}
       <link rel="stylesheet" href="{{ "css/style-rtl.min.css" | absURL }}">

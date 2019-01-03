@@ -4,7 +4,7 @@ LESS_FILE = style.less
 LESS_RTL_FILE = style-rtl.less
 
 # CSS params
-CSS_DIR = ./static/css
+CSS_DIR = ./assets/css
 CSS_FILE = style.min.css
 CSS_RTL_FILE = style-rtl.min.css
 CSS_TMP_FILE = tmp.css

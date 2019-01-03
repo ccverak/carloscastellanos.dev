@@ -33,7 +33,7 @@ enableRobotsTXT = "true"
     hideCopyright = true
 
     # Custom CSS
-    custom_css = ["custom.css"]
+    custom_css = []
 
     # Alignment of Mobile Menu items
     itemscentered = true
