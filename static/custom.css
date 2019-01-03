@@ -32,3 +32,7 @@ a:before, a:after {
   color: white;
   background: rgba(0, 0, 0, 0.99);
 }
+
+.navigation {
+  border-bottom: 0 !important;
+}
