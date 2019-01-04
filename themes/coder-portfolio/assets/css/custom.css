@@ -17,10 +17,8 @@ a:before, a:after {
   content: "";
   display: inline-block;
   width: 0;
-  height: 2px;
+  height: 0;
   background: #ffffff;
-  transition: 0.5s;
-  background-color: rgba(157, 201, 255, .32);
 }
 
 ::-moz-selection {

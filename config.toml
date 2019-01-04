@@ -1,5 +1,5 @@
 baseurl = "https://carloscastellanosvera.com"
-title = ""
+title = "Home"
 theme = "coder-portfolio" # Set the theme.
 languagecode = "en" # The site’s language code used to generate RSS.
 defaultcontentlanguage = "en" # The default content language.
@@ -25,7 +25,7 @@ enableRobotsTXT = "true"
     avatarurl = "/images/av2.jpg"
     footercontent = ""
 
-    fixedbarContent = "Do you want to contact me? →" # Add fixedbar content
+    fixedbarContent = "Do you want to contact me? → " # Add fixedbar content
     fixedbarContentAfter = "Drop me an email to → me@carloscastellanosvera.com" # Add fixedbar content after click
 
     # Whether you want to hide copyright and credits in the footer.
@@ -67,3 +67,8 @@ enableRobotsTXT = "true"
     name = "/Blog"
     weight = 1
     url  = "https://medium.com/@ccverak"
+
+[[menu.main]]
+    name = "/About"
+    weight = 2
+    url  = "about"
