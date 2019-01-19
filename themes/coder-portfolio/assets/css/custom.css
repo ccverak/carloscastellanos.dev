@@ -35,3 +35,9 @@ a:before, a:after {
   border-bottom: 0 !important;
    box-shadow: 0 !important;
 }
+
+body {
+  /* font-family: 'Spectral', serif; */
+  font-size: 1.7em;
+  font-weight: 500;
+}
