@@ -1,10 +1,9 @@
 --- 
-draft: true
+draft: false
 date: 2016-08-27T22:31:20+01:00
-title: "From monolith to microservices."
-slug: "monolith to microservices" 
+title: "From monoliths to microservices"
 categories: general
-description: "From monolith to microservices."
+description: "From monoliths to microservices"
 ---
 
 This is not another post about application architectures but a software design instead. I bet you are a bit lost with the heading, keep reading, I will take you there.
@@ -13,7 +12,7 @@ First I want to let clear that by no means I intend to make this a reference to 
 
 ## Stage 1 — Plain OO
 
-![](https://cdn-images-1.medium.com/max/4000/1*8LEXrs-56k9FLSzhfY_t5A.jpeg)
+![](/images/oop.jpeg)
 
 My beginnings on serious programming were with Java and Object Oriented Programming (OOP or OO), it was challenging to start thinking in matters of objects, Encapsulation, Polymorphism, Inheritance, translating real life concepts into computers language, creating Abstractions. Somehow there is a moment when you control or even master it, but life is rich and so it is OO, then a moment comes when you don’t feel quite happy with results, and you tend to think everything needs refactor, that’s a code smell you can’t obviate, you need to improve your strategy.
 
@@ -21,13 +20,13 @@ Working and maintainable software leads to quality in software, that simple, som
 
 As mentioned, I just started with plain OO, in my code there were lots of objects interacting each other without following rules (or a couple of ones but nothing serious), I had “Monoliths”, yeah, non-modular programs, rigid code bases with shared responsibilities everywhere.
 
-<iframe src="https://medium.com/media/b27c6f145524920d3d48dbe7ed61aba3" frameborder=0></iframe>
 
 ## Stage 2 — Improved collaboration between objects
 
 It felt good for a while but some bittersweet taste after finishing some medium/large projects encouraged me to improve. For instance I found some materials speaking about [Dependency Injection — DI](https://en.wikipedia.org/wiki/Dependency_injection) (Or [Inversion Of Control — IoC](https://en.wikipedia.org/wiki/Inversion_of_control)), it was incredible how sophisticated the concept was for me, I mean, after understanding OO concepts, that was the next big thing in programming for me, it’s funny how new concepts shock me, I know….., whatever, your mind changes after using IoC, “Hollywood Principle” was like addiction.
 
-![](https://cdn-images-1.medium.com/max/2000/1*awhx8ZLsnlgieF6wC4j_tg.png)
+![](/images/inversion-of-control.png)
+
 > It is called Hollywood Principle “(…) Inversion of control is sometimes facetiously referred to as the “[Hollywood Principle](https://en.wikipedia.org/wiki/Hollywood_Principle): Don’t call us, we’ll call you”. (…)”
 
 You can read more and see examples on [this](http://martinfowler.com/articles/injection.html) article from [Martin Fowler](http://martinfowler.com/aboutMe.html) or on this [tutorial](http://www.tutorialspoint.com/spring/spring_dependency_injection.htm). That will give you an idea if you don’t know the concept.
@@ -36,7 +35,7 @@ You can read more and see examples on [this](http://martinfowler.com/articles/in
 
 After a few years working with [Java](https://www.java.com/en/), [Spring Framework](https://projects.spring.io/spring-framework/), [Google Guice](https://github.com/google/guice) and friends using IoC, I moved to different languages mostly dynamically typed such as [Python](https://www.python.org/) and [Ruby](https://www.ruby-lang.org/en/) for several reasons that I will discuss on future posts. On these languages DI is easier, most of the times you don’t even need a IoC container; anyways, one day I discovered [SOLID](https://en.wikipedia.org/wiki/SOLID_(object-oriented_design)), thanks to [Sandi Metz](http://www.sandimetz.com/) and her presentations and books, big fan of her work. I just realized that there were lots of more practices than just DI, great right?
 
-![](https://cdn-images-1.medium.com/max/2600/1*1w_0A5uNQHpyGP1mAyXBSQ.jpeg)
+![](/images/solid.jpeg)
 
 SOLID stands for **SOLID** (**single responsibility, open-closed, Liskov substitution, interface segregation and dependency inversion**), The term was introduced for [Michael Feathers](https://en.wikipedia.org/w/index.php?title=Michael_Feathers&action=edit&redlink=1), referring to [Robert C. Martin](https://en.wikipedia.org/wiki/Robert_C._Martin) principles.
 
@@ -46,7 +45,7 @@ Some SOLID and Demeter’s examples: The first is from T[houghbot](https://robot
 
 ### How did I get to “Microservices”?
 
-I see the transition from plain OO to OO Design (OOD) as a homology to Monolith to Microservices one, both are related to move to independent, easy to manage smaller units talking through messages according to contracts, isn’t this what we call Micro-services on application architectures?. I just made my point. Let’s answer the most common question on the subject:
+I see the transition from "Plain OO to OO Design (OOD)" as a homology to the "Monolith to Microservices" one, both are related to move to independent, easy to manage smaller units talking through messages according to contracts, isn’t this what we call Micro-services on application architectures?. I just made my point. Let’s answer the most common question on the subject:
 
 **Which is better for you?** this is subjective and context dependent, so it depends, in some cases are better concise Monolith on other cases modular and loosely coupled Units of Work, both have pros and cons. I like to think as the second as an evolution of the first. To pick one just research what are doing people with similar problems, try both approaches to understand which one is adequate for the problem and your brain capacity, yes different people deal and react differently to disperse or concrete systems and the same with levels of abstractions. Don’t try do it perfect from the beginning, spent time in the process so you can form an opinion.
 
@@ -62,7 +61,7 @@ Lately I’ve been using lots of [Service Object](http://stevelorek.com/service-
 
 Here you will find details: [Gourmet service objects](http://brewhouse.io/blog/2014/04/30/gourmet-service-objects.html) and [Callable services](http://www.rubytapas.com/2012/12/12/episode-035-callable/).
 
-I also use practices like [**East Oriented Code](http://www.saturnflyer.com/blog/jim/2015/02/10/the-4-rules-of-east-oriented-code-rule-1/)** discussed as well on this [book](http://clean-ruby.com/) both references from [Jim Ga](https://twitter.com/saturnflyer)y, [**Tell don’t ask Principle](https://pragprog.com/articles/tell-dont-ask)** and [**Command Query separation](https://pragprog.com/articles/tell-dont-ask)** , **“UseCase classes”** to orchestrate several services that conform a real application Use Case, **Extract Configuration** and **Strategy patterns **as addressed by Sandi Metz in [Practical Object Oriented Design](http://www.poodr.com/). I use these as well: [**Null Object Pattern](https://robots.thoughtbot.com/rails-refactoring-example-introduce-null-object)** and [**Maybe Pattern](https://robots.thoughtbot.com/if-you-gaze-into-nil-nil-gazes-also-into-you)**, if you want to read more on both research on [Monads](https://en.wikipedia.org/wiki/Monad_(functional_programming)); [here](https://github.com/avdi/naught) is a nice Ruby gem for it with fantastic documentation.
+I also use practices like [East Oriented Code](http://www.saturnflyer.com/blog/jim/2015/02/10/the-4-rules-of-east-oriented-code-rule-1/) discussed as well on this [book](http://clean-ruby.com/) both references from [Jim Ga](https://twitter.com/saturnflyer)y, [Tell don’t ask Principle](https://pragprog.com/articles/tell-dont-ask) and [Command Query separation](https://pragprog.com/articles/tell-dont-ask) , “UseCase classes” to orchestrate several services that conform a real application Use Case, "Extract Configuration" and Strategy patterns as addressed by Sandi Metz in [Practical Object Oriented Design](http://www.poodr.com/). I use these as well: [Null Object Pattern](https://robots.thoughtbot.com/rails-refactoring-example-introduce-null-object) and [Maybe Pattern](https://robots.thoughtbot.com/if-you-gaze-into-nil-nil-gazes-also-into-you), if you want to read more on both research on [Monads](https://en.wikipedia.org/wiki/Monad_(functional_programming)); [here](https://github.com/avdi/naught) is a nice Ruby gem for it with fantastic documentation.
 
 It has worked for me so far, don’t be afraid to try some, you won’t regret it.
 
