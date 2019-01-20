@@ -1,8 +1,7 @@
 --- 
-draft: true
+draft: false
 date: 2016-12-15T22:31:20+01:00
 title: "Continuous delivery and why it matters"
-slug: "Continuous delivery and why it matters" 
 categories: general
 description: "Continuous delivery and why it matters"
 ---
