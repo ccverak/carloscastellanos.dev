@@ -8,7 +8,7 @@ description: "Getting confident. A software developer perspective."
 
 ## "It works"
 
-"It works", says the customer after clicking 5 or 6 times on the app, deep breath and relax shoulders right?, what's next?: payment, are we done here?: as you may guess, +*no**, it doesn't ends here. There is always more in the ways because applications evolve with time, software development is not only about bringing things to life but also about evolving them through time. Optimizing for a first delivery can be risky, you always have to think and what comes next.
+"It works", says the customer after clicking 5 or 6 times on the app, deep breath and relax shoulders right?, what's next?: payment, are we done here?: as you may guess, **no**, it doesn't end here. There is always more in the ways because applications evolve with time, software development is not only about bringing things to life but also about evolving them through time. Optimizing for a first delivery can be risky, you always have to think and what comes next.
 
 Optimizing for deliveries without compromising the future is one of the hardest things in software development, it requires experience and business context. Whatever is the context think twice before saying: *“this works”*, what does your inner voice tells you about it? do you mean every letter? and every pixel? does it work by a mix of luck and lots of manual checks or because you have applied trusted engineering practices? Have you ever stopped to think how confident do you feel about the software you have written and the process you have followed? How easy is to add new things to it? Will other people understand what you've done? My endeavors on becoming a better professional have led me to think about my process and how it scales. Let me introduce you to how I think of it.
 
@@ -36,7 +36,7 @@ I think of **developing software** as a process, a complex one, part of a bigger
 
 You can't leave it to luck, pick practices and make a consistent system for yourself, team or company. I encourage you to think first to become a *confident programmer*, a ***confident engineer***, by applying good practices to your development process.
 
-## Practices (and some tools)
+## Practices
 
 1- **Automated Testing**: Number 1, no doubt. Through automated testing you ensure that every piece of code does what it has to do and it helps you to detect defects while creating or refactoring your code specifically **Unit Testing** and **Mutation Testing** will help on smaller contexts of your code. When it comes to test if the system works as expected you can use **Acceptance Testing** and **BDD**. This will bring you the **95%** confident you are looking for.
 
