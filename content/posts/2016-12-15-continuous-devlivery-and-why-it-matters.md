@@ -5,12 +5,18 @@ title: "Continuous delivery and why it matters"
 categories: general
 description: "Continuous delivery and why it matters"
 ---
+## Introduction
 
 Building software is often under-valuated, many people think that building an app is reduced to writing code, sometimes that’s true, except when it isn’t. When the business grows you need to scale your strategy in order to stay competitive. Moving fast is important so is a matter of adapting or die. Period.
 
 The Continuous Delivery concept is not new at all. My intention with this post is not to copy and paste definitions, instead, I want to provide a couple of patterns I’ve been using for the last 3 years. Try to understand the principle behind each one so you can be accurate in the execution.
 
 ## Continuous Delivery, WTF?
+
+![Credit: Success image via Shutterstock](/images/continuous-delivery.jpeg)
+
+*Credits: continuousdelivery.com*
+
 
 **Continuous delivery** (CD) is a software engineering approach in which teams produce software in short cycles, ensuring that the software can be reliably released at any time. It aims at building, testing, and releasing software faster and more frequently.
 
@@ -28,7 +34,7 @@ Well, let me explain it better. Do you consider next items valuable in any way?
 
 **Low risk release + Faster time to market + Higher quality + Lower costs = Service Level Agreement Fulfillment = Happy Customers**
 
-## So, how do I get there?
+## I'm convinced, how do I get there?
 
 * Every change must be deployable and that is the priority.
 
@@ -44,7 +50,7 @@ Well, let me explain it better. Do you consider next items valuable in any way?
 
 [Continuous Integration](http://martinfowler.com/articles/continuousIntegration.html): Usually refers to integrating, building, and testing code within the development environment. Continuous Delivery builds on this, dealing with the final stages required for production deployment.
 
-[DeploymentPipeline](http://martinfowler.com/bliki/DeploymentPipeline.html): One of the challenges of an automated build and test environment is you want your build to be fast so that you can get fast feedback, but comprehensive tests take a long time to run. A deployment pipeline is a way to deal with this by breaking up your build into stages. Each stage provides increasing confidence, usually at the cost of extra time. Early stages can find most problems yielding faster feedback, while later stages provide slower and more through probing. Deployment pipelines are a central part of [ContinuousDelivery](http://martinfowler.com/bliki/ContinuousDelivery.html).
+[Deployment Pipeline](http://martinfowler.com/bliki/DeploymentPipeline.html): One of the challenges of an automated build and test environment is you want your build to be fast so that you can get fast feedback, but comprehensive tests take a long time to run. A deployment pipeline is a way to deal with this by breaking up your build into stages. Each stage provides increasing confidence, usually at the cost of extra time. Early stages can find most problems yielding faster feedback, while later stages provide slower and more through probing. Deployment pipelines are a central part of [ContinuousDelivery](http://martinfowler.com/bliki/ContinuousDelivery.html).
 
 Automate everything: As the name suggests the pattern is basically towards full automation of the delivery process.
 
@@ -54,13 +60,13 @@ Automate everything: As the name suggests the pattern is basically towards full 
 
 [Build once, deploy everywhere](https://blog.openshift.com/build-once-deploy-anywhere/): One of the fundamental principles of Continuous Delivery is Build Binaries Only Once. Subsequent deployments, testing and releases should never attempt to build the binary artifacts again, instead reusing the already built binary. Worth to say that, in many cases, the binary is built at each stage using the same source code, and is considered to be “the same”, but it is not necessarily the same because of different environmental configuration or other factors. More on this later.
 
-[Inmutable Infraestructure](http://martinfowler.com/bliki/ImmutableServer.html): Immutable infrastructure is an approach to managing services and software deployments on IT resources wherein components are replaced rather than changed. An application or services is effectively redeployed each time any change occurs. This is a game changer. Forget about the possibility of entering to your server to modify stuff, forget there is something called SSH, seriously.
+[Immutable Infrastructure](http://martinfowler.com/bliki/ImmutableServer.html): Immutable infrastructure is an approach to managing services and software deployments on IT resources wherein components are replaced rather than changed. An application or services is effectively redeployed each time any change occurs. This is a game changer. Forget about the possibility of entering to your server to modify stuff, forget there is something called SSH, seriously.
 
 Measure everything: Having business, system, process and application metrics lets you know how your decisions and solutions impact on results, how your systems are behaving. Try to measure and collect as much information as you can so you can, learn from it, make it visible, set KPIs, alarms, make it actionable.
 
 [Infrastructure as code](http://infrastructure-as-code.com/): Or programmable infrastructure, means writing code (which can be done using a high level language or any descriptive language) to manage configurations and automate provisioning of infrastructure in addition to deployments. This is not simply writing scripts but involves using tested and proven software development practices that are already being used in application development. This is the heart of automation and reproducible environments.
 
-Do [Devops](https://devops.com/): DevOps is a term that emerged from the collision of two major related trends. The first was also called “agile system administration” or “agile operations”; it sprang from applying newer Agile and Lean approaches to operations work. The second is a much expanded understanding of the value of collaboration between development and operations staff throughout all stages of the development life cycle when creating and operating a service, and how important operations has become in our increasingly service-oriented world. Believe it, it works and plays really well with the rest of the patterns.
+[Devops](https://devops.com/): DevOps is a term that emerged from the collision of two major related trends. The first was also called “agile system administration” or “agile operations”; it sprang from applying newer Agile and Lean approaches to operations work. The second is a much expanded understanding of the value of collaboration between development and operations staff throughout all stages of the development life cycle when creating and operating a service, and how important operations has become in our increasingly service-oriented world. Believe it, it works and plays really well with the rest of the patterns.
 
 ## Some tools to get the job done easier
 
@@ -86,7 +92,7 @@ Well, that’s for another post, for now, I just want to point out the effective
 
 Building and managing a Software factory is not an easy task but it is not impossible. Following these battle tested patterns might help you avoid common mistakes and achieve goals faster. Stand on giant shoulders so you can be successful. Tools might help to do things easier.
 
-![Credit: Success image via Shutterstock](https://cdn-images-1.medium.com/max/2000/1*FAyBVoius3rOWtiYwkGM5g.jpeg)
+![Credit: Success image via Shutterstock](/images/success-continuous-delivery.jpeg)
 
 *Credit: Success image via Shutterstock*
 
