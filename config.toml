@@ -17,6 +17,7 @@ disqusShortname = "ccverakblog" # Enable or disable Disqus.
 
 googleAnalytics = "UA-108083906-1"
 enableRobotsTXT = "true"
+summaryLength = 30
 
 [taxonomies]
   category = "categories"

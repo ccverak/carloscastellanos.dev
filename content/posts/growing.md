@@ -1,5 +1,5 @@
 --- 
-draft: false
+draft: true
 date: 2017-11-25T22:31:20+01:00
 title: "Growing as a software engineer"
 slug: "Growing as a software engineer" 

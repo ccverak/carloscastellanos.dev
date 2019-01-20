@@ -1,5 +1,5 @@
 --- 
-draft: false
+draft: true
 date: 2016-12-09T22:31:20+01:00
 title: "The Pure Functions experiment"
 slug: "pure functions experiment" 

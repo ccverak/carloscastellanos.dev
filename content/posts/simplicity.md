@@ -1,5 +1,5 @@
 --- 
-draft: false
+draft: true
 date: 2017-05-07T22:31:20+01:00
 title: "Thoughts on simplicity in software development"
 slug: "Thoughts on simplicity in software development" 

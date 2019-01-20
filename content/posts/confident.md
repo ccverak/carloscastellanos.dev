@@ -1,5 +1,5 @@
 --- 
-draft: false
+draft: true
 date: 2016-01-22T22:31:20+01:00
 title: "Getting confident. A software developer perspective."
 slug: "getting confident" 

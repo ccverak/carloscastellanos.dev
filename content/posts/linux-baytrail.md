@@ -1,5 +1,5 @@
 --- 
-draft: false
+draft: true
 date: 2016-12-13T22:31:20+01:00
 title: "Linux issues with Baytrail CPUs"
 slug: "linux issues with baytrail cpus" 
