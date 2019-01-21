@@ -1,22 +1,20 @@
 --- 
-draft: tru
+draft: true
 date: 2016-08-27T22:31:20+01:00
 title: "From monoliths to microservices"
 categories: general
 description: "From monoliths to microservices"
 ---
 
-This is not another post about application architectures but a software design instead. I bet you are a bit lost with the heading, keep reading, I will take you there.
+This is not another post about architectural patterns, believe it or not this one is about software design patterns. I bet you are a bit lost with the then but keep reading, I will explain.
 
-First I want to let clear that by no means I intend to make this a reference to software design, I just want to address how it’s been natural for me to adopt practices that in my opinion had lead me to write better code. Here you will find just the pieces and the most important references, I will try to cover as much as I can.
+First, I want to let clear that by no means I intend to make this a reference to software design, I just want to address how it’s been natural for me to adopt practices that in my opinion had led me to write better code. Here you will find just the pieces and the most important references I'll do my best to cover as much as I can.
 
 ## Stage 1 — Plain OO
 
 ![](/images/oop.jpeg)
 
-My beginnings on serious programming were with Java and Object Oriented Programming (OOP or OO), it was challenging to start thinking in matters of objects, Encapsulation, Polymorphism, Inheritance, translating real life concepts into computers language, creating Abstractions. Somehow there is a moment when you control or even master it, but life is rich and so it is OO, then a moment comes when you don’t feel quite happy with results, and you tend to think everything needs refactor, that’s a code smell you can’t obviate, you need to improve your strategy.
-
-Working and maintainable software leads to quality in software, that simple, some will argue but those are root cause, I mean, aren’t self-reading, well structured and organized, easy to understand and to modify code, means to the same end: Maintainability?. That’s what Object Oriented Design is about (I will refer to it as OOD or just design indistinctly from now on) let’s dig into details.
+My beginnings on serious programming were with Java and Object Oriented Programming (OOP or OO), it was challenging to start thinking in matters of objects, Encapsulation, Polymorphism, Inheritance, translating real life concepts into computers language, creating Abstractions. Somehow there is a moment when you get used to it but then life comes and you don’t feel quite happy with the current state of things, everything appears to require a refactor and without realizing it you are in an endless loop of refactor - uncomfortness.
 
 As mentioned, I just started with plain OO, in my code there were lots of objects interacting each other without following rules (or a couple of ones but nothing serious), I had “Monoliths”, yeah, non-modular programs, rigid code bases with shared responsibilities everywhere.
 
