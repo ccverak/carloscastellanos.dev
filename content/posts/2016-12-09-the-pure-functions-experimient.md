@@ -37,8 +37,6 @@ A **pure function** is a function which:
 
 Everything is moving to multi-threaded or parallel programming now, you need to adhere to safer practices, non-determinism is evil and goes against concurrency and sanity.
 
-**Last but not least**
-
 5- **Memoization and Laziness:** Because pure functions are referentially transparent, we can compute their output once for given inputs and cache the results *(memoization)*, also, you can invoke the computation just when the outputs are being used *(laziness).*
 
 
