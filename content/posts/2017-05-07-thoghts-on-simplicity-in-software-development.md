@@ -44,7 +44,7 @@ Yeah! Dependencies are a 2 edged sword. You could easily end up having something
 
 My take on this would be the following: beyond [Bounded Context](https://martinfowler.com/bliki/BoundedContext.html), defining what’s **public API and private API** at every abstraction level is paramount.
 
-Loosely coupled approach for inter-package communication and high cohesion communication inside packages is a common speech in Design Pattern books, based on this, if we define a ***Facade** for each package with its **public API** and **communication to that package is enforced to be done using its public API, then and only then, we’d have proper boundaries and encapsulation, having simpler dependency graphs to map into our heads. Stable and explicit communication lead to a fully organized system.
+Loosely coupled approach for inter-package communication and high cohesion communication inside packages is a common speech in Design Pattern books, based on this, if we define a **Facade** for each package with its **public API** and communication to that package is enforced to be done using its public API, then and only then, we’d have proper boundaries and encapsulation, having simpler dependency graphs to map into our heads. Stable and explicit communication lead to a fully organized system.
 
 ![](/images/simplictiy-order.jpeg)
 
