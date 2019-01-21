@@ -12,7 +12,7 @@ Linux randomly freezes on laptops with Baytrail processors and your are forced t
 
 ## Solution
 
-Change the pstate settings at kernel level. This should work with 4.x kernels, it has worked for me in Ubuntu 16.04 and Linux Mint 18.
+Change the *pstate* settings at kernel level. This should work with 4.x kernels, it has worked for me in Ubuntu 16.04 and Linux Mint 18.
 
 Steps:
 

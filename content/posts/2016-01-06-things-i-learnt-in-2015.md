@@ -12,7 +12,7 @@ Last year, 2015 was a great year, it was my 3rd year as a Lead Devops Engineer a
 
 * Agile, Lean & Kanban
 
-* Inmutable Infrastructure, Infrastructure as Code
+* Immutable Infrastructure, Infrastructure as Code
 
 * Logging and measuring (BigData, Data Mining and Process Mining)
 

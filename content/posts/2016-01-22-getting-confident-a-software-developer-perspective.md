@@ -80,7 +80,7 @@ Here are a couple of tools that can help you build quality-in in Ruby:
 
 *Tools to come on next posts*
 
-5- **Manage your time**: Avoid procrastination, gain productivity, schedule only what you are able to do, reduce stress by putting appart pending stuff. Learn to say no.
+5- **Manage your time**: Avoid procrastination, gain productivity, schedule only what you are able to do, reduce stress by putting apart pending stuff. Learn to say no.
 
 
 *There are a lot more on practices, these are basic for me. I you like this, you should take a look to the following topics: Agile Development and Continuous Delivery, I plan to write more on that on later posts.*
