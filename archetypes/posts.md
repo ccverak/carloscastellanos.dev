@@ -4,7 +4,7 @@ date: {{ .Date }}
 title: ""
 slug: "" 
 tags: []
-categories: []
+categories:
 thumbnail: "{{ .Site.Params.thumbnail }}"
 description: ""
 ---

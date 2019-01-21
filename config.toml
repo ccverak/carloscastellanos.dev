@@ -6,17 +6,24 @@ defaultcontentlanguage = "en" # The default content language.
 
 paginate = 20 # Default number of pages per page in pagination.
 
-pygmentsstyle = "b2" # Color-theme or style for syntax highlighting.
+pygmentsstyle = "monokai" # Color-theme or style for syntax highlighting.
 pygmentscodefences = true # Enable code fence background highlighting.
 pygmentscodefencesguesssyntax = true # Enable syntax guessing for code fences without specified language.
 pygmentsUseClasses = true # new add
+pygmentsOptions = ["linenos"]
 
-disqusShortname = "yourdiscussshortname" # Enable or disable Disqus.
+disable_comments = true
+disqusShortname = "ccverakblog" # Enable or disable Disqus.
 
 googleAnalytics = "UA-108083906-1"
 enableRobotsTXT = "true"
+summaryLength = 30
 
-[params] # theme parameters
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[params]
     title = "Carlos Castellanos Vera / ccverak"
     author = "Carlos Castellanos Vera"
     description = "Carlos Castellanos Vera is a Software Engineer and Solutions Architect located in Malaga, Spain with over 10 years of experience."
@@ -66,7 +73,7 @@ enableRobotsTXT = "true"
 [[menu.main]]
     name = "/Blog"
     weight = 1
-    url  = "https://medium.com/@ccverak"
+    url  = "posts"
 
 [[menu.main]]
     name = "/About"

@@ -1,0 +1,12 @@
+<section class="container list">
+  <h1 class="title">{{ .Title }}</h1>
+  <ul>
+    {{ range .Paginator.Pages }}
+    <li>
+      <a href="{{ .URL }}">{{ .Title }}</a>
+      <p></p>
+    </li>
+    {{ end }}
+  </ul>
+  {{ partial "pagination.html" . }}
+</section>
