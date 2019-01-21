@@ -6,9 +6,9 @@ categories: general
 description: "Linux issues with Baytrail CPUs"
 ---
 
-Linux randomly freezes on laptops with Baytrail processors and your are forced to do a hard restart, this an open issue of the kernel that apparently only affects the 4.x versions. You might feel hopeless as this is a low priority issue for the kernel but hopefully, there is a workaround.
+Linux randomly freezes on laptops with Baytrail processors and you are forced to do a hard restart, this an open issue of the kernel that apparently only affects the 4.x versions. You might feel hopeless as this is a low priority issue for the kernel but hopefully, there is a workaround.
 
-[PState](https://software.intel.com/en-us/blogs/2008/05/29/what-exactly-is-a-p-state-pt-1) is a technology present in Intel processors that allows the OS to regulate CPU frequency and voltage to adequate power consumption and performance, mostly to safe battery life.
+[PState](https://software.intel.com/en-us/blogs/2008/05/29/what-exactly-is-a-p-state-pt-1) is a technology present in Intel processors that allows the OS to regulate CPU frequency and voltage to adequate power consumption and performance, mostly to save battery life.
 
 ## Solution
 
