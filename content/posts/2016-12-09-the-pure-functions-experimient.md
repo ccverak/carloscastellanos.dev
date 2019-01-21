@@ -27,7 +27,7 @@ A **pure function** is a function which:
 
 > “…Perhaps the most important design principle in computer science is KISS…” Eric Elliott
 
-2- **Improves Testability:** Definitely if your functions don’t mutate state, it is much easier to write tests, just set inputs and expected outputs: be welcome determinism and Immutability. BTW, I’m convinced that mutating state is never the answer, is OK to mutate state just in the constructor of classes, this should be a stated as another Law in software design, I’d call it **D**on’t **F**u..ing **M**utate **S**tate **L**aw.
+2- **Improves Testability:** Definitely if your functions don’t mutate state, it is much easier to write tests, just set inputs and expected outputs: be welcome determinism and Immutability. BTW, I’m convinced that mutating state is never the answer (I/O aside of course), is OK to set the state only in constructors, this should be a stated as another Law in software design, **D**on’t **F**u..ing **M**utate **S**tate **L**aw :)
 
 3- **Helps to Embrace Concurrency:** You are set to go if you don’t mutate state, it will be easier in OO languages to write thread-safe code, immutability is the base to concurrent and distributed programming in FP languages and that is not by accident.
 
