@@ -6,7 +6,7 @@ categories: general
 description: "Things I’ve learnt in 2015 (in software engineering)"
 ---
 
-Last year, 2015 was a great year, it was my 3rd year as a Lead Devops Engineer at my company. It was a year where was able to try a lot of new stuff, here is a list of things I learnt and skills I developed and consolidated during this time:
+Last year, 2015 was a great year, it was my 3rd year as a Lead DevOps Engineer at my company. It was a year where was able to try a lot of new stuff, here is a list of things I learnt and skills I developed and consolidated during this time:
 
 * Continuous Delivery and Continuous Integration
 
