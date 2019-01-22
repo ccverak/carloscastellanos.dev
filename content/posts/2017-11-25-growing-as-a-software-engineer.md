@@ -1,8 +1,7 @@
 --- 
-draft: true
+draft: false
 date: 2017-11-25T22:31:20+01:00
 title: "Growing as a software engineer"
-slug: "Growing as a software engineer" 
 categories: general
 description: "Growing as a software engineer"
 ---
@@ -19,15 +18,15 @@ How many times have you heard ?
 
 * “Y” is a toy programming language.
 
-* I’m a 10k /rock star programmer.
+* I’m a 10k rock star programmer.
 
 * You should work more and sleep less.
 
 * Oh 😮 I see 😮, you don’t know what “Z” is about 😮😕
 
-* “L” is 💩 because is slow.
+* “L” is 💩 programming language because it is slow.
 
-* If you are not using “K” in your code you are doing it wrong.
+* If you are not using “K” practice in your code you are doing it wrong.
 
 * It compiles then I don’t need tests.
 
