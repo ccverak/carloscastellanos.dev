@@ -1,8 +1,7 @@
 --- 
-draft: true
+draft: false
 date: 2018-08-15T22:31:20+01:00
 title: "Serverless Demystified"
-slug: "Serverless Demystified" 
 categories: serverless
 description: "Serverless Demystified"
 ---
@@ -11,7 +10,7 @@ After a couple of years of full-time working on many Serverless Framework projec
 
 ### How Serverless is different?
 
-The **Serverless** main idea is that as programmers we can forget about servers and focus on code, in a model where you don’t pay if your clients don’t use your service aka: pay per usage. This translates into massive power on demand at very low prices and someone else is responsibile for the high availability concerns.
+The **Serverless** main idea is that as programmers we can forget about servers and focus on code, in a model where you don’t pay if your clients don’t use your service aka: pay per usage. This translates into massive power on demand at very low prices being someone else's responsibility the high availability concerns of the platform.
 
 ### What about FaaS?
 
@@ -51,11 +50,11 @@ The **Serverless** main idea is that as programmers we can forget about servers 
 
 ### My recommendations
 
-* Start small, do demos, smaller apps, or part of existing apps.
+* Start small, with demos, smaller apps, or parts of existing apps.
 
 * Understand your team, your organization and product before approaching architectures. Do you have one team, many teams, what are the boundaries of your product? All of that may have an impact on the architecture ([Conway’s law](https://en.wikipedia.org/wiki/Conway%27s_law))
 
-* Find the middle ground between microservices and monoliths before starting to lower, when possible, the impact of changes if you make wrong decisions.
+* Find the middle ground between microservices and monoliths before starting to lower when possible, the impact of changes if you make wrong decisions.
 
 * Implement Correlation Ids for logging so it would be easier to trace one request across the system if your request hits many functions.
 
@@ -65,7 +64,7 @@ The **Serverless** main idea is that as programmers we can forget about servers 
 
 * Analyze Per Per Usage plans and required response latencies for the type of application you are building to avoid problems in the future.
 
-* Hands down for Domain Driven Design. Understanding your product and solving problems is the ultimate goal and the most important things to make your product succeed.
+* Embrace Domain Driven Design. Understanding your product and solving problems is the ultimate goal and the most important things to make your product succeed.
 
 Good to have:
 
