@@ -52,7 +52,7 @@ This is much better. Advantages are innumerable.
 
 **Trees vs flats**
 
-As the product evolves always some kind of complexity is induced by new features, using the approach mentioned above, a good strategy to scale would be to split modules into smaller ones as it’s public API becomes messy. **Divide and conquer** is the answer but only if you grow horizontally building **flat structures** and no **deep structures**, creating messy dependencies goes against sanity, these two interdependency diagrams will convince you:
+As the product evolves always some kind of complexity is induced by new features, using the approach mentioned above, a good strategy to scale would be to split modules into smaller ones as it’s public API becomes messy. **Divide and conquer** is the answer but only if you grow horizontally building **flat structures** and not **deep structures**, creating messy dependencies goes against sanity, these two interdependency diagrams will convince you:
 
 ![](/images/simplicity-flat-packages.png)
 
