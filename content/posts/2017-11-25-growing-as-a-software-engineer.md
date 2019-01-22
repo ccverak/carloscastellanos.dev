@@ -8,7 +8,7 @@ description: "Growing as a software engineer"
 
 This one is short, kinda a micro-post. It’s about misconceptions and ethics in Software development and engineering.
 
-In a form of a list I’m gonna present you some comments I’ve heard or read from Juniors and Seniors across the years, that in my opinion, are helping to spread the wrong mind frameworks across the industry and affecting collaboration in general. I pretend to make you **reflect about it, **hopefully, it will drive to a **mind change**.
+In a form of a list I’m gonna present you some comments I’ve heard or read from Juniors and Seniors across the years, that in my opinion, are helping to spread the wrong mind frameworks across the industry and affecting collaboration in general. I pretend to make you **reflect about it**, hopefully, it will drive to a **mind change**.
 
 Here it goes:
 
