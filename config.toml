@@ -54,6 +54,7 @@ summaryLength = 30
 
     # Multilanguage mode
     langseparator = "|" # Separates menus from language selectors when site is multilingual.
+    twitterHandle = "ccverak"
 
 # Social links
 [[params.social]]
