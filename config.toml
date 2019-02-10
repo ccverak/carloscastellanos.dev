@@ -69,6 +69,10 @@ summaryLength = 30
     name = "/Twitter"
     weight = 3
     url = "https://twitter.com/ccverak/"
+[[params.social]]
+    name = "/Blog"
+    weight = 5
+    url = "https://carloscastellanosvera.com/posts"
 
 # Menu links
 [[menu.main]]

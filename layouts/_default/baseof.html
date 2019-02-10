@@ -5,8 +5,6 @@
     <base href="{{ .Site.BaseURL }}">
     <title>{{ block "title" . }}{{ .Site.Params.Title }}{{ end }}</title>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="canonical" href="{{ .Permalink }}">
     {{ if .Site.Params.snsShare }}
@@ -41,7 +39,10 @@
     {{ end }}
 
     {{ .Hugo.Generator }}
+    
     <meta name="theme-color" content="#1e2327">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     {{ partial "site-meta.html" . }}
     {{ template "_internal/opengraph.html" . }}
