@@ -8,7 +8,7 @@ description: "Thoughts on simplicity in software development"
 
 ## The software developer's view of products
 
-It’s remarkably satisfying to see a nice idea becoming an amazing Product, a successful machinery, probably from the non-technical point of view a fully functional black box. Technical people think different, especially software developers an engineers, we try to understand the working parts of every product we know or use, we need to discover the atoms.
+It’s remarkably satisfying to see a nice idea becoming an amazing Product, a successful machinery, probably from the non-technical point of view a fully functional black box. Technical people think different, especially software developers and engineers, we try to understand the working parts of every product we know or use, we need to discover the atoms.
 
 Not few times during the product development you find developers going too technical and taking the wrong decisions because they are missing the whole picture; — been there, done that, it’s common, let’s not forget it; tech and business are food and salt.
 
