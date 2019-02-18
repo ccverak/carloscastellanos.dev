@@ -32,7 +32,7 @@ How many times have you heard ?
 
 Please let’s stop doing this if you are, because is 💩, it doesn’t make you look smart. My reaction is 😠😱😡.
 
-If you don’t get why this is wrong, double-read it or do some research to understand why a criticism to this mis-leading sometimes discriminant comments is required, this causing an enormous PAIN in communities nowadays.
+If you don’t get why this is wrong, double-read it or do some research to understand why a criticism to this mis-leading sometimes discriminant comments is required, this is causing an enormous PAIN in communities nowadays.
 
 How we can prevent this to become the de-facto discussion points between colleagues from different communities of the field? Hard to tell but definitely, starting points are:
 
