@@ -54,9 +54,9 @@ As the last point, I would like to highlight the importance of this pattern and 
 
 ### Conclusion
 
-* Be. Ware. With. HTTP. Auto-Scaling.
+* Be. Cautious. With. HTTP. Auto-Scaling.
 
-* Do some sort capacity management and planning of your system.
+* Do some sort of capacity management and planning of your system.
 
 * Use pull systems and back-pressure to prevent overwhelming downstream services.
 
