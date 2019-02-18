@@ -46,7 +46,7 @@ The idea is to introduce an intermediary or contention service between your HTTP
 
 **The contention service allows to propagate events at regulated speed avoiding downstream services from going over capacity**
 
-The back-pressure mechanism is required most the times when the publisher is faster than the consumer, this is basically the case of any modern system out there, we live in a connected world where the amount of data to be processed is growing at unstoppable speed.
+This **back-pressure** mechanism is required most the times when the publisher is faster than the consumer, this is basically the case of any modern system out there, we live in a connected world where the amount of data to be processed is growing at unstoppable speed.
 
 ### Serverless architectures
 
