@@ -4,6 +4,7 @@ date: 2018-08-15T22:31:20+01:00
 title: "Serverless Demystified"
 categories: serverless
 description: "Serverless Demystified"
+keywords: "serverless, aws, pros, cons"
 ---
 
 After a couple of years of full-time working on many Serverless Framework projects over AWS, it’s time to talk about my experiences with the platform and the issues and goodies I’ve found in my way. My reflections are in the scope of AWS Lambda but many of them may apply to other Serverless and FaaS providers.
