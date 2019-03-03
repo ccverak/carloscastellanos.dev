@@ -18,11 +18,15 @@ disqusShortname = "ccverakblog" # Enable or disable Disqus.
 googleAnalytics = "UA-108083906-1"
 enableRobotsTXT = true
 canonifyURLs = true
+uglyurls = false
 summaryLength = 30
 
 [taxonomies]
   category = "categories"
   tag = "tags"
+
+[permalinks]
+  posts = "/:year/:month/:title"
 
 [params]
     title = "Carlos Castellanos Vera / ccverak"
