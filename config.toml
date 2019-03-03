@@ -16,7 +16,8 @@ disable_comments = true
 disqusShortname = "ccverakblog" # Enable or disable Disqus.
 
 googleAnalytics = "UA-108083906-1"
-enableRobotsTXT = "true"
+enableRobotsTXT = true
+canonifyURLs = true
 summaryLength = 30
 
 [taxonomies]
@@ -78,9 +79,9 @@ summaryLength = 30
 [[menu.main]]
     name = "/Blog"
     weight = 1
-    url  = "posts"
+    url  = "/posts/"
 
 [[menu.main]]
     name = "/About"
     weight = 2
-    url  = "about"
+    url  = "/about/"
