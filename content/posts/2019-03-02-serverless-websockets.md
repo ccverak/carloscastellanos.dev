@@ -7,16 +7,32 @@ description: "Serverless websockets"
 keywords: "serverless, aws, websockets, apigateway"
 ---
 
-AWS API Gateway (APIGW) is a very versatile product, it plays a fundamental role when building serverless applications with AWS Lambda.
-Recently, the [websockets support was released](https://aws.amazon.com/blogs/compute/announcing-websocket-apis-in-amazon-api-gateway/), this was fantastic news for serverless architects because right now you can use APIGW to act as an stateful websocket server for your existing serverless applications. Stateful applications weren't a thing to consider in a serverless context but now, you can hold a 2 way real-time connection with users without having running code! It's not magic though, APIGW handles the connection and triggers functions on websockets events.
+AWS API Gateway (APIG) is a very versatile product which plays a fundamental role when building applications in the AWS ecosystem. It's not an exception for the case of serverless with AWS Lambda, where it plays as a HTTP bridge to trigger functions. Recently, AWS expanded its capabilities by introducing [websockets support](https://aws.amazon.com/blogs/compute/announcing-websocket-apis-in-amazon-api-gateway/), this is fantastic news for serverless architects because it means that now you can add stateful features to your serverless application, APIG will handle the WebSocket connections for you and trigger your functions under certain events.
 
 ![Api gateway architecture](/images/websockets-architecture-apigw.png)
 
-It can be tricky to setup the whole thing up so I have putted together a simple example of a chat using the serverless framework you can find a working example [here](https://github.com/ccverak/serverless-websockets-demo).
+It's not simple to understand how things work so I have put together a simple example of a chat using the serverless framework. You can find a working example [here](https://github.com/ccverak/serverless-websockets-demo) if interested.
 
-## What we are building?
+## How things work
 
-We are going to build a chat where every user identifies himself when connecting to the socket so he can send messages to any other user in the system using its userId or receive messages from other users.
+Taking as reference the previous image, let's get get a bit deeper into details:
+
+We have three main components:
+- The client (ex: Web Browsers used by our users)
+- APIG, the websocket server frontend
+- Our Lambda functions
+
+The flow is as follows:
+
+![helo](/images/Websockets-flow-diagram.png)
+
+1) The client connects to the WebSocket
+   ---> APIG accepts the connection and calls the lambda function which reacts to the "connect" events
+   <--- Your function returns with success or failure, wether or not the connection was successful 
+
+## The application description
+
+We are going to build a chat where every user identifies himself when connecting to the socket so he can send messages to any other user in the system using its userId or receive messages from others.
 
 First thing it's to double check you have serverless framework version 1.38 or superior, which includes support for connecting API Gateway with your functions. For our particular of a chat we will use DynamoDB to store the websocket connection ids for every user so we can re use them when sending messages between them.
 
