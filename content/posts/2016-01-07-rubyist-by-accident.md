@@ -4,6 +4,9 @@ date: 2016-01-07T22:31:20+01:00
 title: "Rubyist by accident"
 categories: general
 description: "Rubyist by accident"
+aliases:
+  - /2016/01/rubyist-by-accident/
+  - /2016-01-rubyist-by-accident/
 ---
 
 It was 2011, I was a Java developer by that time, I was comfortable with libraries and tooling I used; I was a productive and happy user of Play Framework, Spring Framework, Maven and a couple of other small libraries. I thought I had it all. I learned Java in college and everybody I knew used it, it was a safe house. That feeling lasted for a while till I read "The Pragmatic Programmer" by Andrew Hunt and Dave Thomas and "The passionate programmer" by Chad Fowler. These books encouraged me to get out my comfort zone and try new things to strengthen my programming and problem solving skills. It was when I planned to look for something new, hard thing for a Cuban in 2011 living in an almost disconnected world.

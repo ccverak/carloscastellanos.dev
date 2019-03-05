@@ -4,6 +4,10 @@ date: 2017-05-07T22:31:20+01:00
 title: "Thoughts on simplicity in software development"
 categories: general
 description: "Thoughts on simplicity in software development"
+aliases:
+  - /2017/05/thoughts-on-simplicity-in-software-development/
+  - /2017-05-thoughts-on-simplicity-in-software-development/
+
 ---
 
 ## The software developer's view of products

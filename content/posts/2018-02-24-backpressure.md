@@ -5,6 +5,9 @@ title: "Back-pressure"
 categories: serverless
 description: "Back-pressure mechanisms for serverless and data intensive applications"
 keywords: "data, ingestion, serverless, aws, capacity, resiliency"
+aliases:
+  - /2018/02/back-pressure/
+  - /2018-02-back-pressure/
 ---
 
 ## Intro

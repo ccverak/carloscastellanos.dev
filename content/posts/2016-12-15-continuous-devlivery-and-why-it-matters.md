@@ -4,6 +4,10 @@ date: 2016-12-15T22:31:20+01:00
 title: "Continuous delivery and why it matters"
 categories: general
 description: "Continuous delivery and why it matters"
+aliases:
+  - /2016/12/continuous-delivery-and-why-it-matters/
+  - /2016-12-continuous-delivery-and-why-it-matters/
+
 ---
 ## Introduction
 

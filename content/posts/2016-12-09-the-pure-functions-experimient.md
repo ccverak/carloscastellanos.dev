@@ -4,6 +4,9 @@ date: 2016-12-09T22:31:20+01:00
 title: "The Pure Functions experiment"
 categories: general
 description: "The Pure Functions experiment"
+aliases:
+  - /2016/12the-pure-functions-experiment/
+  - /2016-12-the-pure-functions-experiment/
 ---
 
 Today I would like to talk about **pure functions** and how they help to write better and maintainable code. I tried it myself as an experiment and it went pretty well, good news is that you can apply it in whatever language you like, no matter if it supports Functional Programming or not. This is not a new conclusion you might say, but for me it was. You hear lots of stuff from functional programming nowadays and you think you cannot pay attention to everything, but this one is particularly important, I will try to convince you why.

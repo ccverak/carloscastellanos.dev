@@ -4,6 +4,9 @@ date: 2017-11-25T22:31:20+01:00
 title: "Growing as a software engineer"
 categories: general
 description: "Growing as a software engineer"
+aliases:
+  - /2017/11/growing-as-a-software-engineer/
+  - /2017-11-growing-as-a-software-engineer/
 ---
 
 This one is short, kinda a micro-post. It’s about misconceptions and ethics in Software development and engineering.
