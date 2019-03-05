@@ -6,8 +6,8 @@ categories: general
 description: "Getting confident. A software developer perspective"
 aliases:
   - /2016/01/getting-confident.-a-software-developer-perspective/
-  - /2016-01-getting-confident.-a-software-developer-perspective/
-  - /2016-01-getting-confident.-a-software-developer-perspective./
+  - /2016-01-22-getting-confident.-a-software-developer-perspective/
+  - /2016-01-22-getting-confident.-a-software-developer-perspective./
 ---
 
 ## "It works"

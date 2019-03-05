@@ -38,6 +38,8 @@ a:before, a:after {
 
 body {
   /* font-family: 'Spectral', serif; */
+  /* font-family: 'Fira Mono' !important; */
+  /* font-family: 'Lato' !important; */
   font-size: 1.7em;
   font-weight: 500;
 }
