@@ -76,7 +76,7 @@ summaryLength = 30
     url = "https://twitter.com/ccverak/"
 [[params.social]]
     name = "/Blog"
-    weight = 5
+    weight = 4
     url = "https://carloscastellanosvera.com/posts"
 
 # Menu links

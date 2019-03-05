@@ -1,8 +1,8 @@
 a {
   color: currentcolor;
-  -webkit-box-shadow: inset 0 -0.33333em rgba(84, 156, 245, 0.308) !important;
+  -webkit-box-shadow: inset 0 -0.43333em rgba(84, 156, 245, 0.308) !important;
   /* box-shadow: inset 0 -0.33333em rgba(84, 156, 245, 0.308) !important; */
-  box-shadow: inset 0 -0.33333em rgba(84, 156, 245, 0.308) !important;
+  box-shadow: inset 0 -0.43333em rgba(84, 156, 245, 0.308) !important;
   text-decoration: none !important;
   -webkit-transition: all 0.3s !important;
   transition: all 0.3s !important;
@@ -39,9 +39,9 @@ a:before, a:after {
 }
 
 body {
-  font-family: 'Spectral', serif;
+  /* font-family: 'Spectral', serif; */
   /* font-family: 'Fira Mono' !important; */
-  /* font-family: 'Lato', sans-serif !important; */
+  font-family: 'Lato', sans-serif !important;
   /* font-family: 'Roboto' !important; */
 
   font-size: 1.7em;
