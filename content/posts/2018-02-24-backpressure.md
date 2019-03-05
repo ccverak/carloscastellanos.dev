@@ -7,7 +7,7 @@ description: "Back-pressure mechanisms for serverless and data intensive applica
 keywords: "data, ingestion, serverless, aws, capacity, resiliency"
 aliases:
   - /2018/02/back-pressure/
-  - /2018-02-24-back-pressure/
+  - /posts/2018-02-24-backpressure/
 ---
 
 ## Intro

@@ -6,7 +6,7 @@ categories: general
 description: "Linux issues with Baytrail CPUs"
 aliases:
   - /2016/12/linux-issues-with-baytrail-cpus/
-  - /2016-12-13-linux-issues-with-baytrail-cpus/
+  - /posts/2016-12-13-linux-issues-with-baytrail-cpus/
 ---
 
 Linux randomly freezes on laptops with Baytrail processors and you are forced to do a hard restart, this an open issue of the kernel that apparently only affects the 4.x versions. You might feel hopeless as this is a low priority issue for the kernel but hopefully, there is a workaround.

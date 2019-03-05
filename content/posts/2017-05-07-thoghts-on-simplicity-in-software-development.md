@@ -6,7 +6,7 @@ categories: general
 description: "Thoughts on simplicity in software development"
 aliases:
   - /2017/05/thoughts-on-simplicity-in-software-development/
-  - /2017-05-07-thoughts-on-simplicity-in-software-development/
+  - /posts/2017-05-07-thoughts-on-simplicity-in-software-development/
 
 ---
 

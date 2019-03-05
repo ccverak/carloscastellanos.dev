@@ -6,7 +6,7 @@ categories: general
 description: "Continuous delivery and why it matters"
 aliases:
   - /2016/12/continuous-delivery-and-why-it-matters/
-  - /2016-12-15-continuous-delivery-and-why-it-matters/
+  - /posts/2016-12-15-continuous-delivery-and-why-it-matters/
 
 ---
 ## Introduction
