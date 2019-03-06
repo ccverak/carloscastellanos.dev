@@ -74,6 +74,9 @@
   {{ $script := resources.Get "js/prism.js" | minify | fingerprint }}
   <script src="{{ $script.Permalink }}"></script>
 
+  {{ $script := resources.Get "js/prism-line-numbers.js" | minify | fingerprint }}
+  <script src="{{ $script.Permalink }}"></script>
+
   {{ with .Site.Params.fixedbarContentAfter }}
   <script>
   (function($) {

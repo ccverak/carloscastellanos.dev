@@ -34,44 +34,16 @@ We are going to build a chat where every user identifies himself when connecting
 
 First thing it's to double check you have serverless framework version 1.38 or superior, which includes support for using API Gateway's WebSockets API. For our particular case, we will use DynamoDB to store the WebSocket connection ids for every user so we can re use them when sending messages between them.
 
-```yaml
-functions:
-  wsConnectionHandler:
-    handler: handler.wsConnectionHandler
-    events:
-      - websocket:
-          route: $connect
-      - websocket:
-          route: $disconnect
-  wsDefaultHandler:
-    handler: handler.wsDefaultHandler
-    events:
-      - websocket:
-          route: $default
-  wsSendMessageHandler:
-    handler: handler.wsSendMessageHandler
-    events:
-      - websocket:
-          route: sendMessage
-```
+{{< highlight2 data-options="language-javascript line-numbers">}}
+function a(p){
+  console.log("asd", p);
+  return 10;
+}
+{{< /highlight2 >}}
 
-```javascript,class="line-numbers"
+```javascript "line-numbers"
 function a(p){
   console.log("asd", p)
   return 10;
 }
 ```
-
-{{< highlight data-options="language-csharp line-numbers" data-line-options="1-2" >}}
-// Add some numbers
-let addTwo a b : a + b
-
-addTwo 1 2 
-    |> addTwo 3
-    |> addTwo 4
-
-// Get distinct items
-let myList : [ "a"; "z"; "z"; ]
-
-myList |> Seq.distinct |> List.ofSeq
-{{< /highlight >}}
