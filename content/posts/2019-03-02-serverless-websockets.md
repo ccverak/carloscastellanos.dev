@@ -34,12 +34,12 @@ We are going to build a chat where every user identifies himself when connecting
 
 First thing it's to double check you have serverless framework version 1.38 or superior, which includes support for using API Gateway's WebSockets API. For our particular case, we will use DynamoDB to store the WebSocket connection ids for every user so we can re use them when sending messages between them.
 
-{{< highlight2 data-options="language-javascript line-numbers">}}
+{{< hl data-options="language-javascript line-numbers" data-line-options="1">}}
 function a(p){
   console.log("asd", p);
   return 10;
 }
-{{< /highlight2 >}}
+{{< /hl >}}
 
 ```javascript "line-numbers"
 function a(p){
