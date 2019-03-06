@@ -48,10 +48,6 @@
     {{ template "_internal/opengraph.html" . }}
     {{ partial "site-opengraph.html" . }}
     {{ partial "site-twittercard.html" . }}
-
-
-    {{ $style := resources.Get "css/prism.css" | minify | fingerprint }}
-    <link rel="stylesheet" href="{{ $style.Permalink }}">
   </head>
 
   <body class="{{ if .Site.Params.rtl }}rtl{{ end }}">
@@ -69,9 +65,6 @@
     {{ template "_internal/google_analytics.html" . }}
 
   {{ $script := resources.Get "js/app.js" | minify | fingerprint }}  
-  <script src="{{ $script.Permalink }}"></script>
-
-  {{ $script := resources.Get "js/prism.js" | minify | fingerprint }}
   <script src="{{ $script.Permalink }}"></script>
 
   {{ with .Site.Params.fixedbarContentAfter }}

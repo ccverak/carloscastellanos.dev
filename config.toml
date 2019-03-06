@@ -8,9 +8,9 @@ paginate = 20 # Default number of pages per page in pagination.
 
 pygmentsUseClassic = false
 pygmentsStyle = "monokai" # or dracula; Color-theme or style for syntax highlighting.
-pygmentsCodefences = false # Enable code fence background highlighting.
-pygmentsCodefencesGuessSyntax = false # Enable syntax guessing for code fences without specified language.
-pygmentsUseClasses = true # new add
+pygmentsCodefences = true # Enable code fence background highlighting.
+pygmentsCodefencesGuessSyntax = true # Enable syntax guessing for code fences without specified language.
+pygmentsUseClasses = false # new add
 #pygmentsOptions = ["linenos"]
 
 disable_comments = true

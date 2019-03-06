@@ -61,3 +61,14 @@ body {
 .navigation a {
   /* font-size: 1em; */
 }
+
+/* code highlight classes */
+.highlight pre {
+  padding: 0;
+}
+
+.highlight table td:last-child {
+  display:block !important;
+  box-sizing:border-box !important; 
+  clear:both !important;
+}

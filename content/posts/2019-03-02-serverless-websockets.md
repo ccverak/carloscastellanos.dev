@@ -62,16 +62,10 @@ function a(p){
 }
 ```
 
-{{< highlight data-options="language-csharp line-numbers" data-line-options="1-2" >}}
-// Add some numbers
-let addTwo a b : a + b
 
-addTwo 1 2 
-    |> addTwo 3
-    |> addTwo 4
-
-// Get distinct items
-let myList : [ "a"; "z"; "z"; ]
-
-myList |> Seq.distinct |> List.ofSeq
-{{< /highlight >}}
+{{< highlight javascript "linenos=table,hl_lines=1-2" >}}
+function a(p){
+  console.log("asd", p)
+  return 10;
+}
+{{< / highlight >}}
