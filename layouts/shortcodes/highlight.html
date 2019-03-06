@@ -1,0 +1,6 @@
+<pre {{ with .Get "data-options" }} class="{{ . }}" {{ end }} {{ with .Get "data-line-options" }} data-line="{{ . }}"
+  {{ end }}>
+    <code>
+        {{ .Inner }}
+    </code>
+</pre>

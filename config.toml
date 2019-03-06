@@ -6,11 +6,12 @@ defaultcontentlanguage = "en" # The default content language.
 
 paginate = 20 # Default number of pages per page in pagination.
 
-pygmentsstyle = "monokai" # Color-theme or style for syntax highlighting.
-pygmentscodefences = true # Enable code fence background highlighting.
-pygmentscodefencesguesssyntax = true # Enable syntax guessing for code fences without specified language.
+pygmentsUseClassic = false
+pygmentsStyle = "monokai" # or dracula; Color-theme or style for syntax highlighting.
+pygmentsCodefences = false # Enable code fence background highlighting.
+pygmentsCodefencesGuessSyntax = false # Enable syntax guessing for code fences without specified language.
 pygmentsUseClasses = true # new add
-pygmentsOptions = ["linenos"]
+#pygmentsOptions = ["linenos"]
 
 disable_comments = true
 disqusShortname = "ccverakblog" # Enable or disable Disqus.
