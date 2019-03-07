@@ -7,7 +7,7 @@ description: "Serverless websockets"
 keywords: "serverless, aws, websockets, apigateway"
 ---
 
-AWS API Gateway (APIG) is a very versatile product which plays a fundamental role when building applications in the AWS ecosystem. It's not an exception for the case of serverless with AWS Lambda, where it plays as a HTTP bridge to trigger functions. Recently, AWS expanded its capabilities by introducing [websockets support](https://aws.amazon.com/blogs/compute/announcing-websocket-apis-in-amazon-api-gateway/), this is fantastic news for serverless architects because it means that now you can add stateful features to your serverless application, APIG will handle the WebSocket connections for you and trigger your functions under certain events.
+AWS API Gateway (APIG) is a very versatile product which plays a fundamental role when building applications in the AWS ecosystem. It's not an exception for the case of serverless with AWS Lambda, where it plays as a HTTP bridge to trigger functions. Recently, AWS expanded its capabilities by introducing [WebSockets support](https://aws.amazon.com/blogs/compute/announcing-websocket-apis-in-amazon-api-gateway/), this is fantastic news for serverless architects because it means that now you can add stateful features to your serverless application, APIG will handle the WebSocket connections for you and it will trigger your functions under certain events.
 
 It's not simple to understand how things work so I have put together a simple example of a chat using the serverless framework. You can find a working example [here](https://github.com/ccverak/serverless-websockets-demo) if interested.
 

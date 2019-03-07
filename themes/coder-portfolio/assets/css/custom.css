@@ -72,3 +72,7 @@ body {
 pre.line-numbers > code {
   margin: -90px;
 }
+
+pre.line-numbers {
+  padding-left: 3em !important;
+}
