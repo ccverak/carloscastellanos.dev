@@ -76,3 +76,7 @@ pre.line-numbers > code {
 pre.line-numbers {
   padding-left: 3em !important;
 }
+
+.fixed-bar .container { 
+  height: 40px !important;
+}

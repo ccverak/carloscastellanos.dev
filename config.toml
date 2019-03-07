@@ -39,7 +39,7 @@ summaryLength = 30
     footercontent = ""
 
     fixedbarContent = "Do you want to contact me? → " # Add fixedbar content
-    fixedbarContentAfter = "Drop me an email to → me@carloscastellanosvera.com" # Add fixedbar content after click
+    fixedbarContentAfter = "Email → me@carloscastellanosvera.com" # Add fixedbar content after click
 
     # Whether you want to hide copyright and credits in the footer.
     hideCredits = true
