@@ -19,7 +19,7 @@
     {{ $style := resources.Get "css/style.min.css" | fingerprint }}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
 
-    {{ $style := resources.Get "css/custom.css" | minify | fingerprint }}
+    {{ $style := resources.Get "css/custom.css" | postCSS | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
 
     {{ $style := resources.Get "css/syntax.css" | minify | fingerprint }}
@@ -50,7 +50,7 @@
     {{ partial "site-twittercard.html" . }}
 
 
-    {{ $style := resources.Get "css/prism.css" | minify | fingerprint }}
+    {{ $style := resources.Get "css/prism.css" | postCSS | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
   </head>
 
