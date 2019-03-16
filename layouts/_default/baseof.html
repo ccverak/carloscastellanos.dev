@@ -65,10 +65,10 @@
     {{ template "_internal/google_analytics.html" . }}
 
   {{ $script := resources.Get "js/app.js" | minify | fingerprint }}  
-  <script src="{{ $script.Permalink }}"></script>
+  <script src="{{ $script.Permalink }}" defer></script>
 
   {{ with .Site.Params.fixedbarContentAfter }}
-  <script>
+  <script defer>
   (function($) {
     $(function() {
       $('#privateTrigger').on('click', function() {
