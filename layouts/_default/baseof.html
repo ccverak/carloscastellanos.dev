@@ -50,8 +50,8 @@
     {{ partial "site-twittercard.html" . }}
 
 
-    {{ $style := resources.Get "css/prism.css" | postCSS | minify | fingerprint }}
-    <link rel="stylesheet" href="{{ $style.Permalink }}">
+    <!-- {{ $style := resources.Get "css/prism.css" | postCSS | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}"> -->
   </head>
 
   <body class="{{ if .Site.Params.rtl }}rtl{{ end }}">
@@ -80,10 +80,10 @@
   <script type="text/javascript">
     Prism.plugins.NormalizeWhitespace.setDefaults(
       {
-        'remove-trailing': true,
-        'remove-indent': true,
-        'left-trim': true,
-        'right-trim': true,
+        // 'remove-trailing': true,
+        // 'remove-indent': true,
+        // 'left-trim': true,
+        // 'right-trim': true,
         // 'break-lines': 10,
         // 'indent': 2,
         // 'remove-initial-line-feed': false,

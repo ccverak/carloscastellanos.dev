@@ -35,7 +35,7 @@ a:before, a:after {
 
 .navigation {
   border-bottom: 0 !important;
-   box-shadow: 0 !important;
+  box-shadow: 0 !important;
 }
 
 body {
@@ -60,21 +60,6 @@ body {
 
 .navigation a {
   /* font-size: 1em; */
-}
-
-/* code highlight classes */
-.highlight pre {
-  margin:0 0 0 0;
-  padding:0;
-  overflow-x:auto;
-}
-
-pre.line-numbers > code {
-  margin: -90px;
-}
-
-pre.line-numbers {
-  padding-left: 3em !important;
 }
 
 .fixed-bar .container { 
