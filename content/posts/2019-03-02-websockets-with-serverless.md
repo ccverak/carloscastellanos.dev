@@ -145,7 +145,7 @@ const params = {
 apigwManagementApi.postToConnection(params).promise();
 {{< /hl >}}
 
-Most of the time, you will have to store in the database every user's `connectionId` which you is provided in the connection phase in order to do real things such as sending a message from server to user via the `postToConnection` API, check more details [here](https://github.com/ccverak/serverless-WebSockets-demo)]
+Most of the time, you will have to store in the database every user's `connectionId` which you is provided in the connection phase in order to do real things such as sending a message from server to user via the `postToConnection` API, check more details [here](https://github.com/ccverak/serverless-WebSockets-demo)
 
 ## Usage
 
