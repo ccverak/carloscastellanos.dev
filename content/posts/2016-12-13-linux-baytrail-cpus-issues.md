@@ -4,6 +4,7 @@ date: 2016-12-13T22:31:20+01:00
 title: "Linux issues with Baytrail CPUs"
 categories: general
 description: "Linux issues with Baytrail CPUs"
+keywords: "linux, kernel, ubuntu"
 aliases:
   - /2016/12/linux-issues-with-baytrail-cpus/
   - /posts/2016-12-13-linux-issues-with-baytrail-cpus/

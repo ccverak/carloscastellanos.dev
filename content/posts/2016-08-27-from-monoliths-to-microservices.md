@@ -4,7 +4,10 @@ date: 2016-08-27T22:31:20+01:00
 title: "From monoliths to microservices"
 categories: general
 description: "From monoliths to microservices"
+keywords: "tdd, bdd, software development, ruby"
 ---
+
+FIIIIIIXXXXXXXXXXXXXXXX MMMMMMMMMMMMMMEEEEEEEEEEEEEEEEEEEEEEEE
 
 This is not another post about architectural patterns, believe it or not this one is about software design patterns. I bet you are a bit lost with the then but keep reading, I will explain.
 

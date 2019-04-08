@@ -19,7 +19,7 @@
     {{ $style := resources.Get "css/style.min.css" | fingerprint }}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
 
-    {{ $style := resources.Get "css/custom.css" | minify | fingerprint }}
+    {{ $style := resources.Get "css/custom.css" | postCSS | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
 
     {{ $style := resources.Get "css/syntax.css" | minify | fingerprint }}
@@ -48,6 +48,10 @@
     {{ template "_internal/opengraph.html" . }}
     {{ partial "site-opengraph.html" . }}
     {{ partial "site-twittercard.html" . }}
+
+
+    <!-- {{ $style := resources.Get "css/prism.css" | postCSS | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}"> -->
   </head>
 
   <body class="{{ if .Site.Params.rtl }}rtl{{ end }}">
@@ -66,6 +70,27 @@
 
   {{ $script := resources.Get "js/app.js" | minify | fingerprint }}  
   <script src="{{ $script.Permalink }}" defer></script>
+
+  {{ $script := resources.Get "js/prism.js" | minify | fingerprint }}
+  <script src="{{ $script.Permalink }}"></script>
+
+  {{ $script := resources.Get "js/prism-line-numbers.js" | minify | fingerprint }}
+  <script src="{{ $script.Permalink }}"></script>
+
+  <script type="text/javascript">
+    Prism.plugins.NormalizeWhitespace.setDefaults(
+      {
+        // 'remove-trailing': true,
+        // 'remove-indent': true,
+        // 'left-trim': true,
+        // 'right-trim': true,
+        // 'break-lines': 10,
+        // 'indent': 2,
+        // 'remove-initial-line-feed': false,
+        // 'tabs-to-spaces': 4,
+        // 'spaces-to-tabs': 4
+      });
+  </script>
 
   {{ with .Site.Params.fixedbarContentAfter }}
   <script defer>

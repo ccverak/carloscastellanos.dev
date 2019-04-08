@@ -6,11 +6,12 @@ defaultcontentlanguage = "en" # The default content language.
 
 paginate = 20 # Default number of pages per page in pagination.
 
-pygmentsstyle = "monokai" # Color-theme or style for syntax highlighting.
-pygmentscodefences = true # Enable code fence background highlighting.
-pygmentscodefencesguesssyntax = true # Enable syntax guessing for code fences without specified language.
-pygmentsUseClasses = true # new add
-pygmentsOptions = ["linenos"]
+pygmentsUseClassic = false
+pygmentsStyle = "monokai" # or dracula; Color-theme or style for syntax highlighting.
+pygmentsCodefences = false # Enable code fence background highlighting.
+pygmentsCodefencesGuessSyntax = false # Enable syntax guessing for code fences without specified language.
+pygmentsUseClasses = false # new add
+#pygmentsOptions = ["linenos"]
 
 disable_comments = true
 disqusShortname = "ccverakblog" # Enable or disable Disqus.
@@ -38,7 +39,7 @@ summaryLength = 30
     footercontent = ""
 
     fixedbarContent = "Do you want to contact me? → " # Add fixedbar content
-    fixedbarContentAfter = "Drop me an email to → me@carloscastellanosvera.com" # Add fixedbar content after click
+    fixedbarContentAfter = "me@carloscastellanosvera.com" # Add fixedbar content after click
 
     # Whether you want to hide copyright and credits in the footer.
     hideCredits = true

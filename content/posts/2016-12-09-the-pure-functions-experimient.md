@@ -3,7 +3,8 @@ draft: false
 date: 2016-12-09T22:31:20+01:00
 title: "The Pure Functions experiment"
 categories: general
-description: "The Pure Functions experiment"
+description: "My experiences exploring functional programming aspects such as pure functions and it's impact in software quality and testability"
+keywords: "tdd, bdd, software development, functional programming, ruby"
 aliases:
   - /2016/12/the-pure-functions-experiment/
   - /posts/2016-12-09-the-pure-functions-experiment/
