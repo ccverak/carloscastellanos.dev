@@ -3,7 +3,8 @@ draft: false
 date: 2016-12-15T22:31:20+01:00
 title: "Continuous delivery and why it matters"
 categories: general
-description: "Continuous delivery and why it matters"
+description: "Continuous delivery and why it matters gathers my experiences building and releasing software"
+keywords: "continuous delivery, continuous integration, ci/cd, software development"
 aliases:
   - /2016/12/continuous-delivery-and-why-it-matters/
   - /posts/2016-12-15-continuous-delivery-and-why-it-matters/

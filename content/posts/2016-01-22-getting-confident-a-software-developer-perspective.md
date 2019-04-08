@@ -3,7 +3,8 @@ draft: false
 date: 2016-01-22T22:31:20+01:00
 title: "Getting confident. A software developer perspective"
 categories: general
-description: "Getting confident. A software developer perspective"
+description: "This is my take on how to approach professional software development. I describe tools and practices I have used across the years. #TDD #BDD."
+keywords: "tdd, bdd, software development, ruby"
 aliases:
   - /2016/01/getting-confident.-a-software-developer-perspective/
   - /posts/2016-01-22-getting-confident.-a-software-developer-perspective/

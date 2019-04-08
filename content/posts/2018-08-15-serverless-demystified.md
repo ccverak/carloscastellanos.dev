@@ -3,7 +3,7 @@ draft: false
 date: 2018-08-15T22:31:20+01:00
 title: "Serverless Demystified"
 categories: serverless
-description: "Serverless Demystified"
+description: "Serverless Demystified talks about pros and cons of adopting serverless technologies"
 keywords: "serverless, aws, pros, cons"
 aliases:
   - /2018/08/serverless-demystified/

@@ -3,7 +3,8 @@ draft: false
 date: 2016-01-07T22:31:20+01:00
 title: "Rubyist by accident"
 categories: general
-description: "Rubyist by accident"
+description: "This is my Ruby story and how I discovered the language back in 2011"
+keywords: "ruby, programming, java, software development"
 aliases:
   - /2016/01/rubyist-by-accident/
   - /posts/2016-01-07-rubyist-by-accident/

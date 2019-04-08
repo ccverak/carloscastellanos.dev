@@ -4,6 +4,7 @@ date: 2017-11-25T22:31:20+01:00
 title: "Growing as a software engineer"
 categories: general
 description: "Growing as a software engineer"
+keywords: "software development, ethics, community, diversity"
 aliases:
   - /2017/11/growing-as-a-software-engineer/
   - /posts/2017-11-25-growing-as-a-software-engineer/
