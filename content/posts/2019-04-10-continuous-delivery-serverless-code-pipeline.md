@@ -171,4 +171,4 @@ Well, there you go! now you know how to implement fully automated, **one push**,
 
 Happy coding }
 
-PS: If have made a mistake or you have any suggestions, please feel free to reach out!
+PS: If I have made a mistake or you have any suggestions, please feel free to reach out!
