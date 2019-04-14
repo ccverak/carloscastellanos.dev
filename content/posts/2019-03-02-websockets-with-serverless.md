@@ -37,13 +37,13 @@ Routes are a concept that represents the connection that should be made between 
 
 **$connect, $disconnect and $default routes**
 
-`$connect` and `$disconnect`: These are self-explanatory, they are used to connect functions to react to these WebSocket events. 
+`$connect` and `$disconnect`: These are self-explanatory, they are used to connect functions and react to the different WebSocket events. 
 
 {{< hl data-options="language-bash line-numbers" data-line-options="">}}
 wscat -c wss://<my-api-id>.execute-api.us-east-1.amazonaws.com/dev?userId=2
 {{< /hl >}}
 
-This example uses a cli tool called `wscat` (which you can find [here](https://www.npmjs.com/package/wscat)) to connect to the WebSocket server, the connection it's successful if the function executed returns successfully, after that the connection remains open.
+This example uses a cli tool called `wscat` (which you can find [here](https://www.npmjs.com/package/wscat)) to connect to the WebSocket server, the connection it's successful if the function is executed returns successfully, after that the connection remains open.
 
 `$default`: is used as a fallback route for every communication sent through the WebSocket channel.
 
