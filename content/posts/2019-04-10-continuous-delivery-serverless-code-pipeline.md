@@ -2,9 +2,9 @@
 draft: false
 title: "Blue Green deployments with Serverless and AWS Code Pipeline"
 date: 2019-04-10T22:29:58+02:00
-description: "Blue Green deployments with Serverless and AWS Code Pipeline"
+description: "Blue Green deployments with Serverless and AWS Code Pipeline. How to implement a fully automated, one push, zero downtime, blue-green deployments of serverless applications, continuous delivery all the way down with a fairly simple workflow,"
 categories: serverless
-keywords: "serverless, aws, continuos delivery, canary, blue green, deloyment"
+keywords: "serverless, aws, continuos delivery, canary, blue green, deployment"
 ---
 
 ## Introduction
@@ -92,7 +92,7 @@ phases:
       - sls deploy
 {{< /hl >}}
 
-## CI and CD
+## CI/CD
 
 Good news! at this point, the continuous integration and deployment/delivery process is ready, every push to the Github repository will be automatically built, tested and deployed woo hoo!
 
@@ -109,7 +109,7 @@ The main idea is that you can provide a Blue Green pattern to your functions, as
 
 **Shift 10% of traffic to the new deployment while keeping the rest of the traffic with the current deployment, if any alarm it's triggered after 5 minutes, then the new deployment will replace the current deployment. If an alarm is triggered, the new deployment fails**
 
-**Pro tip**: In combination with alarms or with the `preHook` or `postHook` you can get to build smarter traffic shifting rules. More details (here)[https://serverless.com/blog/manage-canary-deployments-lambda-functions-serverless-framework/] and (here)[https://dev.to/davidgf/canary-deployments-in-serverless-applications-2n3d]
+**Pro tip**: In combination with alarms or with the `preHook` or `postHook` you can get to build smarter traffic shifting rules. More details [here](https://serverless.com/blog/manage-canary-deployments-lambda-functions-serverless-framework/) and [here](https://dev.to/davidgf/canary-deployments-in-serverless-applications-2n3d)
 
 Here are the most significant parts of the `serverless.yml`, notice the alarm declarations and the deployment settings:
 
@@ -165,4 +165,10 @@ You can track the the deployment progress and traffic shifting evolution in the 
 
 ## Conclusions
 
+The point is to get more confident of your deployment process and deploy more often but ensuring you don't break anything on every push, the Blue-Green deployments are a good fit for this and the **Serverless** framework has **AWS Code Pipeline** and the **Canary deployments plugin** for you to get here.
 
+Well, there you go! now you know how to implement fully automated, **one push**, **zero downtime**, **blue-green deployments** of **serverless** applications, continuous delivery all the way down with a fairly simple workflow, 
+
+Happy coding }
+
+PS: If have made a mistake or you have any suggestions, please feel free to reach out!
