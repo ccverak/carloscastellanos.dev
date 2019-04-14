@@ -33,9 +33,9 @@ And the use cases:
 
 ## Connecting your functions
 
-Routes are a concept that represents the connection that should be made between APIG and your functions. There are special and custom routes. 
+Routes are a concept that represents the connection that should be made between APIG and your functions. There are special and custom types of routes. 
 
-**Special routes**
+**$connect, $disconnect and $default routes**
 
 `$connect` and `$disconnect`: These are self-explanatory, they are used to connect functions to react to these WebSocket events. 
 
@@ -97,7 +97,7 @@ functions:
           route: sendMessage
 {{< /hl >}}
 
-Here we configure the special and custom routes. I have included an example for a custom route key called `sendMessage`, which could handle the messages sent between users in a chat application.
+Here we configure the routes mapping. I have included an example for a custom route key called `sendMessage`, which could handle the messages sent between users in a chat application.
 
 Let's see now, how we can handle these events:
 
