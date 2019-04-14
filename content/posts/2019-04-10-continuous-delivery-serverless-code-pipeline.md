@@ -2,7 +2,7 @@
 draft: false
 title: "Blue Green deployments with Serverless and AWS Code Pipeline"
 date: 2019-04-10T22:29:58+02:00
-description: "Blue Green deployments with Serverless and AWS Code Pipeline. How to implement a fully automated, one push, zero downtime, blue-green deployments of serverless applications, continuous delivery all the way down with a fairly simple workflow,"
+description: "Blue Green deployments with Serverless and AWS Code Pipeline. How to implement a fully automated, one push, zero downtime, blue-green deployments of serverless applicationsapplications. Continuous delivery all the way down with a fairly simple workflow!"
 categories: serverless
 keywords: "serverless, aws, continuos delivery, canary, blue green, deployment"
 ---
@@ -61,7 +61,7 @@ We are now ready to push changes to our Github project which will trigger the Co
 
 Congratulations if you got to this place you are 80% done, believe me, some magic is about to come!
 
-If you are an automation advocator I recommend you this references:
+[If you are an automation advocator I recommend you this references:]
 
 [Tutorial: Create a Pipeline with AWS CloudFormation](https://docs.aws.amazon.com/codepipeline/latest/userguide/tutorials-cloudformation.html)
 
@@ -104,8 +104,8 @@ As we mentioned before the Code deploy stage of the pipeline it was going to be 
 
 [The serverless canary deployments plugin](https://www.npmjs.com/package/serverless-plugin-canary-deployments) A Serverless plugin to implement canary deployments of Lambda functions, making use of the [traffic shifting feature](https://docs.aws.amazon.com/lambda/latest/dg/lambda-traffic-shifting-using-aliases.html) in combination with [AWS CodeDeploy](https://docs.aws.amazon.com/lambda/latest/dg/automating-updates-to-serverless-apps.html)
 
-I wont go into details of the project because it covers several patterns for Blue Green deployments, for now let's stick to the basics.
-The main idea is that you can provide a Blue Green pattern to your functions, as in this example `Canary10Percent5Minutes` which means:
+I wont go into details of the plugin because it covers several patterns for Blue Green deployments. For this tutorial let's stick to the basics.
+In the example we will use `Canary10Percent5Minutes` which works in the following way:
 
 **Shift 10% of traffic to the new deployment while keeping the rest of the traffic with the current deployment, if any alarm it's triggered after 5 minutes, then the new deployment will replace the current deployment. If an alarm is triggered, the new deployment fails**
 
@@ -152,13 +152,13 @@ functions:
 
 ## Usage
 
-Time to push changes to your project!
+Time to push changes to your project and see the Pipeline execution!
 
-You can track the the deployment progress and traffic shifting evolution in the Code deploy section of your pipeline for our case in a period of 5 minutes:
+You can track the tests results in the Code Build seciont and the deployment progress and traffic shifting evolution in the Code deploy section of your pipeline, for our case in a period of 5 minutes:
 
 ![Traffic shifting](images/traffic-shifting.png)
 
-...and to try your endpoints to see how the traffic shifting works :)
+...and to try your endpoints during the deployment to see how the traffic shifting works
 
 
 ![Blue Green deployment results](images/bluegreen.png)
@@ -167,7 +167,7 @@ You can track the the deployment progress and traffic shifting evolution in the 
 
 The point is to get more confident of your deployment process and deploy more often but ensuring you don't break anything on every push, the Blue-Green deployments are a good fit for this and the **Serverless** framework has **AWS Code Pipeline** and the **Canary deployments plugin** for you to get here.
 
-Well, there you go! now you know how to implement fully automated, **one push**, **zero downtime**, **blue-green deployments** of **serverless** applications, continuous delivery all the way down with a fairly simple workflow, 
+Well, there you go! now you know how to implement fully automated, **one push**, **zero downtime**, **blue-green deployments** of **serverless** applications. **Continuous delivery** all the way down with a fairly simple workflow!
 
 Happy coding }
 
