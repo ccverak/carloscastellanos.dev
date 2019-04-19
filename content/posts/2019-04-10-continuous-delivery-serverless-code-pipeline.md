@@ -132,7 +132,8 @@ Hey, but what about the Canary deployments?
 
 ### Enter the magic ingredient
 
-As we mentioned before the Code deploy stage of the pipeline it was going to be configured by our project. Here is where the good part starts :) There is already a serverless plugin for this!
+As we mentioned before the Code deploy stage of the pipeline it was going to be configured by our project. Here is where the good part starts :) 
+There is already a serverless plugin for this!
 
 [The serverless canary deployments plugin](https://www.npmjs.com/package/serverless-plugin-canary-deployments) A Serverless plugin to implement canary deployments of Lambda functions, making use of the [traffic shifting feature](https://docs.aws.amazon.com/lambda/latest/dg/lambda-traffic-shifting-using-aliases.html) in combination with [AWS CodeDeploy](https://docs.aws.amazon.com/lambda/latest/dg/automating-updates-to-serverless-apps.html)
 
