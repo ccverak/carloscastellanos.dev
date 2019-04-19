@@ -211,7 +211,7 @@ You can track the tests results in the Code Build section and the deployment pro
 
 ## Conclusions
 
-Applying canary deployments are a good solution if you want safer releases while staying agile. Its self-healing nature is fundamental in a CI/CD workflow. It's also a good fit for **Serverless** and **AWS** with the help of The **Serverless** framework, **AWS Code Pipeline** and the **Canary deployments plugin**.
+Applying canary deployments is a good solution if you want safer releases while staying agile. Its self-healing nature is fundamental in a CI/CD workflow. It's also a good fit for **Serverless** and **AWS** with the help of The **Serverless** framework, **AWS Code Pipeline** and the **Canary deployments plugin**.
 
 There you go! now you know how to implement fully automated, **one push**, **zero downtime**, **canary deployment** of **serverless** applications. **Continuous delivery** all the way down with a simple workflow!
 
