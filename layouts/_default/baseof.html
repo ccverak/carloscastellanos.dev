@@ -77,29 +77,29 @@
   {{ $script := resources.Get "js/prism-line-numbers.js" | minify | fingerprint }}
   <script src="{{ $script.Permalink }}"></script>
 
-  <script type="text/javascript">
-    Prism.plugins.NormalizeWhitespace.setDefaults(
-      {
-        // 'remove-trailing': true,
-        // 'remove-indent': true,
-        // 'left-trim': true,
-        // 'right-trim': true,
-        // 'break-lines': 10,
-        // 'indent': 2,
-        // 'remove-initial-line-feed': false,
-        // 'tabs-to-spaces': 4,
-        // 'spaces-to-tabs': 4
-      });
-  </script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
 
   {{ with .Site.Params.fixedbarContentAfter }}
-  <script defer>
+  <script>
   (function($) {
     $(function() {
       $('#privateTrigger').on('click', function() {
         $('.private').slideToggle();
         $('#privateTriggerText').text("{{ . }}");
       });
+
+      // Prism.plugins.NormalizeWhitespace.setDefaults(
+      //   {
+      //     // 'remove-trailing': true,
+      //     // 'remove-indent': true,
+      //     // 'left-trim': true,
+      //     // 'right-trim': true,
+      //     // 'break-lines': 10,
+      //     // 'indent': 2,
+      //     // 'remove-initial-line-feed': false,
+      //     // 'tabs-to-spaces': 4,
+      //     // 'spaces-to-tabs': 4
+      //   });
     });
    })(jQuery);
   </script>
