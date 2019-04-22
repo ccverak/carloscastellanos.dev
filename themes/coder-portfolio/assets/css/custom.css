@@ -38,13 +38,18 @@ a:before, a:after {
   box-shadow: 0 !important;
 }
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   /* font-family: 'Spectral', serif; */
   /* font-family: 'Fira Mono' !important; */
   font-family: 'Lato', sans-serif !important;
   /* font-family: 'Roboto' !important; */
 
-  font-size: 1.7em;
+  font-size: 1.685em;
   font-weight: 500;
 }
 
