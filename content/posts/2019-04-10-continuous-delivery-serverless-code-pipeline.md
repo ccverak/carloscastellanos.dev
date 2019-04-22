@@ -10,9 +10,9 @@ keywords: "serverless, aws, continuos delivery, canary, blue green, deployment"
 
 ## Introduction
 
-Nowadays, the biggest change in software development has been the frequency of deployments. Time to market has become essential so it's rare to have monthly or yearly releases. This huge leap in the way we release products has brought many other challenges because it's more likely to deploy defects to production. How we can move fast without risking too much then?
+Nowadays, one of the biggest changes in software development has been the increased frequency of deployments. Time to market has become essential so it's rare to have monthly or yearly releases. This huge leap in the way we release products has brought many other challenges because it's more likely to deploy defects to production. How we can move fast without risking too much?
 
-This remains true in the Serverless context. Serverless has changed the way we build, test, and deploy products. Microservices are now more common, doing local deployments of the whole system has become almost impossible, TDD and contract testing have moved to the mainstream to try ensuring all the pieces fit together. Still, continuously deploying changes is hard. Let's review how existing deployment strategies apply and how to implement them.
+This remains true in the Serverless context. Serverless has changed the way we build, test, and deploy products. Microservices are now more common, local deployments of the whole system have become almost impossible, automated testing has moved to the mainstream to try ensuring all the pieces fit together. Still, continuously deploying changes is hard. Let's review how existing deployment strategies can help us to deal with the problem and how to implement some of them.
 
 
 ## Deployment strategies
@@ -44,10 +44,9 @@ With no errors reported, the new version can gradually roll out to the rest of t
 
 As you may notice all the strategies above require a lot of efforts from the infrastructure and operations side of things. The good news is that in the scope of serverless you don't run full copies of the application all the time, things are executed only when they are used so no need to worry about maintaining two clusters, etc, etc, also, AWS provides all the tools you will need to implement the deployment strategy you prefer.
 
+Let's show how we can implement `Canary` deployments for a serverless project using AWS Code Pipeline.
+
 [If you are one of those who likes seeing the code first, I created a sample application for this post, you can find it [here](https://github.com/ccverak/serverless-code-pipeline-cicd-demo)]
-
-So, let's go, let's implement a **Continuous Deployment** pipeline with a **Canary** strategy:
-
 ### The tools
 
 What we will be using?
@@ -56,13 +55,13 @@ What we will be using?
 
 [AWS CodeBuild](https://aws.amazon.com/codebuild/) is a fully managed continuous integration service that compiles source code, runs tests, and produces software packages that are ready to deploy.
 
-[AWS CodeDeploy](https://aws.amazon.com/codedeploy/) is a fully managed deployment service that automates software deployments to a variety of compute services such as Amazon EC2, AWS Fargate, AWS Lambda, and your on-premises servers
+[AWS CodeDeploy](https://aws.amazon.com/codedeploy/) is a fully managed deployment service that automates software deployments to a variety of compute services such as Amazon EC2, AWS Fargate, AWS Lambda, and your on-premises servers.
 
-[AWS CodePipeline](https://aws.amazon.com/codepipeline/) is a fully managed continuous delivery service that helps you automate your release pipelines for fast and reliable application and infrastructure updates. CodePipeline automates the build, test, and deploy phases of your release process every time there is a code change, based on the release model you define. 
+[AWS CodePipeline](https://aws.amazon.com/codepipeline/) is a fully managed continuous delivery service that helps you automate your release pipelines for fast and reliable application and infrastructure updates. CodePipeline automates the build, test, and deploy phases of your release process every time there is a code change, based on the release model you define. It coordinates CodeBuild and CodeDeploy to build a delivery pipeline.
 
 ### Setup
 
-Follow these steps to set up the Code Pipeline using Code Build Code Deploy:
+Follow these steps to set up the Code Pipeline using Code Build & Code Deploy:
 
 1. To create your pipeline and add a source stage, do the following:
 
@@ -90,9 +89,9 @@ Follow these steps to set up the Code Pipeline using Code Build Code Deploy:
 3. In the Add deploy stage, skip the deploy stage (this will be configured by our project)
 4. Confirm the pipeline creation
 
-We are now ready to push changes to our Github project which will trigger the Code Pipeline via webhooks and Run our project-automated Code deploy.
+We are now ready to push changes to our Github project which will trigger the Code Pipeline via webhooks and Run our project-automated code deploy.
 
-Congratulations if you got to this point you are 80% done, really.
+Congratulations if you got to this point you are 80% done :>
 
 [If you are an automation advocator don't worry, there are ways to automate this process, let me recommend you this references:]
 
@@ -108,7 +107,7 @@ Congratulations if you got to this point you are 80% done, really.
 
 As described before, the build stage is specified in a `buildspec.yml` archive. This is basically the script of execution, if you want to dive into details [this is a good place to start](https://docs.aws.amazon.com/codebuild/latest/userguide/build-spec-ref.html)
 
-It's quite simple as you see, no need for explications:
+It's quite simple as you see, you have an `install` section, a `build` and `post_build` sections which allows you to install dependencies build, test and deploy in the order you want. Here is the one we are using in the project:
 
 {{< hl data-options="language-javascript line-numbers" data-line-options="">}}
 version: 0.2
@@ -126,24 +125,26 @@ phases:
       - sls deploy
 {{< /hl >}}
 
-Good news! at this point, the continuous integration and deployment/delivery process is ready, every push to the Github repository will be automatically built, tested and deployed woohoo!
+
+Good news! at this point the continuous integration and deployment process is ready, every push to the Github repository will be automatically built, tested and deployed, woohoo!
 
 Hey, but what about the Canary deployments?
 
 ### Enter the magic ingredient
 
 As we mentioned before the Code deploy stage of the pipeline it was going to be configured by our project. Here is where the good part starts :) 
+
 There is already a serverless plugin for this!
 
 [The serverless canary deployments plugin](https://www.npmjs.com/package/serverless-plugin-canary-deployments) A Serverless plugin to implement canary deployments of Lambda functions, making use of the [traffic shifting feature](https://docs.aws.amazon.com/lambda/latest/dg/lambda-traffic-shifting-using-aliases.html) in combination with [AWS CodeDeploy](https://docs.aws.amazon.com/lambda/latest/dg/automating-updates-to-serverless-apps.html)
 
-Enter, `Canary10Percent5Minutes`
+This plugin supports several deployment settings in the same way CodeDeploy does, for this particular case we will be using  `Canary10Percent5Minutes`
 
 **What does it mean?**
 
 Shift 10% of traffic to the new deployment while keeping the rest of the traffic with the current deployment, if any alarm it's triggered after 5 minutes, then the new deployment will replace the current deployment. If an alarm is triggered, the new deployment fails.
 
-**Pro tip**: Want different strategies or numbers? There are also: 
+**These are also available:**
 
 - `Canary10Percent10Minutes` 
 - `Canary10Percent15Minutes`
@@ -153,11 +154,19 @@ Shift 10% of traffic to the new deployment while keeping the rest of the traffic
 - `Linear10PercentEvery3Minutes`
 - `Linear10PercentEvery10Minutes` 
 
+**In general, this is what Canary* and Linear* stands for:**
+
+**Canary:** Traffic is shifted in two increments. You can choose from predefined canary options. The options specify the percentage of traffic that's shifted to your updated Lambda function version in the first increment, and the interval, in minutes, before the remaining traffic is shifted in the second increment.
+
+**Linear:** Traffic is shifted in equal increments with an equal number of minutes between each increment. You can choose from predefined linear options that specify the percentage of traffic that's shifted in each increment and the number of minutes between each increment.
+
+
 [You can check more details in the [plugins' documentation](https://www.npmjs.com/package/serverless-plugin-canary-deployments)]
+or in the [AWS documentation](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/automating-updates-to-serverless-apps.html)
 
-Deployment strategies aside, you also need to set up alarms in order to trigger the rollback if something goes wrong.
+There is only one last piece missing, we also need to set up alarms in order to trigger the rollback if something goes wrong, for that we'll use [serverless-plugin-aws-alerts](https://www.npmjs.com/package/serverless-plugin-aws-alerts). This plugin helps us to create a CloudWatch alarm that gets fired if an error occurs in a particular function, notice that in the `deploymentSettings` section we have to pass the name of the alarms the deployment should monitor.
 
-Here are the significant parts of the `serverless.yml`:
+Here is the gist the `serverless.yml`, notice the `Alarms` and `deploymentSettings`:
 
 {{< hl data-options="language-javascript line-numbers" data-line-options="6-10,12,13,20-22,29,34">}}
 service: canary-deployments
@@ -197,20 +206,22 @@ functions:
 {{< /hl >}}
 
 
+**Pro tip**: You can use also `preHook` and `postHook` which are functions that get executed **before** and **after** the traffic shifting if you want to do a bit more than with the deployment patterns, such as `end to end testing` to trigger rollback if some test fails. Check [here](https://github.com/davidgf/serverless-plugin-canary-deployments#configuration) for more details.
+
 ### Usage
 
 Time to push changes to your project and see the Pipeline execution!
 
-You can track the tests results in the Code Build section and the deployment progress and traffic shifting evolution in the Code deploy section of your pipeline, for our case in a period of 5 minutes:
+You can track the results of the tests in the Code Build section and the deployment progress in the Code deploy section of your pipeline, you will see something like this:
 
 ![Traffic shifting](images/traffic-shifting.png)
 
-...and then to try your endpoints during the deployment to see how the traffic shifting works.
+...and then to play with the endpoints during the deployment to see how the traffic shifting works, notice you can also force rollbacks.
 
 ![Canary deployment results](images/bluegreen.png)
 
 
-## Conclusions
+## Conclusion
 
 Applying canary deployments is a good solution if you want safer releases while staying agile. Its self-healing nature is fundamental in a CI/CD workflow. It's also a good fit for **Serverless** and **AWS** with the help of The **Serverless** framework, **AWS Code Pipeline** and the **Canary deployments plugin**.
 
