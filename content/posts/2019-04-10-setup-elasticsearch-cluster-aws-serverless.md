@@ -8,7 +8,7 @@ keywords: "serverless, aws, elasticsearch, cloudformation"
 aliases:
   - /posts/setup-aws-elasticsearch-with-serverless/
 ---
-## Quick one
+## A very short post
 
 Here is how you can setup an ES cluster using the Serverless framework and CloudFormation:
 
@@ -53,5 +53,6 @@ resources:
         Name: elasticSearchHost
 {{< /hl >}}
 
+I hope you find this useful!
 
 For more details and options you can visit the [AWS documentation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html)
