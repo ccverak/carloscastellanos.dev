@@ -23,4 +23,4 @@ Experience Overview:
 - Software architectures
 - Distributed systems
 
-For more details visit my [LinkedIn profile](https://wwww.linkedin.com/in/ccverak)
+For more details visit my [LinkedIn profile](https://www.linkedin.com/in/ccverak/)
