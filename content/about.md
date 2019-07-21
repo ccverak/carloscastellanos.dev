@@ -14,6 +14,7 @@ I'm a polyglot software engineer with over _10 years_ of development experience 
 Programming languages wise, `Ruby` and `Javascript` (`Node.js`) are my strong suit nowadays, although I have never left `Python` aside. I have also used `Java` extensively in the past the same as `PHP`. Aside from that, I enjoy spending time testing out different languages across the paradigm and type system spectrum so I've done things in my spare time with `Elixir`, `Elm`.
 
 Experience Overview:
+
 - Ruby, Javascript, Python, Java
 - TDD, BDD
 - DevOps
