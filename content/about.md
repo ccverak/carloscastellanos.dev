@@ -16,12 +16,10 @@ Programming languages wise, `Ruby` and `Javascript` (`Node.js`) are my strong su
 Experience Overview:
 
 - Ruby, Javascript, Python, Java
-- TDD, BDD
 - DevOps
 - Serverless
-- Amazon Web Services (AWS), Kinesis, SQS, etc.
+- Amazon Web Services (AWS)
 - MongoDB, Redis, Elasticsearch, DynamoDB, PostgreSQL.
 - Software architectures
-- Distributed systems
 
 For more details visit my [LinkedIn profile](https://www.linkedin.com/in/ccverak/)
