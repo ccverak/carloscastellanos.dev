@@ -9,7 +9,7 @@ image: "/images/av2.jpg"
 keywords: ["software","engineer","developer","serverless","aws","amazon","architect","freelancer","contractor","ruby", "nodejs"]
 ---
 
-I'm a polyglot software engineer with over _10 years_ of development experience primarily in building backend systems for web and mobile applications. In those years I've developed a strong interest in architectures and good practices for building and growing systems. I love coding, reading, learning and sharing my experiences with others.
+I'm a polyglot software engineer with over 10 years of development experience primarily in building backend systems for web and mobile applications. During this time I have focused not only in technical details but also in software architectures and good practices for building and growing systems. I love coding, reading, learning and sharing my experiences with others.
 
 Programming languages wise, `Ruby` and `Javascript` (`Node.js`) are my strong suit nowadays, although I have never left `Python` aside. I have also used `Java` extensively in the past the same as `PHP`. Aside from that, I enjoy spending time testing out different languages across the paradigm and type system spectrum so I've done things in my spare time with `Elixir`, `Elm`.
 
