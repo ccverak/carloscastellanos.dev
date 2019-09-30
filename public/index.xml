@@ -1,1 +1,143 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title/><link>https://carloscastellanosvera.com/</link><description>Recent content on</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://carloscastellanosvera.com/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Carlos Castellanos Vera / ccverak</title>
+    <link>https://carloscastellanosvera.com/</link>
+    <description>Recent content on Carlos Castellanos Vera / ccverak</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 21 Apr 2019 22:29:58 +0200</lastBuildDate>
+    
+	<atom:link href="https://carloscastellanosvera.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Canary deployments with Serverless and AWS Code Pipeline</title>
+      <link>https://carloscastellanosvera.com/posts/canary-deployments-with-serverless-and-aws-code-pipeline/</link>
+      <pubDate>Sun, 21 Apr 2019 22:29:58 +0200</pubDate>
+      
+      <guid>https://carloscastellanosvera.com/posts/canary-deployments-with-serverless-and-aws-code-pipeline/</guid>
+      <description>Introduction Nowadays, one of the biggest changes in software development has been the increased frequency of deployments. Time to market has become essential so it&amp;rsquo;s rare to have monthly or yearly releases.</description>
+    </item>
+    
+    <item>
+      <title>Setting up AWS Elasticsearch with Serverless and CloudFormation</title>
+      <link>https://carloscastellanosvera.com/posts/setting-up-aws-elasticsearch-with-serverless-and-cloudformation/</link>
+      <pubDate>Wed, 10 Apr 2019 22:29:58 +0200</pubDate>
+      
+      <guid>https://carloscastellanosvera.com/posts/setting-up-aws-elasticsearch-with-serverless-and-cloudformation/</guid>
+      <description>A very short post Here is how you can setup an ES cluster using the Serverless framework and CloudFormation:
+service: my-service provider: name: aws runtime: nodejs8.10 stage: ${self:custom.stage} region: ${self:custom.</description>
+    </item>
+    
+    <item>
+      <title>WebSockets with the serverless framework</title>
+      <link>https://carloscastellanosvera.com/posts/websockets-with-the-serverless-framework/</link>
+      <pubDate>Sat, 02 Mar 2019 22:31:20 +0100</pubDate>
+      
+      <guid>https://carloscastellanosvera.com/posts/websockets-with-the-serverless-framework/</guid>
+      <description>AWS API Gateway (APIG) is a very versatile product which plays a fundamental role when building applications in the AWS ecosystem. It&amp;rsquo;s not an exception for the case of serverless with AWS Lambda where it acts as an HTTP bridge to your functions.</description>
+    </item>
+    
+    <item>
+      <title>About me</title>
+      <link>https://carloscastellanosvera.com/about/</link>
+      <pubDate>Fri, 04 Jan 2019 09:27:08 +0100</pubDate>
+      
+      <guid>https://carloscastellanosvera.com/about/</guid>
+      <description>I&amp;rsquo;m a polyglot software engineer with over 10 years of development experience primarily in building backend systems for web and mobile applications. During this time I have focused not only in technical details but also in software architectures and good practices for building and growing systems.</description>
+    </item>
+    
+    <item>
+      <title>Serverless Demystified</title>
+      <link>https://carloscastellanosvera.com/posts/serverless-demystified/</link>
+      <pubDate>Wed, 15 Aug 2018 22:31:20 +0100</pubDate>
+      
+      <guid>https://carloscastellanosvera.com/posts/serverless-demystified/</guid>
+      <description>After a couple of years of full-time working on many Serverless Framework projects over AWS, it’s time to talk about my experiences with the platform and the issues and goodies I’ve found in my way.</description>
+    </item>
+    
+    <item>
+      <title>Back-pressure</title>
+      <link>https://carloscastellanosvera.com/posts/back-pressure/</link>
+      <pubDate>Sat, 24 Feb 2018 22:31:20 +0100</pubDate>
+      
+      <guid>https://carloscastellanosvera.com/posts/back-pressure/</guid>
+      <description>Intro Almost two years ago I decided to start a journey of learning AWS Lambda and Serverless Framework, being a Ruby/Rails developer is not a common thing to do as many of you might think, but if you know me well you will understand, I’m always open to learning new things, constantly trying to strengthen my problem-solving skills by expanding my horizons.</description>
+    </item>
+    
+    <item>
+      <title>Growing as a software engineer</title>
+      <link>https://carloscastellanosvera.com/posts/growing-as-a-software-engineer/</link>
+      <pubDate>Sat, 25 Nov 2017 22:31:20 +0100</pubDate>
+      
+      <guid>https://carloscastellanosvera.com/posts/growing-as-a-software-engineer/</guid>
+      <description>This one is short, kinda a micro-post. It’s about misconceptions and ethics in Software development and engineering.
+In a form of a list I’m gonna present you some comments I’ve heard or read from Juniors and Seniors across the years, that in my opinion, are helping to spread the wrong mind frameworks across the industry and affecting collaboration in general.</description>
+    </item>
+    
+    <item>
+      <title>Thoughts on simplicity in software development</title>
+      <link>https://carloscastellanosvera.com/posts/thoughts-on-simplicity-in-software-development/</link>
+      <pubDate>Sun, 07 May 2017 22:31:20 +0100</pubDate>
+      
+      <guid>https://carloscastellanosvera.com/posts/thoughts-on-simplicity-in-software-development/</guid>
+      <description>The software developer&amp;rsquo;s view of products It’s remarkably satisfying to see a nice idea becoming an amazing Product, a successful machinery, probably from the non-technical point of view a fully functional black box.</description>
+    </item>
+    
+    <item>
+      <title>Continuous delivery and why it matters</title>
+      <link>https://carloscastellanosvera.com/posts/continuous-delivery-and-why-it-matters/</link>
+      <pubDate>Thu, 15 Dec 2016 22:31:20 +0100</pubDate>
+      
+      <guid>https://carloscastellanosvera.com/posts/continuous-delivery-and-why-it-matters/</guid>
+      <description>Introduction Building software is often under-valuated, many people think that building an app is reduced to writing code, sometimes that’s true, except when it isn’t. When the business grows you need to scale your strategy in order to stay competitive.</description>
+    </item>
+    
+    <item>
+      <title>Linux issues with Baytrail CPUs</title>
+      <link>https://carloscastellanosvera.com/posts/linux-issues-with-baytrail-cpus/</link>
+      <pubDate>Tue, 13 Dec 2016 22:31:20 +0100</pubDate>
+      
+      <guid>https://carloscastellanosvera.com/posts/linux-issues-with-baytrail-cpus/</guid>
+      <description>Linux randomly freezes on laptops with Baytrail processors and you are forced to do a hard restart, this an open issue of the kernel that apparently only affects the 4.</description>
+    </item>
+    
+    <item>
+      <title>The Pure Functions experiment</title>
+      <link>https://carloscastellanosvera.com/posts/the-pure-functions-experiment/</link>
+      <pubDate>Fri, 09 Dec 2016 22:31:20 +0100</pubDate>
+      
+      <guid>https://carloscastellanosvera.com/posts/the-pure-functions-experiment/</guid>
+      <description>Today I would like to talk about pure functions and how they help to write better and maintainable code. I tried it myself as an experiment and it went pretty well, good news is that you can apply it in whatever language you like, no matter if it supports Functional Programming or not.</description>
+    </item>
+    
+    <item>
+      <title>Getting confident. A software developer perspective</title>
+      <link>https://carloscastellanosvera.com/posts/getting-confident.-a-software-developer-perspective/</link>
+      <pubDate>Fri, 22 Jan 2016 22:31:20 +0100</pubDate>
+      
+      <guid>https://carloscastellanosvera.com/posts/getting-confident.-a-software-developer-perspective/</guid>
+      <description>&amp;ldquo;It works&amp;rdquo; &amp;ldquo;It works&amp;rdquo;, says the customer after clicking 5 or 6 times on the app, deep breath and relax shoulders right? what&amp;rsquo;s next? payment, are we done here? as you may guess, no, it doesn&amp;rsquo;t end here.</description>
+    </item>
+    
+    <item>
+      <title>Rubyist by accident</title>
+      <link>https://carloscastellanosvera.com/posts/rubyist-by-accident/</link>
+      <pubDate>Thu, 07 Jan 2016 22:31:20 +0100</pubDate>
+      
+      <guid>https://carloscastellanosvera.com/posts/rubyist-by-accident/</guid>
+      <description>It was 2011, I was a Java developer by that time, I was comfortable with libraries and tooling I used; I was a productive and happy user of Play Framework, Spring Framework, Maven and a couple of other small libraries.</description>
+    </item>
+    
+    <item>
+      <title>Things I’ve learnt in 2015 (in software engineering)</title>
+      <link>https://carloscastellanosvera.com/posts/things-ive-learnt-in-2015-in-software-engineering/</link>
+      <pubDate>Wed, 06 Jan 2016 22:31:20 +0100</pubDate>
+      
+      <guid>https://carloscastellanosvera.com/posts/things-ive-learnt-in-2015-in-software-engineering/</guid>
+      <description>Last year, 2015 was a great year, it was my 3rd year as a Lead DevOps Engineer at my company. It was a year where was able to try a lot of new stuff, here is a list of things I learnt and skills I developed and consolidated during this time:</description>
+    </item>
+    
+  </channel>
+</rss>
