@@ -29,7 +29,7 @@ end
 ## The tests I write are:
 
 - Verbose
-- Do not use shared state
+- Do not use shared global state
 - Do have these 4 clear steps 1) Setup 2) Exercise 3) Verify 4) Teardown
 - All the 4 test steps are co-located
 
