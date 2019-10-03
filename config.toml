@@ -21,7 +21,7 @@ enableRobotsTXT = true
 canonifyURLs = true
 uglyurls = false
 summaryLength = 30
-# enableEmoji = true
+enableEmoji = true
 
 [taxonomies]
   category = "categories"
