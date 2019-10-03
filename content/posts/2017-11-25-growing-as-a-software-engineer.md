@@ -44,7 +44,9 @@ How we can prevent this to become the de-facto discussion points between colleag
 
 — promoting ethical collaboration with colleagues and not discrimination 
 
-— embracing and loving diversity — understanding that not knowing something doesn’t make someone stupid, the IT industry is huge 
+— embracing and loving diversity
+
+— understanding that not knowing something doesn’t make someone stupid, the IT industry is huge 
 
 — preferring and rewarding problem solving and analytical skills over all
 
