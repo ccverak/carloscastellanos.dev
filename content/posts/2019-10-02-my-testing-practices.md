@@ -37,12 +37,12 @@ end
 
 - I like `verbosity` in tests because tests are documentation, the more context and less magic the better.
 - I don't like `shared state` in tests because I prefer duplication in favor of readability. Yes, I'm looking at you shared `before` and `beforeEach` and friends.
-- I like to think always on having these `test steps` and make them pretty clear for readability matters as well.
+- I like to think always on having these `test steps` and make each to have a clear distinction for readability matters as well.
 - I like to have all the 4 `test steps` `co-located` in consecutive lines, yeah, for readability again.
 
-Across the years I have realized that it is very valuable to write tests in a self-expressive way, where everything is there put together like a paragraph, no need to analyzing shared globals or scrolling up and down to look for more context. How many times have you been bitten by a chain of `before` or `beforeEach` with overlapping declarations? Now you get my point, I suppose... Another benefit is that while keeping things simple for tests if it starts hurting, it's most likely because you may have design problems in your application code.
+Across the years I have realized that it is very valuable to write tests this way, where everything is there put together like a paragraph, no need to analyzing shared globals or scrolling up and down looking for more context. How many times have you been bitten by a chain of `before` or `beforeEach` with overlapping declarations? Now you get my point, I suppose... Another benefit is that while keeping things simple for tests if it starts hurting, it's most likely because you may have design problems in your application code.
 
-## How I use mocks, stubs
+## How I use mocks & stubs
 
 These are my rules for mocking and stubbing (in unit tests):
 
@@ -50,7 +50,7 @@ These are my rules for mocking and stubbing (in unit tests):
 - `Stub` query messages performed by the unit under test
 - `Mock` command messages performed by the unit under test
 
-The last two are self-explanatory but I will care to explain with a simple phrase. You should only care about the `queries` `responses` and the `commands` `side effects`, nothing more.
+The last two are self-explanatory but I will care to explain with a simple phrase. You should only care about the `query responses` and the `command side effects`, nothing more.
 
 ## Parting thoughts
 
