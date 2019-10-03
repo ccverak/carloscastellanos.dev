@@ -1,6 +1,6 @@
 ---
-draft: true
-title: "How I write tests"
+draft: false
+title: "My testing practices"
 date: 2019-10-02T18:29:58+02:00
 description: "my testing practices"
 categories: general
@@ -40,7 +40,7 @@ end
 - I like to think always on having these `test steps` and make them pretty clear for readability matters as well.
 - I like to have all the 4 `test steps` `co-located` in consecutive lines, yeah, for readability again.
 
-Across the years I have realized that it is very valuable for individuals and for teams to write tests in a way that are self-expressive, where everything is there put together like a paragraph, no need to analyzing shared globals or scrolling up and down to look for more context. How many times have you been bitten by a chain of `before` or `beforeEach` with overlapping declarations? Now you get my point, I suppose... Another benefit is that while keeping things simple for tests if it starts hurting, it's most likely because you may have design problems in your application code.
+Across the years I have realized that it is very valuable to write tests in a self-expressive way, where everything is there put together like a paragraph, no need to analyzing shared globals or scrolling up and down to look for more context. How many times have you been bitten by a chain of `before` or `beforeEach` with overlapping declarations? Now you get my point, I suppose... Another benefit is that while keeping things simple for tests if it starts hurting, it's most likely because you may have design problems in your application code.
 
 ## How I use mocks, stubs
 
@@ -54,9 +54,9 @@ The last two are self-explanatory but I will care to explain with a simple phras
 
 ## Parting thoughts
 
-As a Ruby programmer who values a lot of principles like `DRY` it has been a long way to get to this point, but then I realized that it is OK to write tests using a different approach because aren't tests a different kind of code? These practices intend is to ultimately optimize for readability and maintainability and if you ask me if this the right thing to optimize or if this gets the ROI we should be expecting from tests? - As for `now, Oct 2, 2019` my answer is `YES`.
+As a Ruby programmer who values a lot of principles like `DRY` it has been a long way to get to this point, but then I realized that it is OK to write tests using a different approach because aren't tests a different kind of code? These practices intend is to ultimately optimize for readability and maintainability and if you ask me if this the right thing to optimize or if this gets the ROI we should be expecting from tests? - As for `now, Oct 2, 2019` my answer is a resounding `YES`.
 
-What do you think? who do you write your tests? what practices do you use and why? 
+What do you think? how do you write your tests? what practices do you use and why? 
 Looking forward to hearing your feedback
 
 Till the next time :}
