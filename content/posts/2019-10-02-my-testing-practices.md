@@ -13,7 +13,7 @@ I don't take responsibility if you decide to apply these practices, in that case
 
 Without further ado, let's start
 
-## How they look?
+## How do they look like?
 
 In structure, something like this:
 
@@ -35,12 +35,12 @@ end
 
 ### Why you ask?
 
-- I like `verbosity` in tests because tests are documentation, the more context and less magic the better.
-- I don't like `shared state` in tests because I prefer duplication in favor of readability. Yes, I'm looking at you shared `before` and `beforeEach` and friends.
+- I like `verbosity` in tests because tests are documentation, the more context the better.
+- I don't like `shared state` in tests because they favor mutability so I opt to duplicate which also leverages readability. Yes, I'm looking at you shared `before` and `beforeEach` and friends.
 - I like to think always on having these `test steps` and make each to have a clear distinction for readability matters as well.
 - I like to have all the 4 `test steps` `co-located` in consecutive lines, yeah, for readability again.
 
-Across the years I have realized that it is very valuable to write tests this way, where everything is there put together like a paragraph, no need to analyzing shared globals or scrolling up and down looking for more context. How many times have you been bitten by a chain of `before` or `beforeEach` with overlapping declarations? Now you get my point, I suppose... Another benefit is that while keeping things simple for tests if it starts hurting, it's most likely because you may have design problems in your application code.
+Across the years I have realized that it is very valuable to write tests this way, where everything is there put together like a paragraph, no magic tricks, no need to analyzing shared globals or scrolling up and down looking for more context. How many times have you been bitten by a chain of `before` or `beforeEach` with overlapping declarations? Now you get my point, I suppose... Another benefit is that while keeping things simple for tests if it starts hurting, it's most likely because you may have design problems in your application code.
 
 ## How I use mocks & stubs
 
