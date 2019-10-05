@@ -9,7 +9,7 @@ keywords: "tdd, ruby, javascript"
 
 I have been asked several times about my testing practices so I decided to spend some time and write them down for future reference and feedback.
 
-I don't take responsibility if you decide to apply these practices, in that case, you are on your own. You are warned :joy: :joy: :joy:
+`Disclaimer`: I don't take responsibility if you decide to apply these practices, in that case, you are on your own. You are warned :joy: :joy: :joy:
 
 Without further ado, let's start
 
