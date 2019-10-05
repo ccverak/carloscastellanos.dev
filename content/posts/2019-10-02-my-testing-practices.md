@@ -40,9 +40,9 @@ end
 - I like to think always on having these `test steps` and make each to have a clear distinction for readability matters as well.
 - I like to have all the 4 `test steps` `co-located` in consecutive lines, yeah, for readability again.
 
-Across the years I have realized that it is very valuable to write tests this way, where everything is there put together like a paragraph, no magic tricks, no need to analyzing shared globals or scrolling up and down looking for more context. How many times have you been bitten by a chain of `before` or `beforeEach` with overlapping declarations? Now you get my point, I suppose... Another benefit is that while keeping things simple for tests if it starts hurting, it's most likely because you may have design problems in your application code.
+Across the years I have realized that it is very valuable to write tests this way, where everything is there put together like a paragraph, no magic tricks, no need to analyzing shared globals or scrolling up and down looking for more context. How many times have you been bitten by a chain of `before` or `beforeEach` with overlapping declarations or with `subject` and `let` combos? (some Rubyists will understand) ...Now you get my point, I suppose... Another benefit is that while keeping things simple for tests if it starts hurting, it's most likely because you may have design problems in your application code.
 
-## How I use mocks & stubs
+## What about mocks & stubs?
 
 These are my rules for mocking and stubbing (in unit tests):
 
