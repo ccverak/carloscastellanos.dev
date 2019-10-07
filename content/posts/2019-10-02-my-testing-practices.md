@@ -37,10 +37,10 @@ end
 
 - I like `verbosity` in tests because tests are documentation, the more context the better.
 - I don't like `shared state` in tests because they favor mutability so I opt to duplicate which also leverages readability. Yes, I'm looking at you shared `before` and `beforeEach` and friends.
-- I like to think always on having these `test steps` and make each to have a clear distinction for readability matters as well.
-- I like to have all the 4 `test steps` `co-located` in consecutive lines, yeah, for readability again.
+- I like to make each `test step` as clear and semantic as possible so there is a clear distinction between the phases, for the same purpose as before: readability.
+- I like to have all the 4 `test steps` `co-located` in consecutive lines, yeah, it's easy to guess that the reason is readability again.
 
-Across the years I have realized that it is very valuable to write tests this way, where everything is there put together like a paragraph, no magic tricks, no need to analyzing shared globals or scrolling up and down looking for more context. How many times have you been bitten by a chain of `before` or `beforeEach` with overlapping declarations or with `subject` and `let` combos? (some Rubyists will understand) ...Now you get my point, I suppose... Another benefit is that while keeping things simple for tests if it starts hurting, it's most likely because you may have design problems in your application code.
+Across the years I have realized that it is very valuable to write tests this way, where everything is there put together like a paragraph, no magic tricks, no need to analyzing shared globals or scrolling up and down looking for more context. How many times have you been bitten by a chain of `before` or `beforeEach` with overlapping declarations or with `subject` and `let` crazy combos? (some Rubyists will understand)... Now you get my point, I suppose... Another benefit is that while keeping things simple for tests if it starts hurting, it's most likely because you may have design problems in your application code.
 
 ## What about mocks & stubs?
 
@@ -54,7 +54,7 @@ The last two are self-explanatory but I will care to explain with a simple phras
 
 ## Parting thoughts
 
-As a Ruby programmer who values a lot of principles like `DRY` it has been a long way to get to this point, but then I realized that it is OK to write tests using a different approach because aren't tests a different kind of code? These practices intend is to ultimately optimize for readability and maintainability and if you ask me if this the right thing to optimize or if this gets the ROI we should be expecting from tests? - As for `today, Oct 2, 2019` my answer is a resounding `YES`.
+as a Ruby programmer who values a lot of principles like `DRY` it has been a long way to get to this point, but then I realized that it is OK to write tests using a different approach because aren't tests a different kind of code? These practices intend is to optimize for readability and maintainability and if you ask me if this the right thing to optimize or if this gets the ROI we should be expecting from tests - As for `today, Oct 2, 2019` my answer is a resounding `YES`.
 
 What do you think? how do you write your tests? what practices do you use and why? 
 Looking forward to hearing your feedback
