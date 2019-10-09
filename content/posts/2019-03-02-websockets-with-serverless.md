@@ -16,7 +16,7 @@ Let's see how it's done!
 [If you are one of those who likes seeing the code first, I created a sample application for this post, you can find it [here](https://github.com/ccverak/serverless-WebSockets-demo)]
 
 
-## Components and uses cases involved
+## Components and use cases involved
 
 We have three main components:
 
