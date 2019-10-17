@@ -43,8 +43,8 @@ enableEmoji = true
     fixedbarContentAfter = "me@carloscastellanosvera.com" # Add fixedbar content after click
 
     # Whether you want to hide copyright and credits in the footer.
-    hideCredits = true
-    hideCopyright = true
+    hideCredits = false
+    hideCopyright = false
 
     # Custom CSS
     custom_css = []
