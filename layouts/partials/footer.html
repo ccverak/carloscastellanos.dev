@@ -11,14 +11,19 @@
     {{ with .Site.Params.footercontent }}
       <p>{{.}}</p>
     {{ end }}
-    <small>The content of this website is under Copyright © 2016-{{ .Site.LastChange.Format "2006" }}. Carlos Castellanos Vera.</small>
-
+    {{ if .IsHome }}
+    {{ else }} 
+      <small>The content of this website is under Copyright © 2016-{{ .Site.LastChange.Format "2006" }}. Carlos Castellanos Vera.</small> 
+    {{ end }}
+    
   </section>
 </footer>
 <div class="fixed-bar">
   <section class="container">
+    {{ if .IsHome }}
     {{ with .Site.Params.fixedbarContent }}
-      <p id="privateTriggerText">{{.}}<a id="privateTrigger">Click!</a></p>
+      <p id="privateTriggerText">{{.}}<a id="privateTrigger">here!</a></p>
+    {{ end }}
     {{ end }}
     {{ if .Site.Params.snsShare }}
       <div class="sns-shares pc-sns-shares">
