@@ -54,7 +54,7 @@ The last two are self-explanatory but I will care to explain with a simple phras
 
 ## Parting thoughts
 
-as a Ruby programmer who values a lot of principles like `DRY` it has been a long way to get to this point, but then I realized that it is OK to write tests using a different approach because aren't tests a different kind of code? These practices intend is to optimize for readability and maintainability and if you ask me if this the right thing to optimize or if this gets the ROI we should be expecting from tests - As for `today, Oct 2, 2019` my answer is a resounding `YES`.
+As a Ruby programmer who values a lot of principles like `DRY` it has been a long way to get to this point, but then I realized that it is OK to write tests using a different approach because aren't tests a different kind of code? These practices intend is to optimize for readability and maintainability and if you ask me if this the right thing to optimize or if this gets the ROI we should be expecting from tests - As for `today, Oct 2, 2019` my answer is a resounding `YES`.
 
 What do you think? how do you write your tests? what practices do you use and why? 
 Looking forward to hearing your feedback
