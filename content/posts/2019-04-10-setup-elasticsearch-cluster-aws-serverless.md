@@ -26,7 +26,7 @@ resources:
     ElasticSearch:
       Type: AWS::Elasticsearch::Domain
       Properties:
-        DomainName: 'myDomainName'
+        DomainName: 'my-domain-name'
         EBSOptions:
           EBSEnabled: true
           VolumeType: gp2
