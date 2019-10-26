@@ -32,7 +32,7 @@ resources:
           VolumeType: gp2
           VolumeSize: 20
         ElasticsearchClusterConfig:
-          InstanceType: m3.medium.elasticsearch
+          InstanceType: 'm3.medium.elasticsearch'
           InstanceCount: 1
           DedicatedMasterEnabled: false
           ZoneAwarenessEnabled: false
