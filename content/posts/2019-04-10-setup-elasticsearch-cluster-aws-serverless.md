@@ -25,9 +25,8 @@ resources:
   Resources:
     ElasticSearch:
       Type: AWS::Elasticsearch::Domain
-      Condition: CreateElasticSearch
       Properties:
-        DomainName: myDomainName
+        DomainName: 'myDomainName'
         EBSOptions:
           EBSEnabled: true
           VolumeType: gp2
@@ -43,7 +42,6 @@ resources:
     # Export ElasticSearch host url
     ElasticSearchHost:
       Description: 'ElasticSearch host url'
-      Condition: CreateElasticSearch
       Value:
         Fn::GetAtt:
           - ElasticSearch
