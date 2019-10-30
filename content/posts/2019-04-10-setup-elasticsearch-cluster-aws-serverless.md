@@ -13,7 +13,7 @@ aliases:
 Here is how you can setup an ES cluster using the Serverless framework and CloudFormation:
 
 {{< hl data-options="language-javascript line-numbers" data-line-options="">}}
-service: my-service
+ service: my-service
 
 provider:
   name: aws
