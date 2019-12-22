@@ -39,7 +39,7 @@ enableEmoji = true
     avatarurl = "/images/av2.jpg"
     footercontent = ""
 
-    fixedbarContent = "Contact me → " # Add fixedbar content
+    fixedbarContent = "→ " # Add fixedbar content
     fixedbarContentAfter = "me@carloscastellanosvera.com" # Add fixedbar content after click
 
     # Whether you want to hide copyright and credits in the footer.
