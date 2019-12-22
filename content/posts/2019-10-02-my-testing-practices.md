@@ -9,9 +9,7 @@ keywords: "tdd, ruby, javascript"
 
 I have been asked several times about my testing practices so I decided to spend some time and write them down for future reference and feedback.
 
-`Disclaimer`: I don't take responsibility if you decide to apply these practices, in that case, you are on your own. You are warned :joy: :joy: :joy:
-
-Without further ado, let's start
+Let's get into it
 
 ## How do they look like?
 
@@ -33,7 +31,7 @@ end
 - Do have these 4 clear steps 1) Setup 2) Exercise 3) Verify 4) Teardown
 - All the 4 test steps are co-located
 
-### Why you ask?
+### And here's why
 
 - I like `verbosity` in tests because tests are documentation, the more context the better.
 - I don't like `shared state` in tests because they favor mutability so I opt to duplicate which also leverages readability. Yes, I'm looking at you shared `before` and `beforeEach` and friends.
