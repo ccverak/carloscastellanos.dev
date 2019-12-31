@@ -39,12 +39,15 @@ end
 
 ### And here's why
 
+Before going into details let's first analyze how are the modfication patterns for test files. In my experience it's very common that once the tests are written, it's very likely that future modifications are made in very few specific places in a file, isn't it better if you don't have to read or refactor unrelated tests or setups of the file to do your change? Do you agree?
+That's why:
+
 - I like `verbosity` in tests because tests are documentation, the more context the better for the reader.
 - I don't like using `shared state` in tests because they favor mutability and coupling, instead I prefer to isolate the contexts for every case which makes the code easier to change. Yes, I'm looking at you shared `before` and `beforeEach` and friends.
 - I like to make each `test step` as clear and semantic as possible so there is a clear distinction between the phases, for the same purpose as before: readability.
-- I like to have all the 4 `test steps` `co-located`, yeah, this helps by providing better context for every test in large and complex scenarios
+- I like to have all the 4 `test steps` `co-located`, yeah, this helps by providing better context for every test in large and complex scenarios.
 
-Across the years I have realized that it is very valuable to write tests this way, where everything is there put together like a paragraph, no magic tricks, no need to analyzing shared globals or scrolling up and down looking for more context. How many times have you been bitten by a chain of `before` or `beforeEach` with overlapping declarations or with `subject` and `let` crazy combos? (some Rubyists will understand)... Now you get my point, I suppose... Another benefit is that while keeping things simple for tests if it starts hurting, it's most likely because you may have design problems in your application code.
+Across the years I have realized that it is very valuable to write tests this way, where everything is there put together like a paragraph, no magic tricks, no need to analyzing shared globals or scrolling up and down looking for more context just to do your thing. How many times have you been bitten by a chain of `before` or `beforeEach` with overlapping declarations or with `subject` and `let` crazy combos? (some Rubyists will understand)... Now you get my point, I suppose... Another benefit is that while keeping things simple for tests if it starts hurting, it's most likely because you may have design problems in your application code.
 
 ### What about mocks & stubs?
 
