@@ -11,7 +11,9 @@ I have been asked several times about my testing practices so I decided to spend
 
 Let's get into it
 
-## How do they look like?
+## My tests
+
+### How do they look like?
 
 In structure, something like this:
 
@@ -24,25 +26,29 @@ In structure, something like this:
 end
 {{< /hl >}}
 
-## The tests I write are:
+### Characteristics
 
 - Verbose
 - Do not use shared global state
-- Do have these 4 clear steps 1) Setup 2) Exercise 3) Verify 4) Teardown
+- Do have these 4 clear steps:
+1) Setup 
+2) Exercise 
+3) Verify 
+4) Teardown
 - All the 4 test steps are co-located
 
 ### And here's why
 
 - I like `verbosity` in tests because tests are documentation, the more context the better.
-- I don't like `shared state` in tests because they favor mutability so I opt to duplicate which also leverages readability. Yes, I'm looking at you shared `before` and `beforeEach` and friends.
+- I don't like `shared state` in tests because they favor mutability that's why I prefer to duplicate code which also favors readability. Yes, I'm looking at you shared `before` and `beforeEach` and friends.
 - I like to make each `test step` as clear and semantic as possible so there is a clear distinction between the phases, for the same purpose as before: readability.
-- I like to have all the 4 `test steps` `co-located` in consecutive lines, yeah, it's easy to guess that the reason is readability again.
+- I like to have all the 4 `test steps` `co-located`, yeah, this helps by providing better context for every test in large and complex scenarios
 
 Across the years I have realized that it is very valuable to write tests this way, where everything is there put together like a paragraph, no magic tricks, no need to analyzing shared globals or scrolling up and down looking for more context. How many times have you been bitten by a chain of `before` or `beforeEach` with overlapping declarations or with `subject` and `let` crazy combos? (some Rubyists will understand)... Now you get my point, I suppose... Another benefit is that while keeping things simple for tests if it starts hurting, it's most likely because you may have design problems in your application code.
 
-## What about mocks & stubs?
+### What about mocks & stubs?
 
-These are my rules for mocking and stubbing (in unit tests):
+These are my "rules" for mocking and stubbing (in unit tests):
 
 - Don't `mock` what you don't own
 - `Stub` query messages performed by the unit under test
