@@ -39,7 +39,7 @@ end
 
 ### And here's why
 
-Before going into details let's first analyze how are the modfication patterns for test files. In my experience it's very common that once the tests are written, it's very likely that future modifications are made in very few specific places in a file, isn't it better if you don't have to read or refactor unrelated tests or setups of the file to do your change? Do you agree?
+Before going into details let's first analyze how are the modfication patterns for test files. In my experience it's very common that once the tests are written, it's very likely that future modifications are made in very few specific places in a file, isn't it better if you don't have to read or refactor unrelated tests or setups in a file just to do your change? Do you agree?
 That's why:
 
 - I like `verbosity` in tests because tests are documentation, the more context the better for the reader.
