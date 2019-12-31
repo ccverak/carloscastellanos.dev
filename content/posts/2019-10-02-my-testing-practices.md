@@ -40,7 +40,7 @@ end
 ### And here's why
 
 - I like `verbosity` in tests because tests are documentation, the more context the better.
-- I don't like `shared state` in tests because they favor mutability that's why I prefer to duplicate code which also favors readability. Yes, I'm looking at you shared `before` and `beforeEach` and friends.
+- I don't like using `shared state` in tests because they favor mutability that's why I prefer to duplicate code which also favors readability. Yes, I'm looking at you shared `before` and `beforeEach` and friends.
 - I like to make each `test step` as clear and semantic as possible so there is a clear distinction between the phases, for the same purpose as before: readability.
 - I like to have all the 4 `test steps` `co-located`, yeah, this helps by providing better context for every test in large and complex scenarios
 
