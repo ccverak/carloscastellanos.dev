@@ -1,8 +1,8 @@
 a {
   color: currentcolor;
-  -webkit-box-shadow: inset 0 -0.43333em rgba(84, 156, 245, 0.308) !important;
+  -webkit-box-shadow: inset 0 -0.43333em #54c8f5a3 !important;
   /* box-shadow: inset 0 -0.33333em rgba(84, 156, 245, 0.308) !important; */
-  box-shadow: inset 0 -0.43333em rgba(84, 156, 245, 0.308) !important;
+  box-shadow: inset 0 -0.43333em #54c8f5a3 !important;
   text-decoration: none !important;
   -webkit-transition: all 0.3s !important;
   transition: all 0.3s !important;
@@ -10,7 +10,7 @@ a {
 }
 
 a:hover {
-  background-color: rgba(157, 201, 255, .32) !important;
+  background-color: #9ddfffa6 !important;
   color: black !important;
 }
 
