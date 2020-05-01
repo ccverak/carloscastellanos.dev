@@ -76,10 +76,6 @@ enableEmoji = true
     name = "/Twitter"
     weight = 3
     url = "https://twitter.com/ccverak/"
-[[params.social]]
-    name = "/Blog"
-    weight = 4
-    url = "https://carloscastellanosvera.com/posts"
 
 # Menu links
 [[menu.main]]
