@@ -18,7 +18,7 @@ Let's get into it
 In structure, something like this:
 
 {{< hl data-options="language-ruby line-numbers" data-line-options="">}}
- 'some test' do
+ it 'some test' do
  setup
  exercise
  verify
