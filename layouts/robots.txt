@@ -1,3 +1,0 @@
-
-User-agent: *
-Sitemap: https://carloscastellanosvera.com/sitemap.xml

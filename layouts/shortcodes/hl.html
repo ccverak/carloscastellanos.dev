@@ -1,6 +1,0 @@
-<div class="highlight">
-    <pre{{ with .Get "data-options" }} class="{{- . -}}"{{ end }}
-        {{ with .Get "data-line-options" }} data-line="{{- . -}}"{{ end }}
-        {{ with .Get "data-line-start" }} data-start="{{- . -}}"{{ end }}>
-        <code>{{ trim .Inner "\n" }}</code></pre>
-</div>
