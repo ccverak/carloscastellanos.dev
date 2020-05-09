@@ -1,4 +1,4 @@
-baseurl = "https://carloscastellanosvera.com"
+baseurl = "https://carloscastellanos.dev"
 title = "Carlos Castellanos Vera / ccverak"
 theme = "coder-portfolio" # Set the theme.
 languagecode = "en" # The site’s language code used to generate RSS.
@@ -40,7 +40,7 @@ enableEmoji = true
     footercontent = ""
 
     fixedbarContent = "→ " # Add fixedbar content
-    fixedbarContentAfter = "me@carloscastellanosvera.com" # Add fixedbar content after click
+    fixedbarContentAfter = "me@carloscastellanos.dev" # Add fixedbar content after click
 
     # Whether you want to hide copyright and credits in the footer.
     hideCredits = false
@@ -76,7 +76,6 @@ enableEmoji = true
     name = "/Twitter"
     weight = 3
     url = "https://twitter.com/ccverak/"
-
 # Menu links
 [[menu.main]]
     name = "/Blog"

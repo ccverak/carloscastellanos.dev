@@ -1,5 +1,5 @@
 {
-  "name": "carloscastellanosvera.com",
+  "name": "carloscastellanos.dev",
   "version": "1.0.0",
   "description": "<p align=\"center\"><img src=\"https://avatars2.githubusercontent.com/u/1001834?s=460&v=4\" width=\"340\"></p>",
   "main": "postcss.config.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ccverak/carloscastellanosvera.com.git"
+    "url": "git+https://github.com/ccverak/carloscastellanos.dev.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ccverak/carloscastellanosvera.com/issues"
+    "url": "https://github.com/ccverak/carloscastellanos.dev/issues"
   },
-  "homepage": "https://github.com/ccverak/carloscastellanosvera.com#readme",
+  "homepage": "https://github.com/ccverak/carloscastellanos.dev#readme",
   "dependencies": {
     "autoprefixer": "^9.4.10",
     "postcss-cli": "^6.1.2"
