@@ -3,7 +3,7 @@ draft: false
 path: "/posts/2016-12-09-the-pure-functions-experimient"
 date: "2016-12-09"
 title: "The Pure Functions experiment"
-categories: general
+category: general
 excerpt: "My experiences exploring functional programming aspects such as pure functions and it's impact in software quality and testability"
 keywords: ["tdd, bdd, software development, functional programming, ruby"]
 aliases:

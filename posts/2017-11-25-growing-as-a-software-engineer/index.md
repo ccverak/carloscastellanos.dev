@@ -3,7 +3,7 @@ draft: false
 path: "/posts/2017-11-25-growing-as-a-software-engineer"
 date: "2017-11-25"
 title: "Growing as a software engineer"
-categories: general
+category: general
 excerpt: "Growing as a software engineer"
 keywords: ["software development, ethics, community, diversity"]
 aliases:

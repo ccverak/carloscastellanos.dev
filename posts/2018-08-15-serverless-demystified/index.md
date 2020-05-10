@@ -3,7 +3,7 @@ draft: false
 path: "/posts/2018-08-15-serverless-demystified"
 date: "2018-08-15"
 title: "Serverless Demystified"
-categories: serverless
+category: serverless
 excerpt: "Serverless Demystified talks about pros and cons of adopting serverless technologies"
 keywords: ["serverless, aws, pros, cons"]
 aliases:

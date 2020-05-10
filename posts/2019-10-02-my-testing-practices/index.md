@@ -4,7 +4,7 @@ path: "/posts/2019-10-02-my-testing-practices"
 title: "My testing practices"
 date: "2019-10-02"
 excerpt: "my testing practices"
-categories: general
+category: general
 keywords: ["tdd, ruby, javascript"]
 ---
 

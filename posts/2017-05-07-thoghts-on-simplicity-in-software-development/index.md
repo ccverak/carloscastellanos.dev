@@ -3,7 +3,7 @@ draft: false
 path: "/posts/2017-05-07-thoghts-on-simplicity-in-software-development"
 date: "2017-05-07"
 title: "Thoughts on simplicity in software development"
-categories: general
+category: general
 excerpt: "My take regarding the simplicity in software development"
 keywords: ["software development, fight complexity, simplicity"]
 aliases:

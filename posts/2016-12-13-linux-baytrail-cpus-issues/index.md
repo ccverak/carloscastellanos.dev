@@ -3,7 +3,7 @@ draft: false
 path: "/posts/2016-12-13-linux-baytrail-cpus-issues"
 date: "2016-12-13"
 title: "Linux issues with Baytrail CPUs"
-categories: general
+category: general
 excerpt: "Linux issues with Baytrail CPUs"
 keywords: ["linux, kernel, ubuntu"]
 aliases:

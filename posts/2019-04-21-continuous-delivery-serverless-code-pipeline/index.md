@@ -4,7 +4,7 @@ path: "/posts/2019-04-21-continuous-delivery-serverless-code-pipeline"
 title: "Canary deployments with Serverless and AWS Code Pipeline"
 date: "2019-04-21"
 excerpt: "Canary deployments with Serverless and AWS Code Pipeline. How to implement a fully automated, one push, zero downtime, blue-green deployments of serverless application. Continuous delivery all the way down with a simple workflow!"
-categories: serverless
+category: serverless
 keywords: ["serverless, aws, continuos delivery, canary, blue green, deployment"]
 aliases:
   - /posts/canary-deployments-with-serverless-and-aws-code-pipeline/

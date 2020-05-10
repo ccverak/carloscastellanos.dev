@@ -3,7 +3,7 @@ draft: false
 path: "/posts/2018-02-24-backpressure"
 date: "2018-02-24"
 title: "Back-pressure"
-categories: serverless
+category: serverless
 excerpt: "Back-pressure mechanisms for serverless and data intensive applications"
 keywords: ["data, ingestion, serverless, aws, capacity, resiliency"]
 aliases:

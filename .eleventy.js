@@ -8,6 +8,7 @@ const fs = require("fs");
 const path = require("path");
 const pluginTOC = require('eleventy-plugin-nesting-toc');
 const pluginNavigation = require("@11ty/eleventy-navigation");
+const readingTime = require('eleventy-plugin-reading-time');
 
 const manifestPath = path.resolve(__dirname, "dist", "assets", "manifest.json");
 const manifest = JSON.parse(
@@ -24,6 +25,7 @@ module.exports = function(eleventyConfig) {
           installPrismLanguages(Prism);
       },
   });
+  eleventyConfig.addPlugin(readingTime),
   eleventyConfig.addPlugin(pluginNavigation);
 
   eleventyConfig.addPlugin(pluginTOC, {
@@ -52,6 +54,12 @@ module.exports = function(eleventyConfig) {
   // Date formatting (machine readable)
   eleventyConfig.addFilter("machineDate", dateObj => {
     return DateTime.fromJSDate(dateObj).toFormat("yyyy-MM-dd");
+  });
+
+  // extract summary from post
+  eleventyConfig.addFilter("summary", post => {
+    const [summary] = post.templateContent.split("</p>")
+    return summary.split(" ").slice(0, 50).join(" ");
   });
 
   // only content in the `posts/` directory
