@@ -1,5 +1,5 @@
 ---
-layout: layouts/base.njk
+layout: base.njk
 section: post
 templateClass: tmpl-post
 ---
@@ -21,11 +21,6 @@ templateClass: tmpl-post
 
   <div class="container pt-8 lg:pt-12">
     <p>{{ summary }}</p>
-
-    <h2>Table of Contents</h2>
-    {{ content | toc | safe }}
-    {{ content | safe }}
-  </div>
 </article>
 
 <nav class="container">

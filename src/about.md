@@ -1,5 +1,5 @@
 ---
-layout: layouts/home.njk
+layout: home.njk
 keywords: ["software","engineer","developer","serverless","aws","amazon","architect","freelancer","contractor","ruby", "nodejs"]
 ---
 

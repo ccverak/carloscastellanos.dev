@@ -1,131 +1,95 @@
-const { DateTime } = require("luxon");
+const pluginRss = require('@11ty/eleventy-plugin-rss')
+const pluginSyntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
+const markdownIt = require("markdown-it");
+const markdownItAnchor = require("markdown-it-anchor");
 const markdownItAttrs = require('markdown-it-attrs');
 const markdownItFootnote = require('markdown-it-footnote');
-const pluginSyntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
-const installPrismLanguages = require('./prism-languages.js');
-const pluginRss = require("@11ty/eleventy-plugin-rss");
-const fs = require("fs");
-const path = require("path");
-const pluginTOC = require('eleventy-plugin-nesting-toc');
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const readingTime = require('eleventy-plugin-reading-time');
 
-const manifestPath = path.resolve(__dirname, "dist", "assets", "manifest.json");
-const manifest = JSON.parse(
-  fs.readFileSync(manifestPath, { encoding: "utf8" })
-);
+const filters = require('./_eleventy/filters.js')
+const shortcodes = require('./_eleventy/shortcodes.js')
+const installPrismLanguages = require('./_eleventy/prism-languages.js');
 
-const getSimilarCategories = function(categoriesA, categoriesB) {
-  return categoriesA.filter(Set.prototype.has, new Set(categoriesB)).length;
-}
-
-module.exports = function(eleventyConfig) {
-  eleventyConfig.addPlugin(pluginSyntaxHighlight, {
-      init: function({ Prism }) {
-          installPrismLanguages(Prism);
-      },
+module.exports = function (config) {
+  // Plugins
+  config.addPlugin(pluginSyntaxHighlight, {
+    init: function ({ Prism }) {
+      installPrismLanguages(Prism);
+    },
   });
-  eleventyConfig.addPlugin(readingTime),
-  eleventyConfig.addPlugin(pluginNavigation);
+  config.addPlugin(readingTime),
+    config.addPlugin(pluginNavigation);
+  config.addPlugin(pluginRss);
 
-  eleventyConfig.addPlugin(pluginTOC, {
-    tags: ['h2', 'h3']
-  });
+  // Filters
+  Object.keys(filters).forEach((filterName) => {
+    config.addFilter(filterName, filters[filterName])
+  })
 
-  eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
-  eleventyConfig.addLayoutAlias("default", "layouts/default.njk");
+  // Shortcodes
+  Object.keys(shortcodes).forEach((shortCodeName) => {
+    config.addShortcode(shortCodeName, shortcodes[shortCodeName])
+  })
 
-  eleventyConfig.setDataDeepMerge(true);
+  // Layouts
+  config.addLayoutAlias("post", "post.njk");
+  config.addLayoutAlias("default", "default.njk");
+  config.addLayoutAlias("page", "page.njk");
+  config.addLayoutAlias("home", "home.njk");
 
-  // Adds a universal shortcode to return the URL to a webpack asset. In Nunjack templates:
-  // {% webpackAsset 'main.js' %} or {% webpackAsset 'main.css' %}
-  eleventyConfig.addShortcode("webpackAsset", function(name) {
-    if (!manifest[name]) {
-      throw new Error(`The asset ${name} does not exist in ${manifestPath}`);
-    }
-    return manifest[name];
-  });
 
-  // Date formatting (human readable)
-  eleventyConfig.addFilter("readableDate", dateObj => {
-    return DateTime.fromJSDate(dateObj).toFormat("dd LLL yyyy");
-  });
 
-  // Date formatting (machine readable)
-  eleventyConfig.addFilter("machineDate", dateObj => {
-    return DateTime.fromJSDate(dateObj).toFormat("yyyy-MM-dd");
-  });
+  // Pass-through files
+  // Copy all images directly to dist.
+  config.addPassthroughCopy({ "assets/images": "assets/images" });
+  // Copy external dependencies to dist.
+  config.addPassthroughCopy({ "assets/vendor": "assets/vendor" });
 
-  // extract summary from post
-  eleventyConfig.addFilter("summary", post => {
-    const [summary] = post.templateContent.split("</p>")
-    return summary.split(" ").slice(0, 50).join(" ");
-  });
-
-  // only content in the `posts/` directory
-  eleventyConfig.addCollection("posts", function(collection) {
-    return collection.getAllSorted().filter(function(item) {
-      return item.inputPath.match(/^\.\/posts\//) !== null;
-    });
-  });
-
-  eleventyConfig.addPlugin(pluginRss);
-
-  /* Markdown Plugins */
-  let markdownIt = require("markdown-it");
-
-  // add anchor links to heading elements like <h1>,<h2>, ...
-  let markdownItAnchor = require("markdown-it-anchor");
-  let options = {
+  // Markdown Plugins
+  config.setLibrary("md", markdownIt({
     html: true,
     breaks: true,
     linkify: true // apply auto links
-  };
-  let opts = {
-    permalink: false
-  };
-
-  eleventyConfig.setLibrary("md", markdownIt(options)
+  })
     .use(markdownItFootnote)
     .use(markdownItAttrs)
-    .use(markdownItAnchor, opts)
+    .use(markdownItAnchor, {
+      permalink: true,
+      permalinkSymbol: '#',
+      permalinkClass: 'heading-anchor',
+      permalinkBefore: true,
+      level: 2,
+      // slugify: anchorSlugify
+    })
   );
 
-  // Copy all images directly to dist.
-  eleventyConfig.addPassthroughCopy({ "assets/images": "assets/images" });
+  // Collections: Posts
+  // only content in the `posts/` directory
+  config.addCollection("posts", function (collection) {
+    const pathsRegex = /\/posts\/|\/drafts\//
+    return collection
+      .getAllSorted()
+      .filter((item) => item.inputPath.match(pathsRegex) !== null)
+      .filter((item) => item.data.permalink !== false)
+      .filter((item) => !item.data.draft)
+  });
 
-  // Copy external dependencies to dist.
-  eleventyConfig.addPassthroughCopy({ "assets/vendor": "assets/vendor" });
 
+  // Configurations
+  config.setDataDeepMerge(true);
   // Reload the page every time the JS/CSS are changed.
-  eleventyConfig.setBrowserSyncConfig({ files: [manifestPath] });
-
-  // A debug utility.
-  eleventyConfig.addFilter("log", obj => {
-    console.log(obj)
-  });
-
-  eleventyConfig.addFilter("similarPosts", function(collection, path, tags){
-    return collection.filter((post) => {
-      console.log("TAGS", post.data.tags)
-        return getSimilarCategories(post.data.tags, tags) >= 1 && post.data.page.inputPath !== path;
-    })
-    // .sort((a,b) => {
-    //     return getSimilarCategories(b.data.categories, categories) - getSimilarCategories(a.data.categories, categories);
-    // });
-  });
-
-  eleventyConfig.addFilter('limit', function(arr, limit) {
-    return arr.slice(0, limit);
-  });
+  config.setBrowserSyncConfig({ files: [shortcodes.manifestPath] });
 
   return {
     dir: {
-      input: ".",
+      input: "src",
       includes: "_includes", // relative to dir.input
       data: "_data",
       output: "dist",
+      layouts: '_layouts'
     },
+    templateFormats: ['njk', 'md'],
     htmlTemplateEngine: "njk",
     markdownTemplateEngine: "njk",
     passthroughFileCopy: true

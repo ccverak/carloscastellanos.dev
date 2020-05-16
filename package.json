@@ -30,7 +30,7 @@
   "devDependencies": {
     "@11ty/eleventy": "^0.10.0",
     "@11ty/eleventy-navigation": "^0.1.5",
-    "@11ty/eleventy-plugin-rss": "^1.0.6",
+    "@11ty/eleventy-plugin-rss": "^1.0.7",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.0",
@@ -39,7 +39,6 @@
     "babel-loader": "^8.1.0",
     "css-loader": "^3.4.2",
     "cssnano": "^4.1.10",
-    "eleventy-plugin-nesting-toc": "^1.2.0",
     "eslint": "^5.16.0",
     "eslint-loader": "^2.1.2",
     "file-loader": "^3.0.1",
