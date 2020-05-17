@@ -5,7 +5,7 @@ const config = {
     extend: {
       fontFamily: {
         serif: ["Merriweather", ...defaultTheme.fontFamily.serif],
-          sans: ["Montserrat", ...defaultTheme.fontFamily.sans],
+        sans: ["IBM Plex Sans", "Inter", ...defaultTheme.fontFamily.sans],
       },
     },
     boxShadow: {

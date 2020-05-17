@@ -9,8 +9,8 @@ const baseFilename = isDev ? "index" : "index.[contenthash]";
 module.exports = {
   mode: isDev ? "development" : "production",
   entry: [
-    path.resolve(__dirname, "assets", "scripts", "index.js"),
-    path.resolve(__dirname, "assets", "styles", "index.css"),
+    path.resolve(__dirname, "src", "assets", "scripts", "index.js"),
+    path.resolve(__dirname, "src", "assets", "styles", "index.css"),
   ],
   output: {
     path: path.resolve(__dirname, "dist", "assets"),
@@ -31,6 +31,12 @@ module.exports = {
       {
         test: /\.css$/,
         use: [MiniCssExtractPlugin.loader, "css-loader", "postcss-loader"],
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        use: [
+          'file-loader',
+        ],
       },
     ],
   },

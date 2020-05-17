@@ -25,3 +25,5 @@
 //         }
 //     });
 // }
+// require('typeface-inter');
+require('typeface-ibm-plex-sans');

@@ -42,9 +42,9 @@ module.exports = function (config) {
 
   // Pass-through files
   // Copy all images directly to dist.
-  config.addPassthroughCopy({ "assets/images": "assets/images" });
+  config.addPassthroughCopy({ "src/assets/images": "assets/images" });
   // Copy external dependencies to dist.
-  config.addPassthroughCopy({ "assets/vendor": "assets/vendor" });
+  config.addPassthroughCopy({ "src/assets/vendor": "assets/vendor" });
 
   // Markdown Plugins
   config.setLibrary("md", markdownIt({
