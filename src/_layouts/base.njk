@@ -4,17 +4,13 @@
 	{% include "components/head.njk" %}
 
 	<body>
+		<div class="h-screen">
+		{% include "components/nav.njk" %}
 
-		<div class="max-w-3xl container mx-auto px-2 py-8">
-			{% include "components/nav.njk" %}
-		</div>
-
-		<main class="">
-			{{ layoutContent | safe }}
-		</main>
+		{% include "components/bio-large.njk" %}
 
 		{# {% include "components/footer.njk" %} #}
-
+		</div>
 	</body>
 
 </html>
