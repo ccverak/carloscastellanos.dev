@@ -1,35 +1,36 @@
 ---
-layout: base.njk
+layout: base-blog.njk
 section: post
 templateClass: tmpl-post
 ---
 
-
 <div class="container-wide">
   <figure data-aspect-ratio="16:9">
-    <img src="/assets/images/{{ image }}@2x.png" alt="{{ image_alt }}" />
+    <img src="/assets/images/{{ image }}@2x.png" alt="{{ image_alt }}"/>
   </figure>
 </div>
 
 <article class="post-single">
   <header class="bg-white sans-serif">
     <div class="container pt-4 sm:pt-8">
-      <time datetime="{{ date | machineDate }}"><small>{{ date | readableDate }}</small></time>
+      <time datetime="{{ date | machineDate }}">
+        <small>{{ date | readableDate }}</small>
+      </time>
       <h1>{{ title }}</h1>
     </div>
   </header>
 
   <div class="container pt-8 lg:pt-12">
     <p>{{ summary }}</p>
-</article>
+  </article>
 
-<nav class="container">
-  <a href="{{ '/' | url }}">← Blog index</a>
-</nav>
+  {{ content | safe }}
 
-<div class="mx-auto container">
-  <script defer src="https://cdn.commento.io/js/commento.js"></script>
-  <div id="commento"></div>
-</div>
+  <nav class="container">
+    <a href="{{ '/' | url }}">← Blog index</a>
+  </nav>
 
-{% include "components/similar-posts.njk" %}
+  <div class="mx-auto container">
+    <script defer="defer" src="https://cdn.commento.io/js/commento.js"></script>
+    <div id="commento"></div>
+  </div>
