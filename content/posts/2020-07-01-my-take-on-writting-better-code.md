@@ -21,7 +21,7 @@ DISCLAIMER: Bear in mind that this is my current mental state about the subject 
 
 ## COMMUNICATING INTENT
 
-In my opinion, writing programs should be more about communicating your intent, not only to the computer but to your fellow developers who are going to read the code at some point. Computers are very smart understanding what you tell them to do, they don't care if the variables have descriptive names or if you used this many files to express your intent. But guess what? Humans do care a lot about that. A lot. People come and go but the code stays. That is why I think you have to make it really easy for the reader to understand your code. But, how can the code be more understandable? Let me give it a shot:
+In my opinion, writing programs should be more about communicating your intent, not only to the computer but to your fellow developers who are going to read the code at some point. Computers are very smart understanding what you tell them to do, they don't care if the variables have descriptive names or if you used this many files to solve the problem. But guess what? Humans do care a lot about that. A lot. People come and go but the code stays. That is why I think you have to make it really easy for the reader to understand your code. But, how can the code be more understandable? Let me give it a shot:
 
 What makes a code fragment more understandable?
 
