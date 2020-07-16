@@ -9,9 +9,9 @@ keywords: "clean code, ruby, javascript"
 
 ## MOTIVATION
 
-Across the years in my career as a software developer, I have always found it very hard to understand others' code. Understanding how the code solves the problem at hand has always drained a significant amount of energy from me, the more complex the domain the worst. Bad news is that it doesn't get much better with time regardless of your experience or understanding of the problem. Does it happen the same to others with my code? most certainly it does happen. Since some time ago I decided to make improvements in my coding style trying to change this, to lower the effort from readers when understanding how my code solves the problem.
+Across the years in my career as a software developer, I have always found it very hard to understand others' code. Comprehending how others's code solves the problem at hand has always drained a significant amount of energy from me, the more complex the domain the worst. Bad news is that it doesn't get much better with time regardless of your experience or understanding of the problem. Does it happen the same to others with my code? most certainly it does happen. That is why since some time ago I decided to make improvements in my coding style, hoping to lower the effort from readers when understanding my code.
 
-Let's extrapolate for a second to a different context, imagine you are in a discussion of a technical problem. Do you find it easy to follow when someone jumps between different concepts, mixing its details and high-level things in a non-structured way? Such a discussion becomes hard to follow.
+Let's switch for a second to a different context, imagine you are in a discussion of a technical problem. Do you find it easy to follow when someone jumps between different concepts, mixing its details and high-level things in a non-structured way? Such a discussion becomes hard to follow.
 
 Coming back to our context, don't you think it happens the same with code?
 
