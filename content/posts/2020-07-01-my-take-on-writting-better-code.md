@@ -13,7 +13,7 @@ Across the years in my career as a software developer, I have always found it ve
 
 Let's switch for a second to a different context, imagine you are in a discussion of a technical problem. Do you find it easy to follow when someone jumps between different concepts, mixing its details and high-level things in a non-structured way? Such discussions become hard to follow. Don't you think it happens the same with code? Shouldn't we care more about expressing our ideas in better ways through code?
 
-If you are interested in the subject, I would like to talk about some ideas on how to get better at this. As a developer article, this would be mainly about code but I'm sure you'll think about how to discuss technical things or run meetings with this philosophy (or not, and that's OK)
+If you are interested in the subject, I would like to talk about some ideas on how to get better at this. As a software developer article, this one would be mainly about code but I'm sure you can apply some of the ideas in technical talks, meetings, etc (or not, and that's OK)
 
 DISCLAIMER: Bear in mind that this is my current mental state about the subject but this is something that I'm sure it will evolve with time. Take this as an intent to spark your interest in the topic and also as some sort of feedback request to readers.
 
