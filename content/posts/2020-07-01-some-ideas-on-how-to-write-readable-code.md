@@ -9,7 +9,7 @@ keywords: "clean code, ruby, javascript"
 
 ## MOTIVATION
 
-Across the years in my career as a software developer, I have always felt that I should get better at making my code more readable. This keeps coming to me every time I read my code from the past and find it hard to understand. What was I thinking when I wrote this piece of code? What did I want to communicate and how is it connected to the problem and to the domain? If this happens to me with my own code, what should I expect to happen with other people? That is why I decided from some time ago to take action and make improvements in my coding style, hoping to lower the effort from readers when understanding my code including myself.
+Across the years in my career as a software developer, I have always felt that I should get better at making my code more readable. This keeps coming to me every time I read my code from the past and find it hard to understand. What was I thinking when I wrote this piece of code? What did I want to communicate and how is it connected to the problem and to the domain? If this happens to me with my own code, what should I expect to happen with other people? At some point I decided to take action and make improvements in my coding style for good, hoping to lower the effort from readers when understanding my code including myself.
 
 DISCLAIMER: Bear in mind that this is my current mental state about the subject but this is something that I'm sure it will evolve with time. Take this as an intent to spark your interest in the topic and also as some sort of feedback request to readers.
 
