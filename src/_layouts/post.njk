@@ -3,22 +3,25 @@ layout: base-blog.njk
 section: post
 templateClass: tmpl-post
 ---
-<article class="prose prose-sm sm:prose lg:prose-lg xl:prose-xl">
-<div class="container-wide">
-  <figure data-aspect-ratio="16:9">
-    <img src="/assets/images/{{ image }}@2x.png" alt="{{ image_alt }}"/>
-  </figure>
-</div>
-
+<article class="prose prose-sm sm:prose lg:prose-lg xl:prose-xl text-black">
   <header class="bg-white sans-serif">
-    <div class="container pt-4 sm:pt-8">
-      <time datetime="{{ date | machineDate }}">
-        <small>{{ date | readableDate }}</small>
-      </time>
-      <h1 class="mb-4">{{ title }}</h1>
-    </div>
-  </header>
+    
+      <h2 class="text-4xl mb-1">{{ title }}</h2>
 
+      <div class="pt-0 mb-4">
+        <time datetime="{{ page.date | machineDate }}">
+          <span>{{ page.date | readableDate }}</span>
+        </time>
+        •
+        <span class="">{{ content | readingTime }}
+          read</span>
+        •
+        <a href="/posts/categories/{{ category }}" class="downcase">
+          {{ category }}
+        </a>
+      </div>
+    
+  </header>
 
   {{ content | safe }}
 </article>

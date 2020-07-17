@@ -26,7 +26,7 @@ const config = {
     typography: theme => ({
       default: {
         css: {
-          color: theme('colors.gray.900')
+          color: theme('colors.black.900')
         }
       }
     })
