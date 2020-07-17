@@ -18,7 +18,7 @@ Without further ado, let's start
 
 In structure, something like this:
 
-```ruby
+``` ruby
 it 'some test' do
  setup
  exercise

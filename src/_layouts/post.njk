@@ -10,27 +10,16 @@ templateClass: tmpl-post
   </figure>
 </div>
 
-<article class="post-single">
+<article class="prose prose-sm sm:prose lg:prose-lg xl:prose-xl">
   <header class="bg-white sans-serif">
     <div class="container pt-4 sm:pt-8">
       <time datetime="{{ date | machineDate }}">
         <small>{{ date | readableDate }}</small>
       </time>
-      <h1>{{ title }}</h1>
+      <h1 class="mb-4">{{ title }}</h1>
     </div>
   </header>
 
-  <div class="container pt-8 lg:pt-12">
-    <p>{{ summary }}</p>
-  </article>
 
   {{ content | safe }}
-
-  <nav class="container">
-    <a href="{{ '/' | url }}">← Blog index</a>
-  </nav>
-
-  <div class="mx-auto container">
-    <script defer="defer" src="https://cdn.commento.io/js/commento.js"></script>
-    <div id="commento"></div>
-  </div>
+</article>

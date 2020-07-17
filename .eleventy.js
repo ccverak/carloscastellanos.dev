@@ -4,6 +4,7 @@ const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const markdownItAttrs = require('markdown-it-attrs');
 const markdownItFootnote = require('markdown-it-footnote');
+const markdownItEmoji = require('markdown-it-emoji');
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const readingTime = require('eleventy-plugin-reading-time');
 
@@ -53,14 +54,15 @@ module.exports = function (config) {
   })
     .use(markdownItFootnote)
     .use(markdownItAttrs)
-    .use(markdownItAnchor, {
-      permalink: true,
-      permalinkSymbol: '#',
-      permalinkClass: 'heading-anchor',
-      permalinkBefore: true,
-      level: 2,
-      // slugify: anchorSlugify
-    })
+    .use(markdownItEmoji)
+    // .use(markdownItAnchor, {
+    //   permalink: true,
+    //   permalinkSymbol: '#',
+    //   permalinkClass: 'heading-anchor',
+    //   permalinkBefore: true,
+    //   level: 2,
+    //   // slugify: anchorSlugify
+    // })
   );
 
   // Collections: Posts

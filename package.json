@@ -75,8 +75,10 @@
   },
   "dependencies": {
     "@manishrc/tailwindcss-typography-js": "^0.1.7",
+    "@tailwindcss/typography": "^0.2.0",
     "eleventy-plugin-reading-time": "^0.0.1",
     "luxon": "^1.11.0",
+    "markdown-it-emoji": "^1.4.0",
     "typeface-ibm-plex-sans": "^0.0.75"
   }
 }
