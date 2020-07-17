@@ -1,32 +1,39 @@
+<h1 class="mt-10 text-2xl font-bold uppercase">
+	Posts
+</h1>
+
 <section>
-	{% for post in postslist | reverse %}
-		<article class="pt-16" {% if post.url == url %} data-current="current item"{% endif %}>
-			<h3 class="mb-4">
-				<a href="{{ post.url | url }}" class="tracking-widest shadow-focus transition-all duration-300 hover:bg-link uppercase font-semibold text-lg">
-												{% if post.data.title %}
-														{{ post.data.title }}
-												{% endif %}
-				</a>
-			</h3>
-			<div class="mb-4">
-				<span class="font-hairline" datetime="{{ post.date | machineDate }}">
-					{{ post.date | readableDate }}
-				</span>
-				•
-				<span class="">{{ post | readingTime }} read</span>
-				•
-				<a href="/posts/categories/{{ post.data.category }}" class="tracking-wide shadow-focus transition-all duration-300 hover:bg-link uppercase font-bold">
-					{{ post.data.category }}
-				</a>
-			</div>
-			<p>
-				{{ post | summary	| safe }}
-			</p>
-			{# <span>
-				<a href="{{ post.url | url }}" class="tracking-wide shadow-focus transition-all duration-300 hover:bg-link uppercase font-bold">
-					Read more
-				</a>
-			</span> #}
-		</article>
-	{% endfor %}
+		{% for post in postslist | reverse %}
+				<article class="pt-16" {% if post.url == url %} data-current="current item" {% endif %}>
+						<h1 class="mb-1">
+								<a href="{{ post.url | url }}" class="shadow-focus transition-all duration-300 hover:bg-link uppercase font-semibold text-2xl">
+										{% if post.data.title %}
+												{{ post.data.title }}
+										{% endif %}
+								</a>
+						</h1>
+						<div class="mb-4 text-sm">
+								<span class="" datetime="{{ post.date | machineDate }}">
+										{{ post.date | readableDate }}
+								</span>
+								•
+								<span class="">{{ post | readingTime }}
+										read</span>
+								•
+								<a href="/posts/categories/{{ post.data.category }}" class="shadow-focus transition-all duration-300 hover:bg-link downcase font-semibold">
+										{{ post.data.category }}
+								</a>
+						</div>
+						<p class="leading-10">
+							<article class="prose-sm sm:prose lg:prose-lg xl:prose-xl">
+								{{ post | summary | safe }}
+							</article>
+						</p>
+						<span>
+							<a href="{{ post.url | url }}" class="tracking-wide shadow-focus transition-all duration-300 hover:bg-link uppercase font-bold">
+								Read more
+							</a>
+						</span>
+				</article>
+		{% endfor %}
 </section>

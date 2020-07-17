@@ -5,7 +5,7 @@ const config = {
     extend: {
       fontFamily: {
         serif: ['Merriweather', ...defaultTheme.fontFamily.serif],
-        sans: ['IBM Plex Sans', 'Inter', ...defaultTheme.fontFamily.sans]
+        sans: ['Inter', 'IBM Plex Sans', ...defaultTheme.fontFamily.sans]
       }
     },
     boxShadow: {
@@ -22,7 +22,14 @@ const config = {
       '3/4': '75%',
       '9/10': '90%',
       full: '100%'
-    }
+    },
+    typography: theme => ({
+      default: {
+        css: {
+          color: theme('colors.gray.900')
+        }
+      }
+    })
   },
   variants: {},
   plugins: [require('@tailwindcss/typography')]
