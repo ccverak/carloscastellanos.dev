@@ -9,11 +9,7 @@ keywords: "clean code, ruby, javascript"
 
 ## MOTIVATION
 
-Across the years in my career as a software developer, I have always found it very hard to understand others' code. Comprehending how others's code solves the problem at hand has always drained a significant amount of energy from me, the more complex the domain the worst. Bad news is that it doesn't get much better with time regardless of your experience or understanding of the problem. Does it happen the same to others with my code? most certainly it does happen. That is why since some time ago I decided to make improvements in my coding style, hoping to lower the effort from readers when understanding my code.
-
-Let's switch for a second to a different context, imagine you are in a discussion of a technical problem. Do you find it easy to follow when someone jumps between different concepts, mixing its details and high-level things in a non-structured way? Such discussions become hard to follow. Don't you think it happens the same with code? Shouldn't we care more about expressing our ideas in better ways through code?
-
-If you are interested in the subject, I would like to talk about some ideas on how to get better at this. As a software developer article, this one would be mainly about code but I'm sure you can apply some of the ideas in technical talks, meetings, etc (or not, and that's OK)
+Across the years in my career as a software developer, I have always felt that I should get better at making my code more readable. This keeps coming to me every time I read my code from the past and find it hard to understand. What was I thinking when I wrote this piece of code? What did I want to communicate and how is it connected to the problem and to the domain? If this happens to me with my own code, what should I expect to happen with other people? That is why I decided from some time ago to take action and make improvements in my coding style, hoping to lower the effort from readers when understanding my code including myself.
 
 DISCLAIMER: Bear in mind that this is my current mental state about the subject but this is something that I'm sure it will evolve with time. Take this as an intent to spark your interest in the topic and also as some sort of feedback request to readers.
 
