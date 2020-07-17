@@ -9,7 +9,7 @@ keywords: "clean code, ruby, javascript"
 
 ## MOTIVATION
 
-Across the years in my career as a software developer, I have always felt that I should get better at making my code more readable. This keeps coming to me every time I read my code from the past and find it hard to understand. What was I thinking when I wrote this piece of code? What did I want to communicate and how is it connected to the problem and to the domain? If this happens to me with my own code, what should I expect to happen with other people? At some point I decided to take action and make improvements in my coding style for good, hoping to lower the effort from readers when understanding my code including myself.
+Across the years in my career as a software developer, I have always felt that I should get better at making my code more readable. This keeps coming to me every time I read my code from the past and find it hard to understand. What was I thinking when I wrote this piece of code? What did I want to communicate and how is it connected to the problem and to the domain? If this happens to me with my own code, what should I expect from others? At some point I decided to take action and make improvements in my coding style for good, hoping to lower the effort from readers -including myself- when understanding my code.
 
 DISCLAIMER: Bear in mind that this is my current mental state about the subject but this is something that I'm sure it will evolve with time. Take this as an intent to spark your interest in the topic and also as some sort of feedback request to readers.
 
@@ -25,7 +25,7 @@ What makes a code fragment more understandable?
 - Understanding of the problem
 - How the code transmits its intent
 
-After the basics that should be taken for granted such as programming essentials and programming language knowledge, business domain and the problem take special importance. As you may know it is not only about using good variable names, you should ask yourself how your code expresses the connections between the business domain and the solution of the problem, so it's easier read by others.
+After the basics that should be taken for granted such as programming essentials and programming language knowledge, business domain and the problem take special importance. As you may know it is not only about using good variable names, you should ask yourself how your code expresses the connections between the business domain and the solution of the problem, so it's easier to understand by others.
 
 Here is Conceptual Compression can help, let's see how.
 
