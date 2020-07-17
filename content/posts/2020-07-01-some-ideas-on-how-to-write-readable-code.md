@@ -1,6 +1,6 @@
 ---
 draft: false
-title: "My take on writing better code"
+title: "Some ideas on how to write readable code"
 date: 2020-07-11T09:29:58+02:00
 description: "This is how I use conceptual compression to better express my intent and make my code more readable and understandable."
 categories: general
