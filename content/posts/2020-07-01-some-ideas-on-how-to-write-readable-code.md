@@ -253,7 +253,7 @@ Business domain problems are responsible of the hardest problems and bugs I've s
 
 Till the next time :}
 
-PS: I would like to share also a how I write Ruby code using conceptual compression, here is a sample class that clones a project from a git repository and then deploys it and a module that exposes it.
+PS: I would like to share also some Ruby code which conceptual compression, it's just a sample class that clones a project from a git repository and then deploys it and then a module that exposes it to others parts of the application.
 
 {{< hl data-options="language-ruby line-numbers" data-line-options="">}}
   class Projects::Deploy
