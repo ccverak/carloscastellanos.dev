@@ -22,17 +22,12 @@ const config = {
       '3/4': '75%',
       '9/10': '90%',
       full: '100%'
-    },
-    typography: theme => ({
-      default: {
-        css: {
-          color: theme('colors.black.900')
-        }
-      }
-    })
+    }
   },
   variants: {},
-  plugins: [require('@tailwindcss/typography')]
+  plugins: [
+    //require('@tailwindcss/typography')
+  ]
 }
 
 module.exports = config

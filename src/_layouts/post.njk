@@ -3,11 +3,10 @@ layout: base-blog.njk
 section: post
 templateClass: tmpl-post
 ---
-<article class="prose prose-sm sm:prose lg:prose-lg xl:prose-xl text-black">
+<article class="markdown">
   <header class="bg-white sans-serif">
     
-      <h2 class="text-4xl mb-1">{{ title }}</h2>
-
+      <h1 class="mb-0">{{ title }}</h1>
       <div class="pt-0 mb-4">
         <time datetime="{{ page.date | machineDate }}">
           <span>{{ page.date | readableDate }}</span>
@@ -16,7 +15,7 @@ templateClass: tmpl-post
         <span class="">{{ content | readingTime }}
           read</span>
         •
-        <a href="/posts/categories/{{ category }}" class="downcase">
+        <a href="/posts/categories/{{ category }}" class="shadow-focus transition-all duration-300 hover:bg-link downcase">
           {{ category }}
         </a>
       </div>

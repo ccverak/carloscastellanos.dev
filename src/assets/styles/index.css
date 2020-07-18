@@ -1,5 +1,77 @@
+@charset 'utf-8';
+
+
 @import './_prism.css';
 
 @tailwind base;
+
+
 @tailwind components;
 @tailwind utilities;
+
+html, body {
+  @apply antialiased leading-relaxed font-medium tracking-wide;
+}
+
+h1 {
+  @apply text-3xl font-bold;
+}
+
+h2 {
+  @apply text-2xl font-bold;
+}
+
+h3 {
+  @apply text-xl font-bold;
+}
+
+.markdown {
+  @apply leading-loose;
+}
+
+.markdown h1 {
+  @apply text-4xl font-bold pb-3 pt-3;
+}
+
+.markdown h2 {
+  @apply text-3xl font-bold pb-3 pt-3;
+}
+
+.markdown h3 {
+  @apply text-2xl font-bold pb-3 pt-3;
+}
+
+.markdown code:not([class^="language-"]){
+  @apply bg-yellow-200;
+}
+
+.markdown code[class^='language-'] {
+  @apply text-gray-100;
+}
+
+
+.markdown ul {
+  @apply list-disc pl-8;
+}
+
+.markdown ol {
+  @apply list-decimal pl-8;
+}
+
+.markdown article {
+  @apply pb-10 pt-10;
+}
+
+.post-summary h1 {
+  @apply text-lg pb-1 pt-1 !important;
+}
+
+.post-summary h2 {
+  @apply text-lg pb-1 pt-1 !important;
+}
+
+.post-summary h3 {
+  @apply text-lg pb-1 pt-1 !important;
+}
+
+
