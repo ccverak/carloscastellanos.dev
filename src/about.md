@@ -1,8 +1,9 @@
 ---
-layout: base-about.njk
+layout: base-blog.njk
 keywords: ["software","engineer","developer","serverless","aws","amazon","architect","freelancer","contractor","ruby", "nodejs"]
 ---
 
+# About me
 
 I'm a polyglot software engineer with over 10 years of development experience primarily in building backend systems for web and mobile applications. During this time I have focused not only in technical details but also in software architectures and good practices for building and growing systems. I love coding, reading, learning and sharing my experiences with others.
 

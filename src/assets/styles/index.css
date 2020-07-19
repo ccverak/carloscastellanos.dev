@@ -10,7 +10,7 @@
 @tailwind utilities;
 
 html, body {
-  @apply antialiased leading-relaxed font-medium tracking-wide;
+  @apply antialiased leading-relaxed font-normal tracking-wider;
 }
 
 h1 {
