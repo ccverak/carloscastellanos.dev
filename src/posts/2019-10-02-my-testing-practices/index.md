@@ -2,6 +2,7 @@
 draft: false
 path: "/posts/2019-10-02-my-testing-practices"
 title: "My testing practices"
+description: "This is some description"
 date: "2019-10-02"
 excerpt: "my testing practices"
 category: general
