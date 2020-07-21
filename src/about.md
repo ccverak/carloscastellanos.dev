@@ -1,5 +1,5 @@
 ---
-layout: base-blog.njk
+layout: base-about.njk
 keywords: ["software","engineer","developer","serverless","aws","amazon","architect","freelancer","contractor","ruby", "nodejs"]
 ---
 
@@ -19,3 +19,4 @@ Experience Overview:
 - Software architectures
 
 For more details visit my [LinkedIn profile](https://www.linkedin.com/in/ccverak/)
+Want to contact me? [me@carloscastellanos.dev](mailto:me@carloscastellanos.dev)

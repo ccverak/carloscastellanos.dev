@@ -46,7 +46,11 @@ h3 {
 }
 
 .markdown code[class^='language-'] {
-  @apply text-gray-100;
+  @apply text-gray-200;
+}
+
+.markdown pre {
+  @apply rounded-md;
 }
 
 
@@ -61,6 +65,16 @@ h3 {
 .markdown article {
   @apply pb-10 pt-10;
 }
+
+.markdown a {
+  @apply shadow-focus transition-all duration-300;
+}
+
+.markdown a:hover {
+  @apply bg-link;
+}
+
+
 
 .post-summary h1 {
   @apply text-lg pb-1 pt-1 !important;
