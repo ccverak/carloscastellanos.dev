@@ -2,16 +2,11 @@
   This file can be accessed using: {{ site.title }}
 */
 
-const year = new Date().getFullYear()
-
 module.exports = {
-  annee: `${year}`,
-  allowDarkMode: true,
   lang: 'en', // for html tag
-  title: 'MF Blog Starter',
-  description: 'Eleventy + Tailwind CSS blog starter',
-  url: 'https://mf-blogstarter.netlify.app', // don't end with a slash /
-  brandName: 'MF', // for copyright and legal page
+  title: 'Carlos Castellanos / ccverak',
+  description: 'Carlos Castellanos Vera is a Software Engineer and Solutions Architect located in Malaga, Spain with over 10 years of experience.',
+  url: 'https://carloscastellanos.dev', // don't end with a slash /
 
   author: {
     name: 'Carlos Castellanos', // for posts meta and Open Graph meta (FB and Twitter)
