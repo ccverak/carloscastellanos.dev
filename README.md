@@ -41,4 +41,4 @@ TODO:
 - title line height in articles
 - line  highlight in code fragments
 - title line height in blog index
-- fix last article
+- review rss and sitemap.xml

@@ -1,10 +1,10 @@
 ---
 draft: false
-title: 'Some ideas on how to write readable code'
-date: 2020-07-11T09:29:58+02:00
-description: 'This is how I use conceptual compression to better express my intent and make my code more readable and understandable.'
-categories: general
-keywords: 'clean code, ruby, javascript'
+title: "Some ideas on how to write readable code"
+date: "2020-07-11"
+description: "This is how I use conceptual compression to better express my intent and make my code more readable and understandable"
+category: general
+keywords: "clean code, ruby, javascript"
 ---
 
 ## MOTIVATION
@@ -37,21 +37,25 @@ Here is Conceptual Compression can help, let's see how.
 
 We, the software developers, are prone to create complexity on the top of the existing problem complexity, this tends to accumulate with the time waiting to bite you in the worst moment ever. This is why I think that Conceptual Compression can be a good tool to help you sail through the complexity and time. It will force you to structure your concepts allowing you to create programs composing them without exposing details that aren't important. This helps also to minimize the interference of the accidental complexity created by developers.
 
-{{< hl data-options="language-javascript line-numbers" data-line-options="">}}
+```javascript
 // Top-level orchestration
-function program() {
-doThis()
-doThisOtherThing()
+function program () {
+  doThis()
+  doThisOtherThing()
 }
 
 // elsewhere
 
-function doThis() { /_ details implementation _/ }
+function doThis () {
+  /* details implementation */
+}
 
 // somewhere else
 
-function doThisOtherThing() { /_ details implementation _/ }
-{{< /hl >}}
+function doThisOtherThing () {
+  /* details implementation */
+}
+```
 
 ### LET'S TALK ABOUT CODE
 
@@ -67,22 +71,22 @@ Let's see some example with different language constructs:
 
 Given this piece of code
 
-{{< hl data-options="language-javascript line-numbers" data-line-options="">}}
+```javascript
 const u = getCurrentUser()
 
 // ...
 
 if (
-project.ownerId === req.session.userId ||
-userPermission.name === 'MANAGE_PROJECTS'
+  project.ownerId === req.session.userId ||
+  userPermission.name === 'MANAGE_PROJECTS'
 ) {
-// ...
+  // ...
 }
-{{< /hl >}}
+```
 
 What if we instead implement it like this?
 
-{{< hl data-options="language-javascript line-numbers" data-line-options="">}}
+```javascript
 const currentUser = getCurrentUser()
 
 // ...
@@ -91,80 +95,80 @@ const hasPermission = userPermission.name === 'MANAGE_PROJECTS'
 const isProjectOwner = project.ownerId === req.session.userId
 
 if (hasPermission || isProjectOwner) {
-// ...
+  // ...
 }
-{{< /hl >}}
+```
 
 Isn't the second example much better? isn't the `if` statement much understandable? The main reason is that it uses concepts that encapsulates its meaning in variable names. This becomes more useful as the number or complexity of the concepts increases.
 
 ### With functions (or classes)
 
-{{< hl data-options="language-javascript line-numbers" data-line-options="">}}
+```javascript
 app.put('/project/:projectId', async ({ req, res }) => {
-const project = await Projects.find(req.projectId)
-if (!project) throw ProjectNotFoundError()
-const userPermission = await ProjectPermissions.find({
-currentUserId,
-userId
+  const project = await Projects.find(req.projectId)
+  if (!project) throw ProjectNotFoundError()
+  const userPermission = await ProjectPermissions.find({
+    currentUserId,
+    userId
+  })
+  if (
+    project.ownerId !== req.session.userId ||
+    userPermission.name !== 'MANAGE_PROJECTS'
+  ) {
+    throw new ForbiddenError()
+  }
+  const pr = await Projects.update({ projectId, params: req.params })
+  return res.json(pr)
 })
-if (
-project.ownerId !== req.session.userId ||
-userPermission.name !== 'MANAGE_PROJECTS'
-) {
-throw new ForbiddenError()
-}
-const pr = await Projects.update({ projectId, params: req.params })
-return res.json(pr)
-})
-{{< /hl >}}
+```
 
 Using concept compression now:
 
-{{< hl data-options="language-javascript line-numbers" data-line-options="">}}
+```javascript
 function canUpdateProject ({ project, requesterId }) {
-const isOwner = project.ownerId === requesterId
+  const isOwner = project.ownerId === requesterId
 
-return isOwner
-? true
-: hasUpdatePermission({ id: project.id, userId: requesterId })
+  return isOwner
+    ? true
+    : hasUpdatePermission({ id: project.id, userId: requesterId })
 }
 
 //----------------
 
 async function ensurePermissions ({ project, requesterId }) {
-const canUpdateProject = await canUpdateProject({ project, requesterId })
+  const canUpdateProject = await canUpdateProject({ project, requesterId })
 
-if (!canUpdateProject) throw new AuthorizationError()
+  if (!canUpdateProject) throw new AuthorizationError()
 }
 
 //----------------
 
 async function updateProject (id, requesterId, params) {
-const project = Projects.find(id)
+  const project = Projects.find(id)
 
-await ensurePermissions({ project, requesterId })
+  await ensurePermissions({ project, requesterId })
 
-return Projects.update(id, params)
+  return Projects.update(id, params)
 }
 
 //-----------------
 
 app.put('/project/:projectId', async ({ request, response }) => {
-const { projectId } = request.params
-const { name, description, category } = request.projectParams
+  const { projectId } = request.params
+  const { name, description, category } = request.projectParams
 
-const currentUserId = currentUserId(request)
+  const currentUserId = currentUserId(request)
 
-const updatedProject = await updateProject(projectId, currentUserId, {
-name,
-description,
-category
+  const updatedProject = await updateProject(projectId, currentUserId, {
+    name,
+    description,
+    category
+  })
+
+  const presentedProject = presentProject(updatedProject)
+  response.json(presentedProject)
 })
-
-const presentedProject = presentProject(updatedProject)
-response.json(presentedProject)
-})
-{{< /hl >}}
+```
 
 Notice that the proposed implementation is longer and probably would involve more files, but it is better structured, several concepts were extracted such as `canUpdateProject`, `updateProject`, `ensurePermissions` or `presentProject`. The main idea is that if you want to understand the `app.put` logic you don't see irrelevant details.
 
@@ -176,21 +180,21 @@ Defining clearer interfaces and keeping internal details separated from the call
 
 Let's see an example with the same `updateProject` endpoint:
 
-{{< hl data-options="language-javascript line-numbers" data-line-options="">}}
+```javascript
 //----------------- src/projects/commands/index.js
 import ensurePermissions from 'not-relevant-now'
 import Projects from 'not-relevant-now'
 
 const updateProject = async function updateProject (id, requesterId, params) {
-const project = Projects.find(id)
+  const project = Projects.find(id)
 
-await ensurePermissions({ project, requesterId })
+  await ensurePermissions({ project, requesterId })
 
-return Projects.update(id, params)
+  return Projects.update(id, params)
 }
 
 export default {
-updateProject
+  updateProject
 }
 
 //----------------- src/projects/web/index.js
@@ -200,21 +204,25 @@ import presentRole from 'not-relevant-now'
 import currentUserId from 'not-relevant-now'
 
 app.put('/project/:projectId', async ({ request, response }) => {
-const { projectId } = request.params
-const { name, description, category } = request.projectParams
+  const { projectId } = request.params
+  const { name, description, category } = request.projectParams
 
-const currentUserId = currentUserId(request)
+  const currentUserId = currentUserId(request)
 
-const updatedProject = await commands.updateProject(projectId, currentUserId, {
-name,
-description,
-category
+  const updatedProject = await commands.updateProject(
+    projectId,
+    currentUserId,
+    {
+      name,
+      description,
+      category
+    }
+  )
+
+  const presentedProject = presentProject(updatedProject)
+  response.json(presentedProject)
 })
-
-const presentedProject = presentProject(updatedProject)
-response.json(presentedProject)
-})
-{{< /hl >}}
+```
 
 Notice that the `updateProject` action was compressed and moved into a `commands` module which encapsulates the actions in a way that the external dependencies of this module don't need to be aware of its details. The `app.put` action it's more cleaner, it's easier to understand, and easier to debug. When an error occurs you will be taken to the required context following the stack-trace not having unnecessary details.
 
@@ -255,57 +263,59 @@ Till the next time :}
 
 PS: I would like to share also some Ruby code which conceptual compression, it's just a sample class that clones a project from a git repository and then deploys it and then a module that exposes it to others parts of the application.
 
-{{< hl data-options="language-ruby line-numbers" data-line-options="">}}
+```ruby
 class Projects::Deploy
 
-# follows the callable interface of blocks
+  # follows the callable interface of blocks
 
-def self.call(*args)
-new(*args).call
-end
+  def self.call(*args)
+    new(*args).call
+  end
 
-def initialize(project)
-@project = project
-end
+  def initialize(project)
+    @project = project
+  end
 
-def call
-return unless deployable?
+  def call
+    return unless deployable?
 
     clone
 
     deploy
+  end
 
-end
+  private
 
-private
+  def git_repository
+    project.git_repository
+  end
 
-def git_repository
-project.git_repository
-end
+  def deployment_config
+    project.deployment_config
+  end
 
-def deployment_config
-project.deployment_config
-end
+  def clone 
+    # clones using git_repository
+  end
 
-def clone # clones using git_repository
-end
+  def deploy 
+    # deploys using deployment_config
+  end
 
-def deploy # deploys using deployment_config
-end
+  def deployable? 
+    # ...
+  end
 
-def deployable? # ...
-end
-
-attr_reader :project
+  attr_reader :project
 end
 
 # module and public interface
 
 module Projects
 
-def deploy(project)
-Deploy.call(project)
-end
+  def deploy(project)
+    Deploy.call(project)
+  end
 
 end
-{{< /hl >}}
+```
