@@ -1,10 +1,9 @@
 --- 
 draft: false
-path: "/posts/2017-05-07-thoghts-on-simplicity-in-software-development"
 date: "2017-05-07"
 title: "Thoughts on simplicity in software development"
 category: general
-excerpt: "My take regarding the simplicity in software development"
+description: "My take regarding the simplicity in software development"
 keywords: ["software development, fight complexity, simplicity"]
 aliases:
   - /2017/05/thoughts-on-simplicity-in-software-development/
@@ -25,7 +24,7 @@ My purpose with this post is to express some ideas about how developers should a
 
 > Albert Einstein
 
-Translating thoughts into materialized representations is underestimated. Drawing diagrams, discussing, writing notes in a pad, writing users stories or high level technical tests describing the product are very simple ways of discovering and understanding, think of this: How many times did happened to you that just commenting an idea with a coworker helped you to realize what was wrong with your thoughts? Many times right? This process of translation helps you to think about the problem first so you can derive technical decisions from it and not viceversa which is most of the time the cause of uncountable hours in front of your computer.
+Translating thoughts into materialized representations is underestimated. Drawing diagrams, discussing, writing notes in a pad, writing users stories or high level technical tests describing the product are very simple ways of discovering and understanding, think of this: How many times did happened to you that just commenting an idea with a coworker helped you to realize what was wrong with your thoughts? Many times right? This process of translation helps you to think about the problem first so you can derive technical decisions from it and not vice-versa which is most of the time the cause of uncountable hours in front of your computer.
 
 Doing this kind of system thinking about the **very start**, will let you alienate into the very technical stuff for a while and be confident about it, you know programmers, our minds go to very wired places in the creating-developing process.
 
@@ -43,7 +42,7 @@ Digging into more technical details, let’s analyze a couple of ideas regarding
 
 Dependencies are means to communication which is the core of any software. Let’s discuss how do we use internal dependencies to address communication.
 
-![No comments...](/images/simplicity-mess.jpeg)
+![No comments...](/assets/images/posts/thoughts-on-simplicity-in-software-development-simplicity-mess.jpeg)
 
 *No comments….*
 
@@ -53,7 +52,7 @@ My take on this would be the following: beyond [Bounded Context](https://martinf
 
 Loosely coupled approach for inter-package communication and high cohesion communication inside packages is a common speech in Design Pattern books, based on this, if we define a **Facade** for each package with its **public API** and communication to that package is enforced to be done using its public API, then and only then, we’d have proper boundaries and encapsulation, having simpler dependency graphs to map into our heads. Stable and explicit communication lead to a fully organized system.
 
-![](/images/simplicity-order.jpeg)
+![](/assets/images/posts/thoughts-on-simplicity-in-software-development-simplicity-order.jpeg)
 
 This is much better. Advantages are innumerable.
 
@@ -61,11 +60,11 @@ This is much better. Advantages are innumerable.
 
 As the product evolves always some kind of complexity is induced by new features, using the approach mentioned above, a good strategy to scale would be to split modules into smaller ones as it’s public API becomes messy. **Divide and conquer** is the answer but only if you grow horizontally building **flat structures** and not **deep structures**, creating messy dependencies goes against sanity, these two interdependency diagrams will convince you:
 
-![](/images/simplicity-flat-packages.png)
+![](/assets/images/posts/thoughts-on-simplicity-in-software-development-simplicity-flat-packages.png)
 
 **vs**
 
-![](/images/simplicity-messy-packages.png)
+![](/assets/images/posts/thoughts-on-simplicity-in-software-development-simplicity-messy-packages.png)
 
 No discussion, brain health is my choice.
 

@@ -1,10 +1,9 @@
 --- 
 draft: false
-path: "/posts/2019-03-02-websockets-with-serverless"
 date: "2019-03-02"
 title: "WebSockets with the serverless framework"
 category: serverless
-excerpt: "Setting up WebSockets with the serverless framework, API Gateway and AWS"
+description: "Setting up WebSockets with the serverless framework, API Gateway and AWS"
 keywords: ["serverless, aws, WebSockets, apigateway"]
 aliases:
   - /posts/websockets-with-the-serverless-framework/
@@ -32,7 +31,7 @@ And the use cases:
 - The client receives a message
 - The client disconnects
 
-![Websockets flow diagram](/images/WebSockets-flow-diagram.png)
+![Websockets flow diagram](/assets/images/posts/websockets-with-the-serverless-framework-WebSockets-flow-diagram.png)
 
 ## Connecting your functions
 

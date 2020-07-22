@@ -1,14 +1,10 @@
 --- 
 draft: false
-path: "/posts/2016-12-09-the-pure-functions-experimient"
 date: "2016-12-09"
 title: "The Pure Functions experiment"
 category: general
-excerpt: "My experiences exploring functional programming aspects such as pure functions and it's impact in software quality and testability"
+description: "My experiences exploring functional programming aspects such as pure functions and it's impact in software quality and testability"
 keywords: ["tdd, bdd, software development, functional programming, ruby"]
-aliases:
-  - /2016/12/the-pure-functions-experiment/
-  - /posts/2016-12-09-the-pure-functions-experiment/
 ---
 
 Today I would like to talk about **pure functions** and how they help to write better and maintainable code. I tried it myself as an experiment and it went pretty well, good news is that you can apply it in whatever language you like, no matter if it supports Functional Programming or not. This is not a new conclusion you might say, but for me it was. You hear lots of stuff from functional programming nowadays and you think you cannot pay attention to everything, but this one is particularly important, I will try to convince you why.
@@ -23,7 +19,7 @@ A **pure function** is a function which:
 
 * Relies on no external state.
 
-![](images/pure-function.png)
+![](/assets/images/posts/the-pure-functions-experiment-pure-function.png)
 
 ## What should I care?
 

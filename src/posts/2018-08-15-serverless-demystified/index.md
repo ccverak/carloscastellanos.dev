@@ -1,10 +1,9 @@
 --- 
 draft: false
-path: "/posts/2018-08-15-serverless-demystified"
 date: "2018-08-15"
 title: "Serverless Demystified"
 category: serverless
-excerpt: "Serverless Demystified talks about pros and cons of adopting serverless technologies"
+description: "Serverless Demystified talks about pros and cons of adopting serverless technologies"
 keywords: ["serverless, aws, pros, cons"]
 aliases:
   - /2018/08/serverless-demystified/

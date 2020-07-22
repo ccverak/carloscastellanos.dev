@@ -1,9 +1,8 @@
 ---
 draft: false
-path: "/posts/2019-04-10-setup-elasticsearch-cluster-aws-serverless"
 title: "Setting up AWS Elasticsearch with Serverless and CloudFormation"
 date: "2019-04-10"
-excerpt: "Setting up AWS Elasticsearch with Serverless and CloudFormation"
+description: "Setting up AWS Elasticsearch with Serverless and CloudFormation"
 category: serverless
 keywords: ["serverless, aws, elasticsearch, cloudformation"]
 aliases:

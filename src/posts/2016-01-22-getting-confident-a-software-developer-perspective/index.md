@@ -1,15 +1,10 @@
 --- 
 draft: false
-path: "/posts/2016-01-22-getting-confident-a-software-developer-perspective"
 date: "2016-01-22"
 title: "Getting confident. A software developer perspective"
 category: general
-excerpt: "This is my take on how to approach professional software development. I describe tools and practices I have used across the years. #TDD #BDD."
+description: "This is my take on how to approach professional software development. I describe tools and practices I have used across the years. #TDD #BDD."
 keywords: ["tdd, bdd, software development, ruby"]
-aliases:
-  - /2016/01/getting-confident.-a-software-developer-perspective/
-  - /posts/2016-01-22-getting-confident.-a-software-developer-perspective/
-  - /posts/2016-01-22-getting-confident.-a-software-developer-perspective./
 ---
 
 ## "It works"

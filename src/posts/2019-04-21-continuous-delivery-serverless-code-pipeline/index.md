@@ -1,9 +1,8 @@
 ---
 draft: false
-path: "/posts/2019-04-21-continuous-delivery-serverless-code-pipeline"
 title: "Canary deployments with Serverless and AWS Code Pipeline"
 date: "2019-04-21"
-excerpt: "Canary deployments with Serverless and AWS Code Pipeline. How to implement a fully automated, one push, zero downtime, blue-green deployments of serverless application. Continuous delivery all the way down with a simple workflow!"
+description: "Canary deployments with Serverless and AWS Code Pipeline. How to implement a fully automated, one push, zero downtime, blue-green deployments of serverless application. Continuous delivery all the way down with a simple workflow!"
 category: serverless
 keywords: ["serverless, aws, continuos delivery, canary, blue green, deployment"]
 aliases:
@@ -21,15 +20,15 @@ This remains true in the Serverless context. Serverless has changed the way we b
 
 **Rolling Deployments**: Rolling, phased, or step deployments are a type of deployment where an application’s new version gradually replaces the old one. The actual deployment happens over a period of time. During that time, new and old versions will coexist without affecting functionality or user experience. This process makes it easier to roll back any new component incompatible with the old components.
 
-![Rolling deployment](images/rolling-deployments.png)
+![Rolling deployment](/assets/images/posts/canary-deployment-serverless-rolling-deployments.png)
 
 **Blue-Green, Red-Black or A/B Deployment**: This strategy consists in having two identical production environments work in parallel. One is the currently-running production environment receiving all user traffic (Blue). The other is a clone of it, but idle (Green).
 
-![Blue Green deployment](images/bluegreen-deployments-1.png)
+![Blue Green deployment](/assets/images/posts/canary-deployment-serverless-bluegreen-deployments-1.png)
 
 The new version of the application is deployed in the green environment and tested for functionality and performance. Once the testing results are successful, application traffic is routed from blue to green. Green then becomes the new production.
 
-![Blue Green deployment](images/bluegreen-deployments-2.png)
+![Blue Green deployment](/assets/images/posts/canary-deployment-serverless-bluegreen-deployments-2.png)
 
 If there is an issue after green becomes live, traffic can be routed back to blue.
 
@@ -38,7 +37,7 @@ With canary deployment, you deploy a new application code in a small part of the
 
 With no errors reported, the new version can gradually roll out to the rest of the infrastructure
 
-![Blue Green deployment](images/canary-deployments.png)
+![Blue Green deployment](/assets/images/posts/canary-deployment-serverless-canary-deployments.png)
 
 
 
@@ -73,7 +72,7 @@ Follow these steps to set up the Code Pipeline using Code Build & Code Deploy:
   4. Click Next
   5. On the Step 2: Add source stage page, in Source provider, choose GitHub, and then choose Connect to GitHub.
   6. Approve the Github permissions and provide the repository name and branch, it should something like:
- ![Github setup](images/github-setup-code-pipeline.png)
+ ![Github setup](/assets/images/posts/canary-deployment-serverless-github-setup-code-pipeline.png)
   7. Click next
 
 2. In Add build stage, add a build stage:
@@ -216,11 +215,11 @@ Time to push changes to your project and see the Pipeline execution!
 
 You can track the results of the tests in the Code Build section and the deployment progress in the Code deploy section of your pipeline, you will see something like this:
 
-![Traffic shifting](images/traffic-shifting.png)
+![Traffic shifting](/assets/images/posts/canary-deployment-serverless-traffic-shifting.png)
 
 ...and then to play with the endpoints during the deployment to see how the traffic shifting works, notice you can also force rollbacks.
 
-![Canary deployment results](images/bluegreen.png)
+![Canary deployment results](/assets/images/posts/canary-deployment-serverless-bluegreen.png)
 
 
 ## Conclusion

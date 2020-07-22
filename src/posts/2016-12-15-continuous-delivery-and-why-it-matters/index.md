@@ -1,10 +1,9 @@
 --- 
 draft: false
-path: "/posts/2016-12-15-continuous-devlivery-and-why-it-matters"
 date: "2016-12-15"
 title: "Continuous delivery and why it matters"
 category: general
-excerpt: "Continuous delivery and why it matters gathers my experiences building and releasing software"
+description: "Continuous delivery and why it matters gathers my experiences building and releasing software"
 keywords: ["continuous delivery, continuous integration, ci/cd, software development"]
 aliases:
   - /2016/12/continuous-delivery-and-why-it-matters/
@@ -19,8 +18,7 @@ The Continuous Delivery concept is not new at all. My intention with this post i
 
 ## Continuous Delivery, WTF?
 
-![Credit: Success image via Shutterstock](/images/continuous-delivery.jpeg)
-
+![Credit: Success image via Shutterstock](/assets/images/posts/continuous-delivery-and-why-it-matters-continuous-delivery.jpg)
 *Credits: continuousdelivery.com*
 
 
@@ -98,7 +96,7 @@ Well, that’s for another post, for now, I just want to point out the effective
 
 Building and managing a Software factory is not an easy task but it is not impossible. Following these battle tested patterns might help you avoid common mistakes and achieve goals faster. Stand on giant shoulders so you can be successful. Tools might help to do things easier.
 
-![Credit: Success image via Shutterstock](/images/success-continuous-delivery.jpeg)
+![Credit: Success image via Shutterstock](/assets/images/posts/continuous-delivery-and-why-it-matters-success-continuous-delivery.jpg)
 
 *Credit: Success image via Shutterstock*
 
