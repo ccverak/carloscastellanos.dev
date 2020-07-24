@@ -16,9 +16,10 @@ module.exports = function (config) {
   // Plugins
   config.addPlugin(pluginSyntaxHighlight, {
     init: function ({ Prism }) {
-      installPrismLanguages(Prism)
-    }
-  })
+      installPrismLanguages(Prism);
+    },
+    alwaysWrapLineHighlights: true
+  });
   config.addPlugin(readingTime), config.addPlugin(pluginNavigation)
   config.addPlugin(pluginRss)
 

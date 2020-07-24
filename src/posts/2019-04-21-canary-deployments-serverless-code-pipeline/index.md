@@ -169,7 +169,7 @@ There is only one last piece missing, we also need to set up alarms in order to 
 
 Here is the gist the `serverless.yml`, notice the `Alarms` and `deploymentSettings`:
 
-```yaml{6-10,12,13,20-22,29,34}
+```yaml/6-10,12,13,20-22,29,34
 service: canary-deployments
 provider:
   name: aws
@@ -182,7 +182,7 @@ provider:
         - "*"
 plugins:
   - serverless-plugin-canary-deployments
-  - serverless-plugin-aws-alerts       
+  - serverless-plugin-aws-alerts
 functions:
   hello:
     handler: handler.hello

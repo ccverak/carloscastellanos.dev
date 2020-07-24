@@ -9,6 +9,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 html, body {
   @apply antialiased leading-relaxed font-normal tracking-wider;
 }
@@ -80,6 +81,15 @@ h3 {
   @apply bg-link;
 }
 
+.markdown pre {
+  @apply text-base mb-4 mt-4;
+  
+  /* Fixme with tailwind */
+  font-size: 15px;
+  line-height: 22.5px;
+  font-weight: 500;
+
+}
 
 
 .post-summary h1 {
