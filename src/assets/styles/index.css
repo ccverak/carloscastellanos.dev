@@ -60,7 +60,6 @@ h3 {
   @apply rounded-md;
 }
 
-
 .markdown ul {
   @apply list-disc pl-8;
 }
@@ -91,6 +90,9 @@ h3 {
 
 }
 
+.markdown blockquote {
+  @apply border-solid border-l-2 border-gray-300 pl-4 italic mx-8;
+}
 
 .post-summary h1 {
   @apply text-lg pb-1 pt-1 !important;

@@ -149,9 +149,6 @@ pre[data-line] {
 	}
 }
 
-width: 820px;
-
-
 .highlight-line-active pre[class*='language-'] {
   float: left;
   min-width: 100%;
