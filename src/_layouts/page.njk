@@ -1,10 +1,15 @@
----
-layout: base.njk
-section: page
----
+<!doctype html>
+<html {% if section %} data-current="{{ section }}" {% endif %} lang="en">
 
+    {% include "components/head.njk" %}
 
-<div class="container">
-    <h1>{{ title }}</h1>
-    {{ content | safe }}
-</div>
+    <body>
+        <div class="h-screen">
+            {% include "components/nav.njk" %}
+
+            {% include "components/not-found.njk" %}
+            {# {% include "components/footer.njk" %} #}
+        </div>
+    </body>
+
+</html>

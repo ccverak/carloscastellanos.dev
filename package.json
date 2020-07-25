@@ -1,7 +1,6 @@
 {
-  "name": "regenrek-blog-11ty",
+  "name": "carloscastellanos.dev",
   "version": "2.0.0",
-  "description": "regenrek.com - Minimalistic Eleventy (11ty) blog with webpack, PostCSS and Tailwind",
   "scripts": {
     "build": "npm-run-all clean build:assets build:site purge",
     "build:assets": "NODE_ENV=production webpack --mode=production",
@@ -15,18 +14,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/regenrek/regenrek-blog-11ty"
+    "url": "https://github.com/ccverak/carloscastellanos.dev"
   },
   "author": {
-    "name": "Kevin Regenrek",
-    "email": "hello@regenrek.at",
-    "url": "https://www.regenrek.com/"
+    "name": "Carlos Castellanos"
   },
   "license": "MIT",
-  "bugs": {
-    "url": "hhttps://github.com/regenrek/regenrek-blog-11ty/issues"
-  },
-  "homepage": "https://github.com/regenrek/regenrek-blog-11ty",
+  "browserslist": [
+    "defaults",
+    "not IE 11",
+    "not IE_Mob 11",
+    "maintained node versions"
+  ],
+  "homepage": "https://github.com/ccverak/carloscastellanos.dev",
   "devDependencies": {
     "@11ty/eleventy": "^0.10.0",
     "@11ty/eleventy-navigation": "^0.1.5",

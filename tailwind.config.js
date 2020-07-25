@@ -27,7 +27,11 @@ const config = {
   variants: {},
   plugins: [
     //require('@tailwindcss/typography')
-  ]
+  ],
+  purge: [
+    './src/**/*.html',
+    './src/**/*.njk'
+  ],
 }
 
 module.exports = config

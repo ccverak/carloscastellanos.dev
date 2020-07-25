@@ -41,11 +41,11 @@ h3 {
 }
 
 .markdown h2 {
-  @apply text-3xl font-medium uppercase;
+  @apply text-2xl font-medium uppercase;
 }
 
 .markdown h3 {
-  @apply text-2xl font-medium uppercase;
+  @apply text-xl font-medium uppercase;
 }
 
 .markdown p {
@@ -57,7 +57,7 @@ h3 {
 }
 
 .markdown code:not([class^="language-"]){
-  @apply bg-yellow-200;
+  background-color: #ffe56433;
 }
 
 .markdown code[class^='language-'] {
