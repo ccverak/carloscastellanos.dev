@@ -30,13 +30,7 @@ end
 
 - Verbose
 - Do not use shared global state
-- Do have these 4 clear steps:
-
-1. Setup
-2. Exercise
-3. Verify
-4. Teardown
-
+- Do have these 4 clear steps: **Setup, Exercise, Verify & Teardown**
 - All the 4 test steps are co-located
 
 ### And here's why

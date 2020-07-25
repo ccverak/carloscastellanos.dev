@@ -76,6 +76,10 @@ h3 {
   margin-bottom: -10px;
 }
 
+.markdown ul li ul,ol {
+  @apply pl-16;
+}
+
 .markdown ul li:last-child {
   @apply mb-5;
 }
@@ -83,6 +87,11 @@ h3 {
 .markdown ol li {
   margin-bottom: -10px;
 }
+
+.markdown ol li ul,ol{
+  @apply pl-16;
+}
+
 
 .markdown ol li:last-child {
   @apply mb-5;
@@ -127,11 +136,11 @@ h3 {
 }
 
 .post-summary h2 {
-  @apply text-lg pb-1 pt-1 !important;
+  @apply text-sm font-medium pb-1 pt-1 !important;
 }
 
 .post-summary h3 {
-  @apply text-lg pb-1 pt-1 !important;
+  @apply text-sm font-medium pb-1 pt-1 !important;
 }
 
 
