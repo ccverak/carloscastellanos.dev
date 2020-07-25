@@ -1,39 +1,11 @@
-# regenrek.com Eleventy Blog
+# Carlos Castellanos Vera - @ccverak
 
-My personal blog.
+<p align="center"><img src="https://avatars2.githubusercontent.com/u/1001834?s=460&v=4" width="340"></p>
 
-## Under the hood
+The code of [https://carloscastellanos.dev](https://carloscastellanos.dev)
 
-* [11ty/eleventy](https://github.com/11ty/eleventy) Static site generator
-* [webpack](https://webpack.js.org/) 
-* [Tailwind CSS](https://tailwindcss.com)
-* [postcss](https://postcss.org/)
+## Want to reach out?
 
-
-## Install
-
-```bash
-yarn
-```
-
-## Dev
-
-```bash
-yarn dev
-```
-
-## Build
-
-```bash
-yarn prod
-```
-
-Netlify
-```bash
-npm run prod
-```
-
-Twitter: [@kregenrek](https://twitter.com/kregenrek)
-
-TODO:
-- review rss and sitemap.xml
+- GitHub [ccverak](https://github.com/ccverak)
+- Twitter [@ccverak](https://twitter.com/ccverak)
+- LinkedIn [ccverak](https://linkedin.com/in/ccverak)
