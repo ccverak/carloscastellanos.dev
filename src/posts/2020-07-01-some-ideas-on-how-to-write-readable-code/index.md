@@ -7,8 +7,6 @@ category: general
 keywords: "clean code, ruby, javascript"
 ---
 
-## MOTIVATION
-
 Across the years in my career as a software developer, I have always felt that I should get better at making my code more readable. This keeps coming to me every time I read my code from the past and find it hard to understand. What was I thinking when I wrote this piece of code? What did I want to communicate and how is it connected to the problem and to the domain? If this happens to me with my own code, what should I expect from others? At some point I decided to take action and make improvements in my coding style for good, hoping to lower the effort from readers -including myself- when understanding my code.
 
 DISCLAIMER: Bear in mind that this is my current mental state about the subject but this is something that I'm sure it will evolve with time. Take this as an intent to spark your interest in the topic and also as some sort of feedback request to readers.
@@ -176,7 +174,7 @@ Notice that the proposed implementation is longer and probably would involve mor
 
 Modules provide a way to encapsulate common functionality exposing what is done while abstracting how is done.
 
-Defining clearer interfaces and keeping internal details separated from the callers have many benefits. It lowers the cognitive load required to understand and use the functionality, it provides a compressed concept that can be orchestrated in a higher level of abstraction without polluting it with details. From the insider point of view, you have more freedom to change the implementation details of the module without risking too much. Also, since the public interface is clearly defined, you will know better when you introducing a breaking change. It helps a lot to construct a well-structured application if you want more details [read this other article of mine](https://carloscastellanosvera.com/posts/thoughts-on-simplicity-in-software-development/).
+Defining clearer interfaces and keeping internal details separated from the callers have many benefits. It lowers the cognitive load required to understand and use the functionality, it provides a compressed concept that can be orchestrated in a higher level of abstraction without polluting it with details. From the insider point of view, you have more freedom to change the implementation details of the module without risking too much. Also, since the public interface is clearly defined, you will know better when you introducing a breaking change. It helps a lot to construct a well-structured application if you want more details [read this other article of mine](/posts/aiming-for-simplicity/).
 
 Let's see an example with the same `updateProject` endpoint:
 

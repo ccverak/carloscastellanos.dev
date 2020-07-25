@@ -10,8 +10,6 @@ aliases:
   - /posts/2018-02-24-backpressure/
 ---
 
-## Intro
-
 Almost two years ago I decided to start a journey of learning [AWS Lambda](https://aws.amazon.com/lambda/) and [Serverless Framework](https://serverless.com/), being a Ruby/Rails developer is not a common thing to do as many of you might think, but if you know me well you will understand, I’m always open to learning new things, constantly trying to strengthen my problem-solving skills by expanding my horizons. I still have a passion on Ruby but this experience has been amazing and complementary; I’ve learned a lot about these tools and their ecosystem, and from a more general perspective, about architectural resources to be used when dealing with massive data volumes and real-time applications. Today I want to take some ideas related to architecture and not to any particular technology and put them here as a reference for the future me and those who might be interested, in particular, I will try to describe a solution I’m tending to use for the case massive data ingestion.
 
 ### Capacity

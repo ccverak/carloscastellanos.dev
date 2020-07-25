@@ -24,7 +24,7 @@ The **Serverless** main idea is that as programmers we can forget about servers 
 
 **Serverless** and **FaaS** are ***hyped***. [You know what does it mean right?](https://www.gartner.com/en/research/methodologies/gartner-hype-cycle)
 
-### **What should you consider before adopting Serverless / FaaS?**
+### Things to consider
 
 * Being a hyped technology, you will find yourself trying to keep up with the new features or changes, the bigger your app is, the harder to keep up.
 

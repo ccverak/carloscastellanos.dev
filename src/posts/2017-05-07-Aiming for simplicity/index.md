@@ -1,18 +1,12 @@
 --- 
 draft: false
 date: "2017-05-07"
-title: "Thoughts on simplicity in software development"
+title: "Aiming for simplicity"
 category: general
 description: "My take regarding the simplicity in software development"
 keywords: ["software development, fight complexity, simplicity"]
-aliases:
-  - /2017/05/thoughts-on-simplicity-in-software-development/
-  - /posts/2017-05-07-thoughts-on-simplicity-in-software-development/
-  - /posts/2017-05-07-thoghts-on-simplicity-in-software-development/
 
 ---
-
-## The software developer's view of products
 
 It’s remarkably satisfying to see a nice idea becoming an amazing Product, a successful machinery, probably from the non-technical point of view a fully functional black box. Technical people think different, especially software developers and engineers, we try to understand the working parts of every product we know or use, we need to discover the atoms.
 

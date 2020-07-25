@@ -1,9 +1,9 @@
 --- 
 draft: false
 date: "2017-11-25"
-title: "Growing as a software engineer"
+title: "On ethics"
 category: general
-description: "Growing as a software engineer"
+description: "Ethics in software development"
 keywords: ["software development, ethics, community, diversity"]
 aliases:
   - /2017/11/growing-as-a-software-engineer/

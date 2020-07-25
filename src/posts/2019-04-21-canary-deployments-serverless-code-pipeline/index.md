@@ -9,8 +9,6 @@ aliases:
   - /posts/canary-deployments-with-serverless-and-aws-code-pipeline/
 ---
 
-## Introduction
-
 Nowadays, one of the biggest changes in software development has been the increased frequency of deployments. Time to market has become essential so it's rare to have monthly or yearly releases. This huge leap in the way we release products has brought many other challenges because it's more likely to deploy defects to production. How we can move fast without risking too much?
 
 This remains true in the Serverless context. Serverless has changed the way we build, test, and deploy products. Microservices are now more common, local deployments of the whole system have become almost impossible, automated testing has moved to the mainstream to try ensuring all the pieces fit together. Still, continuously deploying changes is hard. Let's review how existing deployment strategies can help us to deal with the problem and how to implement some of them.

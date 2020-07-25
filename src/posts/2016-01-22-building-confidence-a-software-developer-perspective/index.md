@@ -1,13 +1,11 @@
 --- 
 draft: false
 date: "2016-01-22"
-title: "Getting confident. A software developer perspective"
+title: "Building confidence - A software developer perspective"
 category: general
 description: "This is my take on how to approach professional software development. I describe tools and practices I have used across the years. #TDD #BDD."
 keywords: ["tdd, bdd, software development, ruby"]
 ---
-
-## "It works"
 
 "It works", says the customer after clicking 5 or 6 times on the app, deep breath and relax shoulders right? what's next? payment, are we done here? as you may guess, **no**, it doesn't end here. There is always more in the ways because applications evolve with time, software development is not only about bringing things to life but also about evolving them through time. Optimizing for a first delivery can be risky, you always have to think and what comes next.
 

@@ -1,13 +1,13 @@
 ---
 draft: false
-title: "My testing practices"
+title: "On writing tests"
 date: "2019-10-02"
-description: "my testing practices"
+description: "On writing tests"
 category: general
 keywords: ["tdd, ruby, javascript"]
 ---
 
-I have been asked several times about my testing practices so I decided to spend some time and write them down for future reference and feedback.
+I have been asked several times about my software testing practices so I decided to spend some time and write them down for future reference and feedback.
 
 Let's get into it
 

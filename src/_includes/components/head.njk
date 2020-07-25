@@ -24,6 +24,9 @@
   #}
   <meta name="description" content="{% if description %}{{ description }}{% else %}{{ site.description }}{% endif %}">
 
+
+  <meta name="keywords" content="{% if keywords %}{{ keywords }}{% else %}{{ title }}{% endif %}">
+
   {# Control the behavior of search engine crawling and indexing #}
   <meta name="robots" content="index,follow">
   {# All Search Engines #}

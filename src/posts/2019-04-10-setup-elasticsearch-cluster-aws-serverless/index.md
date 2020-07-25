@@ -8,9 +8,8 @@ keywords: ["serverless, aws, elasticsearch, cloudformation"]
 aliases:
   - /posts/setup-aws-elasticsearch-with-serverless/
 ---
-## A very short post
 
-Here is how you can setup an ES cluster using the Serverless framework and CloudFormation:
+Quick one! Here is how you can setup an ES cluster using the Serverless framework and CloudFormation:
 
 ```yaml
 service: my-service

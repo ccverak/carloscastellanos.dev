@@ -10,7 +10,6 @@ aliases:
   - /posts/2016-12-15-continuous-delivery-and-why-it-matters/
 
 ---
-## Introduction
 
 Building software is often under-valuated, many people think that building an app is reduced to writing code, sometimes that’s true, except when it isn’t. When the business grows you need to scale your strategy in order to stay competitive. Moving fast is important so is a matter of adapting or die. Period.
 
