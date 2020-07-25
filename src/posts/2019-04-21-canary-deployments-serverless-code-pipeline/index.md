@@ -64,7 +64,7 @@ What we will be using?
 
 Follow these steps to set up the Code Pipeline using Code Build & Code Deploy:
 
-1. To create your pipeline and add a source stage, do the following:
+- To create your pipeline and add a source stage, do the following:
 
   1. Sign in to the AWS Management Console and open the CodePipeline console at https://console.aws.amazon.com/codepipeline/.
   2. Click on Create pipeline
@@ -75,7 +75,7 @@ Follow these steps to set up the Code Pipeline using Code Build & Code Deploy:
  ![Github setup](/assets/images/posts/canary-deployment-serverless-github-setup-code-pipeline.png)
   7. Click next
 
-2. In Add build stage, add a build stage:
+- In Add build stage, add a build stage:
 
   1. In Build provider, choose AWS CodeBuild. Allow Region to default to the pipeline Region
   2. Choose Create project
@@ -87,12 +87,13 @@ Follow these steps to set up the Code Pipeline using Code Build & Code Deploy:
   10. Choose Continue to CodePipeline. This returns to the CodePipeline console and creates a CodeBuild project that uses the buildspec.yml in your repository for configuration. The build project uses a service role to manage AWS service permissions. This step might take a couple of minutes
   11. Choose Next
 
-3. In the Add deploy stage, skip the deploy stage (this will be configured by our project)
-4. Confirm the pipeline creation
+- In the Add deploy stage, skip the deploy stage (this will be configured by our project)
+
+- Confirm the pipeline creation
 
 We are now ready to push changes to our Github project which will trigger the Code Pipeline via webhooks and Run our project-automated code deploy.
 
-Congratulations if you got to this point you are 80% done :>
+Congratulations if you got to this point you are 80% done :)
 
 [If you are an automation advocator don't worry, there are ways to automate this process, let me recommend you this references:]
 

@@ -21,8 +21,7 @@ Not few times during the product development you find developers going too techn
 My purpose with this post is to express some ideas about how developers should approach technical decisions without losing perspective, and how the understanding of your domain is fundamental. Mainly, I want this to be a reminder for the future me but I suppose this will be valuable for most software developers.
 
 > If you can’t explain it simply, you don’t understand it well enough.
-
-> Albert Einstein
+Albert Einstein
 
 Translating thoughts into materialized representations is underestimated. Drawing diagrams, discussing, writing notes in a pad, writing users stories or high level technical tests describing the product are very simple ways of discovering and understanding, think of this: How many times did happened to you that just commenting an idea with a coworker helped you to realize what was wrong with your thoughts? Many times right? This process of translation helps you to think about the problem first so you can derive technical decisions from it and not vice-versa which is most of the time the cause of uncountable hours in front of your computer.
 

@@ -36,9 +36,4 @@ npm run prod
 Twitter: [@kregenrek](https://twitter.com/kregenrek)
 
 TODO:
-- quotes in articles
-- images separation in articles
-- title line height in articles
-- line  highlight in code fragments
-- title line height in blog index
 - review rss and sitemap.xml

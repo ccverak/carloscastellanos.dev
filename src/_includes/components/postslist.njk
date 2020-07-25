@@ -2,10 +2,10 @@
 		Posts
 </h1>
 
-<section>
+<section class="post-summary">
 		{% for post in postslist | reverse %}
 				<article class="pb-16" {% if post.url == url %} data-current="current item" {% endif %}>
-						<h1 class="mb-1">
+						<h1 class="">
 								<a href="{{ post.url | url }}" class="font-bold text-2xl">
 										{% if post.data.title %}
 												{{ post.data.title }}
@@ -25,7 +25,7 @@
 								</a>
 						</div>
 						<p class="leading-10 ">
-								<article class="post-summary text-base">
+								<article class="text-base">
 										{{ post | summary | safe }}
 										<span>
 												<a href="{{ post.url | url }}" class="shadow-focus transition-all duration-300 hover:bg-link downcase font-medium">

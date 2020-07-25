@@ -37,15 +37,23 @@ h3 {
 }
 
 .markdown h1 {
-  @apply text-4xl font-bold pb-3 pt-3;
+  @apply text-4xl font-medium leading-normal uppercase;
 }
 
 .markdown h2 {
-  @apply text-3xl font-bold pb-3 pt-3;
+  @apply text-3xl font-medium uppercase;
 }
 
 .markdown h3 {
-  @apply text-2xl font-bold pb-3 pt-3;
+  @apply text-2xl font-medium uppercase;
+}
+
+.markdown p {
+  @apply mb-5 mt-5;
+}
+
+.markdown strong {
+  @apply tracking-wider font-semibold;
 }
 
 .markdown code:not([class^="language-"]){
@@ -62,6 +70,22 @@ h3 {
 
 .markdown ul {
   @apply list-disc pl-8;
+}
+
+.markdown ul li {
+  margin-bottom: -10px;
+}
+
+.markdown ul li:last-child {
+  @apply mb-5;
+}
+
+.markdown ol li {
+  margin-bottom: -10px;
+}
+
+.markdown ol li:last-child {
+  @apply mb-5;
 }
 
 .markdown ol {
@@ -91,11 +115,15 @@ h3 {
 }
 
 .markdown blockquote {
-  @apply border-solid border-l-2 border-gray-300 pl-4 italic mx-8;
+  @apply border-solid border-l-2 border-gray-300 pl-4 italic mx-8 mt-8 mb-8 text-gray-700;
+}
+
+.markdown img {
+  @apply mt-8 mb-8;
 }
 
 .post-summary h1 {
-  @apply text-lg pb-1 pt-1 !important;
+  @apply text-lg font-semibold pb-1 pt-1 leading-normal;
 }
 
 .post-summary h2 {
