@@ -2,7 +2,7 @@
 draft: false
 date: 2016-01-06T22:31:20+01:00
 title: 'Things I have learned in 2015 (in software engineering)'
-category: general
+tags: general
 description: 'Things I’ve learned in 2015 (in software engineering)'
 ---
 

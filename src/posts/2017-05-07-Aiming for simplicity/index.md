@@ -2,7 +2,7 @@
 draft: false
 date: "2017-05-07"
 title: "Aiming for simplicity"
-category: general
+tags: general
 description: "My take regarding the simplicity in software development"
 keywords: ["software development, fight complexity, simplicity"]
 

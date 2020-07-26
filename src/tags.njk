@@ -7,22 +7,14 @@ pagination:
     - all
     - nav
 permalink: /tags/{{ tag }}/
-layout: base.njk
+layout: base-blog.njk
 ---
 
-<div class="sm:container mx-auto">
-    <section class="center ph3 ph0-l mw7-ns pt5-ns">
-      <h2>Tagged “{{ tag }}”</h2>
-    </section>
-</div>
-
-<div class="sm:container mx-auto">
+<div class="container">
     <section class="">
+        {{ layoutContent | safe }}
+
         {% set postslist = collections[ tag ] %}
         {% include "components/postslist.njk" %}
     </section>
 </div>
-
-<div class="sm:container mx-auto">
-  <a href="{{ '/' | url }}">← Blog index</a>
-</nav>

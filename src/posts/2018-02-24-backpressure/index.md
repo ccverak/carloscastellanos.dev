@@ -2,7 +2,7 @@
 draft: false
 date: "2018-02-24"
 title: "Back-pressure"
-category: serverless
+tags: serverless
 description: "Back-pressure mechanisms for serverless and data intensive applications"
 keywords: ["data, ingestion, serverless, aws, capacity, resiliency"]
 aliases:

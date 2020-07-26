@@ -2,7 +2,7 @@
 draft: false
 date: "2016-12-15"
 title: "Continuous delivery and why it matters"
-category: general
+tags: general
 description: "Continuous delivery and why it matters gathers my experiences building and releasing software"
 keywords: ["continuous delivery, continuous integration, ci/cd, software development"]
 aliases:

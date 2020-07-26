@@ -2,7 +2,7 @@
 draft: false
 date: "2017-11-25"
 title: "On ethics"
-category: general
+tags: general
 description: "Ethics in software development"
 keywords: ["software development, ethics, community, diversity"]
 aliases:

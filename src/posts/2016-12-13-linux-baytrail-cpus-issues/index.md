@@ -2,7 +2,7 @@
 draft: false
 date: "2016-12-13"
 title: "Linux issues with Baytrail CPUs"
-category: general
+tags: general
 description: "Linux issues with Baytrail CPUs"
 keywords: ["linux, kernel, ubuntu"]
 ---

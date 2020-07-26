@@ -1,5 +1,5 @@
 <h1 class="mt-6 pb-10 text-4xl font-medium uppercase">
-		Posts
+		Posts {% if tag %} - {{ tag }} {% endif %}
 </h1>
 
 <section class="post-summary">
@@ -20,8 +20,8 @@
 								<span class="">{{ post | readingTime }}
 										read</span>
 								•
-								<a href="/posts/categories/{{ post.data.category }}" class="shadow-focus transition-all duration-300 hover:bg-link downcase">
-										{{ post.data.category }}
+								<a href="/tags/{{ post.data.tags }}" class="shadow-focus transition-all duration-300 hover:bg-link downcase">
+										{{ post.data.tags }}
 								</a>
 						</div>
 						<p class="leading-10 ">

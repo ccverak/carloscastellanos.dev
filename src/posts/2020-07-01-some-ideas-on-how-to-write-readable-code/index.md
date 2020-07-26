@@ -3,7 +3,7 @@ draft: false
 title: "Some ideas on how to write readable code"
 date: "2020-07-11"
 description: "This is how I use conceptual compression to better express my intent and make my code more readable and understandable"
-category: general
+tags: general
 keywords: "clean code, ruby, javascript"
 ---
 

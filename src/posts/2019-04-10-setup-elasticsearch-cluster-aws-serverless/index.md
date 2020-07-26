@@ -3,7 +3,7 @@ draft: false
 title: "Setting up AWS Elasticsearch with Serverless and CloudFormation"
 date: "2019-04-10"
 description: "Setting up AWS Elasticsearch with Serverless and CloudFormation"
-category: serverless
+tags: serverless
 keywords: ["serverless, aws, elasticsearch, cloudformation"]
 aliases:
   - /posts/setup-aws-elasticsearch-with-serverless/

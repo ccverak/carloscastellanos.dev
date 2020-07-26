@@ -3,7 +3,7 @@ draft: false
 title: "On writing tests"
 date: "2019-10-02"
 description: "On writing tests"
-category: general
+tags: general
 keywords: ["tdd, ruby, javascript"]
 ---
 

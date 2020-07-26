@@ -3,7 +3,7 @@ draft: false
 title: "Canary deployments with Serverless and AWS Code Pipeline"
 date: "2019-04-21"
 description: "Canary deployments with Serverless and AWS Code Pipeline. How to implement a fully automated, one push, zero downtime, blue-green deployments of serverless application. Continuous delivery all the way down with a simple workflow!"
-category: serverless
+tags: serverless
 keywords: ["serverless, aws, continuos delivery, canary, blue green, deployment"]
 aliases:
   - /posts/canary-deployments-with-serverless-and-aws-code-pipeline/

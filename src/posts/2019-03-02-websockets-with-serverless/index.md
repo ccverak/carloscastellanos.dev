@@ -2,7 +2,7 @@
 draft: false
 date: "2019-03-02"
 title: "WebSockets with the serverless framework"
-category: serverless
+tags: serverless
 description: "Setting up WebSockets with the serverless framework, API Gateway and AWS"
 keywords: ["serverless, aws, WebSockets, apigateway"]
 aliases:
