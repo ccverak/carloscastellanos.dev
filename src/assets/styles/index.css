@@ -73,7 +73,7 @@ h3 {
 }
 
 .markdown ul li {
-  margin-bottom: -10px;
+  margin-bottom: 2;
 }
 
 .markdown ul li ul,ol {
@@ -85,7 +85,7 @@ h3 {
 }
 
 .markdown ol li {
-  margin-bottom: -10px;
+  margin-bottom: 2;
 }
 
 .markdown ol li ul,ol{

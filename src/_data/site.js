@@ -17,7 +17,7 @@ module.exports = {
 
   metadata: {
     theme_color: '#1e2327', // used in Chrome, Firefox OS and Opera
-    default_social_image: '/assets/images/avatar.jpg', // for Open Graph meta
+    default_social_image: 'https://carloscastellanos.dev/assets/images/avatar.jpg', // for Open Graph meta
     locale: 'en_US', // for Open Graph meta
     twitter_username: '@ccverak' // for Twitter Open Graph meta
   }
