@@ -11,7 +11,7 @@
 
 
 html, body {
-  @apply antialiased leading-relaxed font-medium tracking-wider font-sans text-base;
+  @apply antialiased leading-relaxed font-normal tracking-wider font-sans text-base;
 }
 
 ::selection {
@@ -53,7 +53,7 @@ h3 {
 }
 
 .markdown strong {
-  @apply tracking-wider font-bold;
+  @apply tracking-wider font-semibold;
 }
 
 .markdown code:not([class^="language-"]){
