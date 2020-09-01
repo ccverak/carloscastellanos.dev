@@ -19,5 +19,4 @@ Experience Overview:
 - Software architectures
 
 [Follow me](https://twitter.com/ccverak) on Twitter
-For more details visit my [LinkedIn profile](https://www.linkedin.com/in/ccverak/)
-Want to contact me? [me@carloscastellanos.dev](mailto:me@carloscastellanos.dev)
+Or drop me a line to [me@carloscastellanos.dev](mailto:me@carloscastellanos.dev)
