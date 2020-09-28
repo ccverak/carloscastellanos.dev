@@ -4,7 +4,7 @@
 
 module.exports = {
   lang: 'en', // for html tag
-  title: 'Carlos Castellanos / ccverak',
+  title: 'Carlos Castellanos - @ccverak',
   description: 'Carlos Castellanos Vera is a Software Engineer and Solutions Architect located in Malaga, Spain with over 10 years of experience.',
   url: 'https://carloscastellanos.dev', // don't end with a slash /
 
