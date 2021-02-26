@@ -1,7 +1,7 @@
 --- 
 draft: false
 date: "2018-02-24"
-title: "Back-pressure in the cloud"
+title: "Back-pressure"
 tags: serverless
 description: "Back-pressure mechanisms for serverless and data intensive applications and patterns for effective usage of cloud resources"
 keywords: ["data, ingestion, serverless, aws, capacity, resiliency, cloud"]
