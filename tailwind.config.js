@@ -9,6 +9,7 @@ const config = {
       },
     },
     boxShadow: {
+      ...defaultTheme.boxShadow,
       focus: "inset 0 -.43333em #54c8f5a3",
     },
     backgroundColor: {

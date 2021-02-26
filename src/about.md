@@ -18,5 +18,5 @@ Experience Overview:
 - MongoDB, Redis, Elasticsearch, DynamoDB, PostgreSQL.
 - Software architectures
 
-[Follow me](https://twitter.com/ccverak) on Twitter
-Or drop me a line to [me@carloscastellanos.dev](mailto:me@carloscastellanos.dev)
+Contact:
+[me@carloscastellanos.dev](mailto:me@carloscastellanos.dev)

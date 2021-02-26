@@ -59,7 +59,7 @@ function doThisOtherThing () {
 
 First and foremost, I'm talking about application code, not about library code. Bear this in mind from now own, this may or may not apply to all the contexts.
 
-**GETTING STARTED**
+**Getting started**
 
 How we can communicate our intent and make use of Conceptual Compressions?
 
@@ -233,7 +233,7 @@ Notice that the `updateProject` action was compressed and moved into a `commands
 - It communicates the intent in a better way
 - It is (hopefully) easier to follow
 
-**WHEN YOU SHOULD USE CONCEPTUAL COMPRESSION**
+**When you should use Conceptual Compression**
 
 I'm a web developer and primarily I had had web applications in mind while writing this article. Web applications are more about expressing business rules and interaction between different concepts.
 

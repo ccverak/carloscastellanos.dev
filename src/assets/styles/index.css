@@ -37,23 +37,31 @@ h3 {
 }
 
 .markdown h1 {
-  @apply text-4xl font-medium leading-normal uppercase;
+  @apply text-3xl font-bold;
 }
 
 .markdown h2 {
-  @apply text-2xl font-medium uppercase;
+  @apply text-2xl font-bold lowercase;
+}
+
+.markdown h2::first-letter {
+  @apply text-2xl font-bold capitalize;
 }
 
 .markdown h3 {
-  @apply text-xl font-medium uppercase;
+  @apply text-xl font-bold lowercase;
+}
+
+.markdown h3::first-letter {
+  @apply text-xl font-bold capitalize;
+}
+
+.markdown strong {
+  @apply font-semibold;
 }
 
 .markdown p {
   @apply mb-5 mt-5;
-}
-
-.markdown strong {
-  @apply tracking-wider font-semibold;
 }
 
 .markdown code:not([class^="language-"]){

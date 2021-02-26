@@ -1,6 +1,8 @@
-<h1 class="mt-6 pb-10 text-4xl font-medium uppercase">
-		Posts {% if tag %} - {{ tag }} {% endif %}
+{% if tag %}
+<h1 class="mt-6 pb-10 text-3xl font-medium">
+	<code>#{{ tag }}</code>
 </h1>
+{% endif %}
 
 <section class="post-summary">
 		{% for post in postslist | reverse %}
@@ -21,7 +23,7 @@
 										read</span>
 								•
 								<a href="/tags/{{ post.data.tags }}" class="shadow-focus transition-all duration-300 hover:bg-link downcase">
-										{{ post.data.tags }}
+										#{{ post.data.tags }}
 								</a>
 						</div>
 						<p class="leading-10 ">
@@ -29,7 +31,7 @@
 										{{ post | summary | safe }}
 										<span>
 												<a href="{{ post.url | url }}" class="shadow-focus transition-all duration-300 hover:bg-link downcase font-medium">
-														read more
+													→ continue
 												</a>
 										</span>
 								</article>

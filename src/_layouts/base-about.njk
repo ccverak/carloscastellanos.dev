@@ -1,24 +1,36 @@
 <!doctype html>
 <html {% if section %} data-current="{{ section }}" {% endif %} lang="en">
 
-		{% include "components/head.njk" %}
+	{% include "components/head.njk" %}
 
-		<body>
-				<div class="h-screen">
-						{% include "components/nav.njk" %}
+	<body>
+		<div class="h-screen">
+			{% include "components/nav.njk" %}
 
-						<main class="container w-11/12 md:w-9/12 lg:w-6/12 mx-auto">
-								<article class="markdown">
-										<header class="bg-white sans-serif mt-6">
-												<h1 class="mb-0">{{ title }}</h1>
-										</header>
+			<main class="container w-11/12 md:w-9/12 lg:w-6/12 mx-auto">
+				<article class="markdown">
+					<header class="bg-white sans-serif mt-6">
+						<h1 class="mb-0">{{ title }}</h1>
+					</header>
 
-										{{ layoutContent | safe }}
-								</article>
-						</main>
+					{{ layoutContent | safe }}
+				</article>
 
-						{% include "components/footer.njk" %}
-				</div>
+				<div class="pt-8">
+					<p class="">Also, if you like my content, consider following me in Twitter<br>
+
+						<a target="_blank" href="https://twitter.com/ccverak" 
+     class="justify-center mt-3 text-lg font-semibold text-center
+                bg-gray-800 w-48 text-white rounded-lg
+                px-6 py-3 block shadow-2xl hover:text-white hover:bg-black">
+                Follow me
+              </a>
+					</div>
+
+				</main>
+
+				{% include "components/footer.njk" %}
+			</div>
 		</body>
 
-</html>
+	</html>
