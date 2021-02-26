@@ -6,6 +6,7 @@ tags: serverless
 description: "Back-pressure mechanisms for serverless and data intensive applications and patterns for effective usage of cloud resources"
 keywords: ["data, ingestion, serverless, aws, capacity, resiliency, cloud"]
 aliases:
+  - /posts/back-pressure/
   - /2018/02/back-pressure/
   - /posts/2018-02-24-backpressure/
 ---
