@@ -7,29 +7,37 @@ description: "This is my take on how to approach professional software developme
 keywords: ["tdd, bdd, software development, ruby"]
 ---
 
-"It works", says the customer after clicking 5 or 6 times on the app, deep breath and relax shoulders right? what's next? payment, are we done here? as you may guess, **no**, it doesn't end here. There is always more in the ways because applications evolve with time, software development is not only about bringing things to life but also about evolving them through time. Optimizing for a first delivery can be risky, you always have to think and what comes next.
+> "It works" 🙌
 
-Optimizing for deliveries without compromising the future is one of the hardest things in software development, it requires experience and business context. Whatever is the context think twice before saying: *“this works”*, what does your inner voice tells you about it? do you mean every letter? and every pixel? does it work by a mix of luck and lots of manual checks or because you have applied trusted engineering practices? Have you ever stopped to think how confident do you feel about the software you have written and the process you have followed? How easy is to add new things to it? Will other people understand what you've done? My endeavors on becoming a better professional have led me to think about my process and how it scales. Let me introduce you to how I think of it.
+Words from your customer after some random clicking on the app you build for them. Deep breath and relax shoulders right? Get paid and move on. The end. Finito. Buuuut... as you may know this is not how to works in real life if you want to stay in business. Deliver and forget doesn't work as a business model for anybody. You always go beyond the first delivery, real applications evolve with time, so it's not a matter of writing shitty code to deliver "On Time", you need to work for your future self making things good enough with a more long term vision.
+
+Not compromising the future is one of the hardest things in software development, it requires experience and business context. What makes you go fast now, will slow you down in the future? Are you accumulating too much tech-debt? Does your code expresses the real business rules in a clear way? My endeavors on becoming a better professional have led me to think about my process and how it scales. Let me introduce you to how I think of it.
 
 ## The Process
 
-I think of **developing software** as a process, a complex one, part of a bigger system, comparable with creating and selling iPhones, and as it, one should worry about optimizing it, reducing time and costs and improving speed and consistency; it's your name on the papers, it's your competence and your reputation under evaluation. Every small piece of code you write might lead to good or bad opinion about your professionality. You lose nothing here, all I'm talking about gaining confidence and consistency so you can say every time "this works" and be confident about it, or at least move the bar closer to a higher level of confidence away from stress, anxiety, and uncertainty. It has worked me in personal and professional projects for some time, I don't think I'm an expert on it, but I've gotten incredible results.
+I think of **developing software** as a process, part of a bigger system, comparable with creating and selling iPhones, and as it, one should worry about optimizing it by reducing time, costs and improving speed and consistency; at the end, it's your name on git logs and and your reputation at stake. Every small piece of code you write may lead to good or bad opinion about your professionalism. All I'm talking about is about gaining confidence and consistency so you can say "this f*cking works" and be confident about it. At the end, isn't removing stress, anxiety, and uncertainty what everybody is looking in life? So, you need a process but how you define it? First let's see what are the systems of having a dis-functional process.
 
-## Symptoms of the problem (you might not be aware of them)
+## Symptoms of a dis-functional process
 
-* Wondering - Will these changes break the master branch?
+- Master gets unstable frequently
 
-* Wondering  - Will this break production?
+- Production breaks frequently
 
-* Breaks elsewhere but works in your PC
+- "Works in my computer" phenomenon
 
-* Constantly wanting to rewrite things out
+- Things are complex and hard to change
 
-* Manually testing everything after simple and small changes
+- Simple things take too long to implement
 
-* Fixing here but breaking elsewhere in the code base
+- Features need to be tested manually
 
-* Being uncertain if everything works fine
+- Fixes in one area break things elsewhere
+
+- Being uncertain if everything it's works fine
+
+## The problems
+
+If you experience any of these symptoms can mean that you are having issues in the product definition, software design, development or delivery processes stages.
 
 ## How do I deal with it?
 
@@ -75,14 +83,19 @@ Here are a couple of tools that can help you build quality-in in Ruby:
 
 3- **Automate Everything**: Optimize for reproducibility, putting less effort and saving time by no repeating work.
 
-4- **Everything as source code:** Translate every resource you use to source code, even infrastructure definitions, your source is your main and most important asset.
+4- **Everything as source code:** Translate every resource you use to source code, even infrastructure definitions, your source is your main and most important asset. 
 
-*Tools to come on next posts*
+     *Tools to come on next posts (take Docker as a good representative of this practice)*
 
-5- **Manage your time**: Avoid procrastination, gain productivity, schedule only what you are able to do, reduce stress by putting apart pending stuff. Learn to say no.
+5- **Continuos integration and Continuos delivery (CI/CD)**: Making sure you integrate and deliver the software you want continuously without breaking things in small chunks. The aim is to make things go faster and reliable.
+
+     *More details in new posts*
+
+6- **Manage your time**: Avoid procrastination, gain productivity, schedule only what you are able to do, reduce stress by putting apart pending stuff. Do only one thing at the time. Take notes. Learn to say no.
 
 
-*There are a lot more on practices but these are basic for me. I are interested in the topic, you should take a look at the following topics: Agile Development and Continuous Delivery, I plan to write more on that on later posts.*
+
+There are a lot more on practices but these are basic for me. If you are interested in the topic, you should go deeper in the following topics: Agile Development and Continuous Delivery, I plan to write more on that on later posts.
 
 I hope this post helps you to see things differently. Here are some references you might be interested:
 
