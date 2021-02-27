@@ -18,7 +18,7 @@ Here it goes:
 
 How many times have you heard ?
 
-* “X” is the best/worst programming language of all.
+* “X” is the best/worst programming language on Earth.
 
 * “Y” is a toy programming language.
 
@@ -49,6 +49,8 @@ How we can prevent this to become the de-facto discussion points between colleag
 — understanding that not knowing something doesn’t make someone stupid, the IT industry is huge 
 
 — preferring and rewarding problem solving and analytical skills over all
+
+- empathy
 
 
 I feel positive we can work this out aren’t you?. I would be happy to hear your thoughts,
